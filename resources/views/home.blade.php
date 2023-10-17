@@ -32,7 +32,7 @@
             <div class="container">
                 <nav class="navbar navbar-dark navbar-expand-lg py-0">
                     <a href="index.html" class="navbar-brand">
-                        <h1 class="text-white fw-bold d-block">Grupo<span class="text-secondary">T&G</span> </h1>
+                        <h1 class="text-white fw-bold d-block">Grupo<span class="text-secondary">TyG</span> </h1>
                     </a>
                     <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
@@ -365,8 +365,8 @@
         <div class="container-fluid blog py-5 mb-5">
             <div class="container">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h5 class="text-primary">Our Blog</h5>
-                    <h1>Latest Blog & News</h1>
+                    <h5 class="text-primary">Nuestro Blog</h5>
+                    <h1>Últimos blogs y noticias</h1>
                 </div>
                 <div class="row g-5 justify-content-center">
                     <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
@@ -472,8 +472,8 @@
         <div class="container-fluid py-5 mb-5 team">
             <div class="container">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h5 class="text-primary">Our Team</h5>
-                    <h1>Meet our expert Team</h1>
+                    <h5 class="text-primary">Nuestro Equipo</h5>
+                    <h1>Conozca a nuestro equipo de expertos</h1>
                 </div>
                 <div class="owl-carousel team-carousel wow fadeIn" data-wow-delay=".5s">
                     <div class="rounded team-item">
@@ -561,8 +561,8 @@
         <div class="container-fluid testimonial py-5 mb-5">
             <div class="container">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h5 class="text-primary">Our Testimonial</h5>
-                    <h1>Our Client Saying!</h1>
+                    <h5 class="text-primary">Nuestro testimonio</h5>
+                    <h1>Nuestro Cliente Dice!</h1>
                 </div>
                 <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay=".5s">
                     <div class="testimonial-item border p-4">
@@ -660,9 +660,9 @@
         <div class="container-fluid py-5 mb-5">
             <div class="container">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h5 class="text-primary">Get In Touch</h5>
-                    <h1 class="mb-3">Contact for any query</h1>
-                    <p class="mb-2">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                    <h5 class="text-primary">Ponerse en contacto</h5>
+                    <h1 class="mb-3">Contacto para cualquier consulta</h1>
+                    
                 </div>
                 <div class="contact-detail position-relative p-5">
                     <div class="row g-5 mb-5 justify-content-center">
@@ -672,8 +672,8 @@
                                     <i class="fas fa-map-marker-alt text-white"></i>
                                 </div>
                                 <div class="ms-3">
-                                    <h4 class="text-primary">Address</h4>
-                                    <a href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6" target="_blank" class="h5">23 rank Str, NY</a>
+                                    <h4 class="text-primary">Dirección</h4>
+                                    <a href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6" target="_blank" class="h5">Lima, Perú</a>
                                 </div>
                             </div>
                         </div>
@@ -683,8 +683,8 @@
                                     <i class="fa fa-phone text-white"></i>
                                 </div>
                                 <div class="ms-3">
-                                    <h4 class="text-primary">Call Us</h4>
-                                    <a class="h5" href="tel:+0123456789" target="_blank">+012 3456 7890</a>
+                                    <h4 class="text-primary">Llámanos</h4>
+                                    <a class="h5" href="tel:+0123456789" target="_blank">+51 978209130</a>
                                 </div>
                             </div>
                         </div>
@@ -694,8 +694,8 @@
                                     <i class="fa fa-envelope text-white"></i>
                                 </div>
                                 <div class="ms-3">
-                                    <h4 class="text-primary">Email Us</h4>
-                                    <a class="h5" href="mailto:info@example.com" target="_blank">info@example.com</a>
+                                    <h4 class="text-primary">Email</h4>
+                                    <a class="h5" href="mailto:info@example.com" target="_blank">jctorresdelcastillo@gmail.com</a>
                                 </div>
                             </div>
                         </div>
@@ -709,19 +709,19 @@
                         <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
                             <div class="p-5 rounded contact-form">
                                 <div class="mb-4">
-                                    <input type="text" class="form-control border-0 py-3" placeholder="Your Name">
+                                    <input type="text" class="form-control border-0 py-3" placeholder="Su nombre">
                                 </div>
                                 <div class="mb-4">
-                                    <input type="email" class="form-control border-0 py-3" placeholder="Your Email">
+                                    <input type="email" class="form-control border-0 py-3" placeholder="Tu Email">
                                 </div>
                                 <div class="mb-4">
-                                    <input type="text" class="form-control border-0 py-3" placeholder="Project">
+                                    <input type="text" class="form-control border-0 py-3" placeholder="Proyecto">
                                 </div>
                                 <div class="mb-4">
-                                    <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10" placeholder="Message"></textarea>
+                                    <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10" placeholder="Mensaje"></textarea>
                                 </div>
                                 <div class="text-start">
-                                    <button class="btn bg-primary text-white py-3 px-5" type="button">Send Message</button>
+                                    <button class="btn bg-primary text-white py-3 px-5" type="button">Enviar mensaje</button>
                                 </div>
                             </div>
                         </div>
@@ -738,7 +738,7 @@
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
                         <a href="index.html">
-                            <h1 class="text-white fw-bold d-block">High<span class="text-secondary">Tech</span> </h1>
+                            <h1 class="text-white fw-bold d-block">Grupo<span class="text-secondary">TyG</span> </h1>
                         </a>
                         <p class="mt-4 text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere delectus qui placeat inventore consectetur repellendus optio debitis.</p>
                         <div class="d-flex hightech-link">
@@ -749,42 +749,42 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <a href="#" class="h3 text-secondary">Short Link</a>
+                        <a href="#" class="h3 text-secondary">Enlace corto</a>
                         <div class="mt-4 d-flex flex-column short-link">
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>About us</a>
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact us</a>
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Services</a>
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Projects</a>
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Latest Blog</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Sobre nosotros</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contáctenos</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Nuestros servicios</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Nuestros proyectos</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Blog más reciente</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <a href="#" class="h3 text-secondary">Help Link</a>
+                        <a href="#" class="h3 text-secondary">Enlace de ayuda</a>
                         <div class="mt-4 d-flex flex-column help-link">
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Terms Of use</a>
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Privacy Policy</a>
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Helps</a>
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>FQAs</a>
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Condiciones de uso</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Política de privacidad</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Ayuda</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Preguntas frecuentes</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contacto</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <a href="#" class="h3 text-secondary">Contact Us</a>
                         <div class="text-white mt-4 d-flex flex-column contact-link">
-                            <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i> 123 Street, New York, USA</a>
-                            <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i> +123 456 7890</a>
-                            <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i> info@exmple.con</a>
+                            <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Lima, Perú</a>
+                            <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i> +51 978209130</a> 
+                            <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i> jctorresdelcastillo@gmail.con</a>
                         </div>
                     </div>
                 </div>
                 <hr class="text-light mt-5 mb-4">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start">
-                        <span class="text-light"><a href="#" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>Your Site Name</a>, All right reserved.</span>
+                        <span class="text-light"><a href="#" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>Grupo TyG Ingenieros SAC</a>, Todos los derechos reservados.</span>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        <span class="text-light">Designed By<a href="https://htmlcodex.com" class="text-secondary">HTML Codex</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a></span>
+                        <span class="text-light">Diseñado por<a href="https://grupotyg.pe" class="text-secondary"> Grupo TyG</a></span>
                     </div>
                 </div>
             </div>
