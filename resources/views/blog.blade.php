@@ -62,7 +62,7 @@
             @foreach ($posts as $post)
             <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
                 <div class="blog-item position-relative bg-light rounded">
-                    <img src="http://127.0.0.1:8000/storage/{{$post->image}}" class="img-fluid w-100 rounded-top" alt="">
+                    <img src="{{config('url')}}/storage/{{$post->image}}" class="img-fluid w-100 rounded-top" alt="">
                     <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">{{$post->title}} </span>
                     <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
                         <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
@@ -80,7 +80,7 @@
                         </div>
                     </div>
                     <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
-                        <img src="http://127.0.0.1:8000/storage/{{$post->user->avatar}}" width="100" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                        <img src="{{config('url')}}/storage/{{$post->user->avatar}}" width="100" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
                         <h5 class="">By {{$post->user->name}}</h5>
                         <span class="text-secondary">{{date_format($post->created_at,'d M Y')}}</span>
                         <p class="py-2">{{Str::limit($post->excerpt,100)}}</p>
