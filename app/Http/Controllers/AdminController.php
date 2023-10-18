@@ -8,8 +8,9 @@ use App\Models\Post;
 class AdminController extends Controller
 {
     public function index(){
+        $posts = Post::all();
         $nav = 'Inicio';
-        return view('home',compact('nav'));
+        return view('home',compact('nav','posts'));
     }
 
     public function nosotros(){

@@ -108,11 +108,11 @@
 
 
 <!-- Services Start -->
-<div class="container-fluid services py-5 mb-5">
-    <div class="container">
+<div class="container-fluid services py-5 my-5">
+    <div class="container py-5">
         <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
             <h5 class="text-primary">Nuestros Servicios</h5>
-            <h1>Servicios creados específicamente para su negocio</h1>
+            <h1>Servicios específicamente para su negocio</h1>
         </div>
         <div class="row g-5 services-inner">
             <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
@@ -120,9 +120,9 @@
                     <div class="p-4 text-center services-content">
                         <div class="services-content-icon">
                             <i class="fa fa-code fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">Web Design</h4>
+                            <h4 class="mb-3">Diseño Web</h4>
                             <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leer más</a>
                         </div>
                     </div>
                 </div>
@@ -132,9 +132,9 @@
                     <div class="p-4 text-center services-content">
                         <div class="services-content-icon">
                             <i class="fa fa-file-code fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">Web Development</h4>
+                            <h4 class="mb-3">Desarrollo Web</h4>
                             <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leer más</a>
                         </div>
                     </div>
                 </div>
@@ -143,10 +143,10 @@
                 <div class="services-item bg-light">
                     <div class="p-4 text-center services-content">
                         <div class="services-content-icon">
-                            <i class="fa fa-external-link-alt fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">UI/UX Design</h4>
+                            <i class="fas fa-chart-line fa-7x mb-4 text-primary"></i>
+                            <h4 class="mb-3">Biseness Analytics</h4>
                             <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leer más</a>
                         </div>
                     </div>
                 </div>
@@ -155,10 +155,10 @@
                 <div class="services-item bg-light">
                     <div class="p-4 text-center services-content">
                         <div class="services-content-icon">
-                            <i class="fas fa-user-secret fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">Web Cecurity</h4>
+                            <i class="fas fa-shopping-cart fa-7x mb-4 text-primary"></i>
+                            <h4 class="mb-3">E-Commerce</h4>
                             <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leer más</a>
                         </div>
                         
                     </div>
@@ -168,8 +168,8 @@
                 <div class="services-item bg-light">
                     <div class="p-4 text-center services-content">
                         <div class="services-content-icon">
-                            <i class="fa fa-envelope-open fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">Digital Marketing</h4>
+                            <i class="fa fa-project-diagram fa-7x mb-4 text-primary"></i>
+                            <h4 class="mb-3">Arquitectura Software</h4>
                             <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
                             <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
                         </div>
@@ -180,8 +180,8 @@
                 <div class="services-item bg-light">
                     <div class="p-4 text-center services-content">
                         <div class="services-content-icon">
-                            <i class="fas fa-laptop fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">Programming</h4>
+                            <i class="fas fa-palette fa-7x mb-4 text-primary"></i>
+                            <h4 class="mb-3">Branding</h4>
                             <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
                             <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
                         </div>
@@ -287,20 +287,21 @@
 
 
 <!-- Blog Start -->
-<div class="container-fluid blog py-5 mb-5">
-    <div class="container">
+<div class="container-fluid blog py-5 my-5">
+    <div class="container py-5">
         <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
             <h5 class="text-primary">Nuestro Blog</h5>
-            <h1>Últimos blogs y noticias</h1>
+            <h1>Últimos blogs & noticias</h1>
         </div>
         <div class="row g-5 justify-content-center">
+            @foreach ($posts as $post)
             <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
                 <div class="blog-item position-relative bg-light rounded">
-                    <img src="img/blog-1.jpg" class="img-fluid w-100 rounded-top" alt="">
-                    <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Web Design</span>
+                    <img src="{{config('url')}}/storage/{{$post->image}}" class="img-fluid w-100 rounded-top" alt="">
+                    <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">{{$post->title}} </span>
                     <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
                         <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
-                            <a href="" class="btn text-white">Read More</a>
+                            <a href="" class="btn text-white">Leer más</a>
                         </div>
                         <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
                             <div class="blog-icon-1">
@@ -314,10 +315,10 @@
                         </div>
                     </div>
                     <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
-                        <img src="img/admin.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
-                        <h5 class="">By Daniel Martin</h5>
-                        <span class="text-secondary">24 March 2023</span>
-                        <p class="py-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
+                        <img src="{{config('url')}}/storage/{{$post->user->avatar}}" width="100" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                        <h5 class="">By {{$post->user->name}}</h5>
+                        <span class="text-secondary">{{date_format($post->created_at,'d M Y')}}</span>
+                        <p class="py-2">{{Str::limit($post->excerpt,100)}}</p>
                     </div>
                     <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
                         <a href="" class="text-white"><small><i class="fas fa-share me-2 text-secondary"></i>5324 Share</small></a>
@@ -325,68 +326,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".5s">
-                <div class="blog-item position-relative bg-light rounded">
-                    <img src="img/blog-2.jpg" class="img-fluid w-100 rounded-top" alt="">
-                    <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Development</span>
-                    <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
-                        <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
-                            <a href="" class="btn text-white ">Read More</a>
-                        </div>
-                        <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
-                            <div class="blog-icon-1">
-                                <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
-                            </div>
-                            <div class="blog-icon-2">
-                                <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
-                                <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
-                                <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
-                        <img src="img/admin.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
-                        <h5 class="">By Daniel Martin</h5>
-                        <span class="text-secondary">23 April 2023</span>
-                        <p class="py-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
-                    </div>
-                    <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
-                        <a href="" class="text-white"><small><i class="fas fa-share me-2 text-secondary"></i>5324 Share</small></a>
-                        <a href="" class="text-white"><small><i class="fa fa-comments me-2 text-secondary"></i>5 Comments</small></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".7s">
-                <div class="blog-item position-relative bg-light rounded">
-                    <img src="img/blog-3.jpg" class="img-fluid w-100 rounded-top" alt="">
-                    <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Mobile App</span>
-                    <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
-                        <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
-                            <a href="" class="btn text-white ">Read More</a>
-                        </div>
-                        <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
-                            <div class="blog-icon-1">
-                                <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
-                            </div>
-                            <div class="blog-icon-2">
-                                <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
-                                <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
-                                <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
-                        <img src="img/admin.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
-                        <h5 class="">By Daniel Martin</h5>
-                        <span class="text-secondary">30 jan 2023</span>
-                        <p class="py-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
-                    </div>
-                    <div class="blog-coments d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
-                        <a href="" class="text-white"><small><i class="fas fa-share me-2 text-secondary"></i>5324 Share</small></a>
-                        <a href="" class="text-white"><small><i class="fa fa-comments me-2 text-secondary"></i>5 Comments</small></a>
-                    </div>
-                </div>
-            </div>
+            @endforeach            
         </div>
     </div>
 </div>
