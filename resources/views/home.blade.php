@@ -315,7 +315,7 @@
                         </div>
                     </div>
                     <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
-                        <img src="{{config('url')}}/storage/{{$post->user->avatar}}" width="100" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                        <img src="{{config('url')}}/storage/{{$post->user->avatar}}" width="100" height="100" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
                         <h5 class="">By {{$post->user->name}}</h5>
                         <span class="text-secondary">{{date_format($post->created_at,'d M Y')}}</span>
                         <p class="py-2">{{Str::limit($post->excerpt,100)}}</p>
