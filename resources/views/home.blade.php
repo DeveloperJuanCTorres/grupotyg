@@ -89,8 +89,8 @@
                         <img src="img/carousel-1.jpg" class="img-fluid" alt="First slide">
                         <div class="carousel-caption">
                             <div class="container carousel-content">
-                                <h6 class="text-secondary h4 animated fadeInUp">Las mejores soluciones de TI</h6>
-                                <h1 class="text-white display-1 mb-4 animated fadeInRight">Una Agencia innovadora de soluciones de TI</h1>
+                                <h6 class="text-secondary h4 animated fadeInUp">Soluciones de TI</h6>
+                                <h1 class="text-white display-1 mb-4 animated fadeInRight">Agencia innovadora de soluciones de TI</h1>
                                 <p class="mb-4 text-white fs-5 animated fadeInDown">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt.</p>
                                 <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Leer más</button></a>
                                 <a href="" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contactanos</button></a>
@@ -102,7 +102,7 @@
                         <div class="carousel-caption">
                             <div class="container carousel-content">
                                 <h6 class="text-secondary h4 animated fadeInUp">Las mejores soluciones de TI</h6>
-                                <h1 class="text-white display-1 mb-4 animated fadeInLeft">Servicios digitales de calidad que realmente necesitas!</h1>
+                                <h1 class="text-white display-1 mb-4 animated fadeInLeft">Servicios digitales de calidad!</h1>
                                 <p class="mb-4 text-white fs-5 animated fadeInDown">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt.</p>
                                 <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Leer más</button></a>
                                 <a href="" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contactanos</button></a>
