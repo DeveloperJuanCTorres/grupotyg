@@ -55,8 +55,8 @@
 <div class="container-fluid services py-5 my-5">
     <div class="container py-5">
         <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-            <h5 class="text-primary">Our Services</h5>
-            <h1>Services Built Specifically For Your Business</h1>
+            <h5 class="text-primary">Nuestros Servicios</h5>
+            <h1>Servicios específicamente para su negocio</h1>
         </div>
         <div class="row g-5 services-inner">
             <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
@@ -64,9 +64,9 @@
                     <div class="p-4 text-center services-content">
                         <div class="services-content-icon">
                             <i class="fa fa-code fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">Web Design</h4>
+                            <h4 class="mb-3">Diseño Web</h4>
                             <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leer más</a>
                         </div>
                     </div>
                 </div>
@@ -76,9 +76,9 @@
                     <div class="p-4 text-center services-content">
                         <div class="services-content-icon">
                             <i class="fa fa-file-code fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">Web Development</h4>
+                            <h4 class="mb-3">Desarrollo Web</h4>
                             <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leer más</a>
                         </div>
                     </div>
                 </div>
@@ -87,10 +87,10 @@
                 <div class="services-item bg-light">
                     <div class="p-4 text-center services-content">
                         <div class="services-content-icon">
-                            <i class="fa fa-external-link-alt fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">UI/UX Design</h4>
+                            <i class="fas fa-chart-line fa-7x mb-4 text-primary"></i>
+                            <h4 class="mb-3">Biseness Analytics</h4>
                             <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leer más</a>
                         </div>
                     </div>
                 </div>
@@ -99,10 +99,10 @@
                 <div class="services-item bg-light">
                     <div class="p-4 text-center services-content">
                         <div class="services-content-icon">
-                            <i class="fas fa-user-secret fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">Web Cecurity</h4>
+                            <i class="fas fa-money-check-alt fa-7x mb-4 text-primary"></i>
+                            <h4 class="mb-3">E-Commerce</h4>
                             <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leer más</a>
                         </div>
                         
                     </div>
@@ -112,8 +112,8 @@
                 <div class="services-item bg-light">
                     <div class="p-4 text-center services-content">
                         <div class="services-content-icon">
-                            <i class="fa fa-envelope-open fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">Digital Marketing</h4>
+                            <i class="fa fa-project-diagram fa-7x mb-4 text-primary"></i>
+                            <h4 class="mb-3">Arquitectura Software</h4>
                             <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
                             <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
                         </div>
@@ -124,8 +124,8 @@
                 <div class="services-item bg-light">
                     <div class="p-4 text-center services-content">
                         <div class="services-content-icon">
-                            <i class="fas fa-laptop fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">Programming</h4>
+                            <i class="fas fa-palette fa-7x mb-4 text-primary"></i>
+                            <h4 class="mb-3">Branding</h4>
                             <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
                             <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
                         </div>

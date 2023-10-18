@@ -55,8 +55,8 @@
 <div class="container-fluid blog py-5 my-5">
     <div class="container py-5">
         <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-            <h5 class="text-primary">Our Blog</h5>
-            <h1>Latest Blog & News</h1>
+            <h5 class="text-primary">Nuestro Blog</h5>
+            <h1>Últimos blogs & noticias</h1>
         </div>
         <div class="row g-5 justify-content-center">
             @foreach ($posts as $post)
