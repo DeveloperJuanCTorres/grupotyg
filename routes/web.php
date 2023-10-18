@@ -19,12 +19,16 @@ use App\Http\Controllers\AdminController;
 // });
 
 Route::get('/',[AdminController::class, 'index'])->name('index');
+Route::get('/about',[AdminController::class, 'nosotros'])->name('about');
+Route::get('/service',[AdminController::class, 'servicios'])->name('service');
+Route::get('/project',[AdminController::class, 'proyectos'])->name('project');
+Route::get('/blog',[AdminController::class, 'posts'])->name('blog');
 
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
-// Auth::routes();
+ Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
