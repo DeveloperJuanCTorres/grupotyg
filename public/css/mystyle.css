@@ -3,4 +3,7 @@
         right: 5% !important;
         left: 5% !important;
     }
+    .carousel-item p{
+        margin: 0 15px 35px 15px;
+    }
 }

@@ -91,7 +91,7 @@
                             <div class="container carousel-content">
                                 <h6 class="text-secondary h4 animated fadeInUp">Soluciones de TI</h6>
                                 <h1 class="text-white display-1 mb-4 animated fadeInRight">Agencia innovadora de soluciones de TI</h1>
-                                <p class="mb-4 text-white fs-5 animated fadeInDown">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt.</p>
+                                <p class="mb-4 text-white fs-5 animated fadeInDown">Ofrecemos soluciones completas y fáciles de usar, incluso para sus problemas de gestión de TI más difíciles.</p>
                                 <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Leer más</button></a>
                                 <a href="" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contactanos</button></a>
                             </div>
@@ -103,7 +103,7 @@
                             <div class="container carousel-content">
                                 <h6 class="text-secondary h4 animated fadeInUp">Las mejores soluciones de TI</h6>
                                 <h1 class="text-white display-1 mb-4 animated fadeInLeft">Servicios digitales de calidad!</h1>
-                                <p class="mb-4 text-white fs-5 animated fadeInDown">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt.</p>
+                                <p class="mb-4 text-white fs-5 animated fadeInDown">Ofrecemos soluciones completas y fáciles de usar, incluso para sus problemas de gestión de TI más difíciles.</p>
                                 <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Leer más</button></a>
                                 <a href="" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contactanos</button></a>
                             </div>
