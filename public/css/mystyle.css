@@ -1,0 +1,6 @@
+@media (max-width: 768px) {
+    .mobil-p {
+        right: 5% !important;
+        left: 5% !important;
+    }
+}

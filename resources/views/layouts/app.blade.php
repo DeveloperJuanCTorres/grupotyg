@@ -32,6 +32,8 @@
         <!-- Template Stylesheet -->
         <link href="{{asset('css/style.css')}}" rel="stylesheet">
 
+        <link href="{{asset('css/mystyle.css')}}" rel="stylesheet">
+
         @stack('css')
 
     <!-- Scripts -->

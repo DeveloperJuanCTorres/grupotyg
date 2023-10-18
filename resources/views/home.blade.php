@@ -87,7 +87,7 @@
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
                         <img src="img/carousel-1.jpg" class="img-fluid" alt="First slide">
-                        <div class="carousel-caption">
+                        <div class="carousel-caption mobil-p">
                             <div class="container carousel-content">
                                 <h6 class="text-secondary h4 animated fadeInUp">Soluciones de TI</h6>
                                 <h1 class="text-white display-1 mb-4 animated fadeInRight">Agencia innovadora de soluciones de TI</h1>
@@ -99,7 +99,7 @@
                     </div>
                     <div class="carousel-item">
                         <img src="img/carousel-2.jpg" class="img-fluid" alt="Second slide">
-                        <div class="carousel-caption">
+                        <div class="carousel-caption mobil-p">
                             <div class="container carousel-content">
                                 <h6 class="text-secondary h4 animated fadeInUp">Las mejores soluciones de TI</h6>
                                 <h1 class="text-white display-1 mb-4 animated fadeInLeft">Servicios digitales de calidad!</h1>
@@ -695,7 +695,7 @@
                                 </div>
                                 <div class="ms-3">
                                     <h4 class="text-primary">Email</h4>
-                                    <a class="h5" href="mailto:info@example.com" target="_blank">jctorresdelcastillo@gmail.com</a>
+                                    <a class="h5" href="mailto:info@example.com" target="_blank">info@grupotyg.com</a>
                                 </div>
                             </div>
                         </div>
