@@ -65,7 +65,7 @@
                     <div class="project-img">
                         <img src="{{config('url')}}/storage/{{$project->imagen}}" class="img-fluid w-100 rounded" alt="">
                         <div class="project-content">
-                            <a href="#" class="text-center">
+                            <a href="{{$project->link_pagina}}" class="text-center">
                                 <h4 class="text-secondary">{{$project->titulo}}</h4>
                                 <p class="m-0 text-white">{{$project->subtitulo}}</p>
                             </a>
