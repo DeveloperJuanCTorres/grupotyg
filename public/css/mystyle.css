@@ -6,4 +6,10 @@
     .carousel-item p{
         margin: 0 15px 35px 15px;
     }
+    .contact{
+        padding: 10px !important;
+    }
+    .contact-h6{
+        font-size: medium !important;
+    }
 }
