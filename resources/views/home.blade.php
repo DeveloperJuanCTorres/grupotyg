@@ -202,20 +202,22 @@
             <h1>Nuestros proyectos recientemente completados</h1>
         </div>
         <div class="row g-5">
+            @foreach($projects as $project)
             <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                 <div class="project-item">
                     <div class="project-img">
                         <img src="img/project-1.jpg" class="img-fluid w-100 rounded" alt="">
                         <div class="project-content">
                             <a href="#" class="text-center">
-                                <h4 class="text-secondary">Web design</h4>
-                                <p class="m-0 text-white">Web Analysis</p>
+                                <h4 class="text-secondary">{{$project->titulo}}</h4>
+                                <p class="m-0 text-white">{{$project->subtitulo}}</p>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+            @endforeach
+            <!-- <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
                 <div class="project-item">
                     <div class="project-img">
                         <img src="img/project-2.jpg" class="img-fluid w-100 rounded" alt="">
@@ -279,7 +281,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
@@ -361,64 +363,7 @@
                     </div>
                 </div>
             </div>
-            @endforeach
-            <!-- <div class="rounded team-item">
-                <div class="team-content">
-                    <div class="team-img-icon">
-                        <div class="team-img rounded-circle">
-                            <img src="img/team-2.jpg" class="img-fluid w-100 rounded-circle" alt="">
-                        </div>
-                        <div class="team-name text-center py-3">
-                            <h4 class="">Full Name</h4>
-                            <p class="m-0">Designation</p>
-                        </div>
-                        <div class="team-icon d-flex justify-content-center pb-4">
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="rounded team-item">
-                <div class="team-content">
-                    <div class="team-img-icon">
-                        <div class="team-img rounded-circle">
-                            <img src="img/team-3.jpg" class="img-fluid w-100 rounded-circle" alt="">
-                        </div>
-                        <div class="team-name text-center py-3">
-                            <h4 class="">Full Name</h4>
-                            <p class="m-0">Designation</p>
-                        </div>
-                        <div class="team-icon d-flex justify-content-center pb-4">
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="rounded team-item">
-                <div class="team-content">
-                    <div class="team-img-icon">
-                        <div class="team-img rounded-circle">
-                            <img src="img/team-4.jpg" class="img-fluid w-100 rounded-circle" alt="">
-                        </div>
-                        <div class="team-name text-center py-3">
-                            <h4 class="">Full Name</h4>
-                            <p class="m-0">Designation</p>
-                        </div>
-                        <div class="team-icon d-flex justify-content-center pb-4">
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+            @endforeach            
         </div>
     </div>
 </div>

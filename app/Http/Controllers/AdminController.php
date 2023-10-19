@@ -5,14 +5,16 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\User;
+use App\Models\Project;
 
 class AdminController extends Controller
 {
     public function index(){
         $posts = Post::all();
         $users = User::all();
+        $projects = Project::all();
         $nav = 'Inicio';
-        return view('home',compact('nav','posts','users'));
+        return view('home',compact('nav','posts','users','projects'));
     }
 
     public function nosotros(){
