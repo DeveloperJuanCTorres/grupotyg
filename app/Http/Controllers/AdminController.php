@@ -29,7 +29,8 @@ class AdminController extends Controller
 
     public function proyectos(){
         $nav = 'Proyectos';
-        return view('project',compact('nav'));
+        $projects = Project::all();
+        return view('project',compact('nav','projects'));
     }
 
     public function posts(){
