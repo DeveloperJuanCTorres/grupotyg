@@ -232,13 +232,14 @@
         </div>
         <div class="row g-5 justify-content-center">
             @foreach ($posts as $post)
+            @if($post->status=="PUBLISHED")
             <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
                 <div class="blog-item position-relative bg-light rounded">
                     <img src="{{config('url')}}/storage/{{$post->image}}" class="img-fluid w-100 rounded-top" alt="">
                     <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">{{$post->title}} </span>
                     <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
                         <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
-                            <a href="" class="btn text-white">Leer más</a>
+                            <a href="{{route('blogid',$post)}}" class="btn text-white">Leer más</a>
                         </div>
                         <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
                             <div class="blog-icon-1">
@@ -263,6 +264,7 @@
                     </div>
                 </div>
             </div>
+            @endif
             @endforeach            
         </div>
     </div>

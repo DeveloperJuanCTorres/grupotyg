@@ -37,6 +37,7 @@ class AdminController extends Controller
     public function posts(){
         $posts = Post::all();
         $nav = 'Posts';
+       // dd($posts);
         return view('blog',compact('nav','posts'));
     }
 

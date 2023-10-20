@@ -60,6 +60,7 @@
         </div>
         <div class="row g-5 justify-content-center">
             @foreach ($posts as $post)
+            @if($post->status=="PUBLISHED")
             <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
                 <div class="blog-item position-relative bg-light rounded">
                     <img src="{{config('url')}}/storage/{{$post->image}}" class="img-fluid w-100 rounded-top" alt="">
@@ -91,6 +92,7 @@
                     </div>
                 </div>
             </div>
+            @endif
             @endforeach            
         </div>
     </div>
