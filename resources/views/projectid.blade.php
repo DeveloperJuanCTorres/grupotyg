@@ -87,7 +87,7 @@
                         $portafolio = json_decode($project->portafolio);
                     @endphp
                     @foreach($portafolio as $item)
-                    <img src="{{config('url')}}/storage/{{$item}}" data-full="{{config('url')}}/storage/{{$item}}" class="m-p-g__thumbs-img" />
+                    <img style="padding: 2px;" src="{{config('url')}}/storage/{{$item}}" data-full="{{config('url')}}/storage/{{$item}}" class="m-p-g__thumbs-img" />
                     @endforeach
                 </div>
 
