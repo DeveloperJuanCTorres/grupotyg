@@ -96,7 +96,7 @@
             </div>
             <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
                 <h5 class="text-primary">Sobre nosotros</h5>
-                <h1 class="mb-4">Acerca de la agencia GrupoT&G y sus innovadoras soluciones de TI</h1>
+                <h1 class="mb-4">Acerca de la agencia GrupoTyG y sus innovadoras soluciones de TI</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus. Etiam gravida justo nec erat vestibulum, et malesuada augue laoreet.</p>
                 <p class="mb-4">Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus.</p>
                 <a href="" class="btn btn-secondary rounded-pill px-5 py-3 text-white">Más detalles</a>

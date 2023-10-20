@@ -39,7 +39,7 @@
                         <div class="text-white mt-4 d-flex flex-column contact-link">
                             <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Lima, Perú</a>
                             <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i> +51 978209130</a> 
-                            <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i> jctorresdelcastillo@gmail.con</a>
+                            <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i> informes@grupotyg.pe</a>
                         </div>
                     </div>
                 </div>

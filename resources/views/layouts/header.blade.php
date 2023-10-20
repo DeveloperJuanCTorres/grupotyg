@@ -9,7 +9,7 @@
             <div class="d-flex justify-content-between topbar">
                 <div class="top-info">
                     <small class="me-3 text-white-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>Lima, perú</small>
-                    <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>jctorresdelcastillo@gmail.com</small>
+                    <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>informes@grupotyg.pe</small>
                 </div>
                 <div id="note" class="text-secondary d-none d-xl-flex"><small>Nota : Pagina en construcción</small></div>
                 <div class="top-link">

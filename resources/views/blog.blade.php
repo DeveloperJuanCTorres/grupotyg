@@ -66,7 +66,7 @@
                     <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">{{$post->title}} </span>
                     <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
                         <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
-                            <a href="" class="btn text-white">Leer más</a>
+                            <a href="{{route('blogid',$post)}}" class="btn text-white">Leer más</a>
                         </div>
                         <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
                             <div class="blog-icon-1">

@@ -13,3 +13,12 @@
         font-size: medium !important;
     }
 }
+
+.rounded1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px !important;
+    width: 200px !important;
+    border-radius: 500px;
+}
