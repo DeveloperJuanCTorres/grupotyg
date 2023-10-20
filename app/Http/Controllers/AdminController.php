@@ -34,17 +34,22 @@ class AdminController extends Controller
         return view('project',compact('nav','projects'));
     }    
 
+    public function proyectoid(Project $project)
+    {
+        $nav = 'Proyectos';
+        //dd($project);
+        return view('projectid',compact('nav','project'));
+    }
+
     public function posts(){
         $posts = Post::all();
         $nav = 'Posts';
-       // dd($posts);
         return view('blog',compact('nav','posts'));
     }
 
     public function postid(Post $blog)
     {
         $nav = 'Posts';
-        // dd($blog);
         return view('blogid',compact('nav','blog'));
     }
 

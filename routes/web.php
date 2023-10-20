@@ -22,6 +22,7 @@ Route::get('/',[AdminController::class, 'index'])->name('index');
 Route::get('/about',[AdminController::class, 'nosotros'])->name('about');
 Route::get('/service',[AdminController::class, 'servicios'])->name('service');
 Route::get('/project',[AdminController::class, 'proyectos'])->name('project');
+Route::get('/project/{project}',[adminController::class,'proyectoid'])->name('projectid');
 Route::get('/blog',[AdminController::class, 'posts'])->name('blog');
 Route::get('/blog/{blog}',[adminController::class,'postid'])->name('blogid');
 Route::get('/contact',[AdminController::class, 'contactanos'])->name('contact');

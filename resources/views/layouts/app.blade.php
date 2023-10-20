@@ -60,6 +60,6 @@
 
         <!-- Template Javascript -->
         <script src="{{asset('js/main.js')}}"></script>
-        @yield('javascript')
+        @stack('javascript')
 </body>
 </html>
