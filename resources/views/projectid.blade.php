@@ -51,8 +51,8 @@
 <!-- Fact End -->
 
 <!-- Negocio Start -->
-<div class="container-fluid py-5 my-5">
-    <div class="container pt-5">
+<div class="container-fluid my-5">
+    <div class="container pt-5">        
         <div class="row g-5">
             <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
                 <div class="h-100 position-relative">
@@ -61,7 +61,7 @@
                 </div>
             </div>
             <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
-                <img src="{{config('url')}}/storage/{{$project->logo_negocio}}" style="display: block;margin-left: auto;margin-right: auto;max-height: 100px;" class="img-fluid rounded" alt="">
+                <img src="{{config('url')}}/storage/{{$project->logo_negocio}}" style="max-height: 100px;" class="img-fluid rounded" alt="">
                 
                 <h1 class="mb-4">{{$project->nombre_negocio}}</h1>
                 <h5 class="text-primary">Sobre el proyecto</h5>
@@ -76,19 +76,23 @@
 <!-- Gallery Start -->
 <div class="container-fluid my-5">
     <div class="container">
-        <div class="row g-5">
-        <div class="m-p-g">
-            <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
-                @php
-                    $portafolio = json_decode($project->portafolio);
-                @endphp
-                @foreach($portafolio as $item)
-                <img src="{{config('url')}}/storage/{{$item}}" data-full="{{config('url')}}/storage/{{$item}}" class="m-p-g__thumbs-img" />
-                @endforeach
-            </div>
-
-            <div class="m-p-g__fullscreen"></div>
+        <div class="text-center mx-auto pb-5 wow fadeIn mb-4" data-wow-delay=".3s" style="max-width: 600px;">
+            <h5 class="text-primary">Imagenes del proyecto</h5>
+            <h1>Portafolio</h1>
         </div>
+        <div class="row g-5">
+            <div class="m-p-g">
+                <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+                    @php
+                        $portafolio = json_decode($project->portafolio);
+                    @endphp
+                    @foreach($portafolio as $item)
+                    <img src="{{config('url')}}/storage/{{$item}}" data-full="{{config('url')}}/storage/{{$item}}" class="m-p-g__thumbs-img" />
+                    @endforeach
+                </div>
+
+                <div class="m-p-g__fullscreen"></div>
+            </div>
         </div>
     </div>
 </div>
