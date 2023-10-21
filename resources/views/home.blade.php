@@ -164,18 +164,6 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                <div class="services-item bg-light">
-                    <div class="p-4 text-center services-content">
-                        <div class="services-content-icon">
-                            <i class="fa fa-project-diagram fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">Arquitectura Software</h4>
-                            <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
                 <div class="services-item bg-light">
                     <div class="p-4 text-center services-content">
@@ -188,6 +176,18 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon">
+                            <i class="fa fa-project-diagram fa-7x mb-4 text-primary"></i>
+                            <h4 class="mb-3">Asesoramiento TI</h4>
+                            <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>            
         </div>
     </div>
 </div>

@@ -326,7 +326,6 @@
     position: relative;
 }
 
-
 .services-content::after {
     position: absolute;
     content: "";
@@ -335,7 +334,7 @@
     top: 0;
     left: 0;
     border-radius: 10px 10px 0 0;
-    background: rgba(3, 43, 243, 0.8);
+    background: #011133;
     transition: .5s;
 }
 
@@ -366,6 +365,10 @@
 }
 
 .services-item:hover .services-content-icon p {
+    color: var(--bs-white);
+}
+
+.services-item:hover .services-content-icon h4 {
     color: var(--bs-white);
 }
 
@@ -634,11 +637,11 @@
 }
 
 .contact-map {
-    background: #26d48c;
+    background: #ff521d;
 }
 
 .contact-form {
-    background: #26d48c;
+    background: #ff521d;
 }
 
 /*** Contact End ***/

@@ -27,7 +27,8 @@
     <div class="container-fluid bg-primary">
         <div class="container">
             <nav class="navbar navbar-dark navbar-expand-lg py-0">
-                <a href="/" class="navbar-brand">
+                <a href="/" class="navbar-brand" style="display: flex;">
+                    <img style="margin-right: 20px;" class="mt-2" src="{{asset('img/iso-02.png')}}" height="30" alt="">
                     <h1 class="text-white fw-bold d-block">Grupo<span class="text-secondary">TyG</span> </h1>
                 </a>
                 <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
