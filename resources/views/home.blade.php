@@ -144,7 +144,7 @@
                     <div class="p-4 text-center services-content">
                         <div class="services-content-icon">
                             <i class="fas fa-chart-line fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">Biseness Analytics</h4>
+                            <h4 class="mb-3">Biseness Intelligence</h4>
                             <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
                             <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leer más</a>
                         </div>
