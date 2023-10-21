@@ -9,6 +9,45 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    <!-- META -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta property="og:title" itemprop="headline" content="Grupo T&G Ingenieros" />
+        <meta property="og:description" itemprop="description" content="Grupo TyG Ingenieros | Agencia innovadora de soluciones de TI" />
+        <meta property="og:keywords" itemprop="keywords" content="tyg, tecnologia, ti, grupo, business, branding, asesoramiento, web, diseño, pagina, agencia">
+        <meta name="googlebot" content="noindex">
+        <meta name="googlebot-news" content="nosnippet">
+        <meta property="og:image" itemprop="image" content="/img/iso-02.png" />
+        <meta property="og:url" itemprop="url" content="https://grupotyg.pe/" />
+        <!-- FB -->
+        <meta property="fb:app_id" content="" />
+        <meta property="fb:admins" content="" />
+        <meta property="fb:pages" content="" /> 
+        <meta name="lang" content="es" itemprop="inLanguage" />
+        <base href="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="Grupo TyG Ingenieros | Agencia innovadora de soluciones de TI">
+        <meta name="keywords" content="tyg, tecnologia, ti, grupo, business, branding, asesoramiento, web, diseño, pagina, agencia">
+        <meta name="news_keywords" content="tyg, tecnologia, ti, grupo, business, branding, asesoramiento, web, diseño, pagina, agencia">
+        <meta name="author" content="Ing. Juan Carlos Torres del Castillo">
+        <meta name='robots' content='index, follow' />
+        <!-- APPLE -->
+        <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-icon-180x180.png">
+        <!-- Google -->
+        <link rel="icon" type="image/png" sizes="192x192" href="/icon/favicon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/icon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+
+        <link href="/img/iso-02.png" rel="icon" type="image/x-icon"> 
+
     <!-- Fonts -->
     <!-- <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet"> -->
@@ -24,7 +63,7 @@
 
         <!-- Libraries Stylesheet -->
         <?php
-            $version = '1993.1.3';
+            $version = '1993.1.4';
         ?>
         <link href="{{asset('lib/animate/animate.min.css')}}?v=<?php echo $version ?>" rel="stylesheet">
         <link href="{{asset('lib/owlcarousel/assets/owl.carousel.min.css')}}?v=<?php echo $version ?>" rel="stylesheet">
