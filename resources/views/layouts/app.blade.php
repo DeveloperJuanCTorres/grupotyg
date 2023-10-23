@@ -18,6 +18,7 @@
         <meta name="googlebot-news" content="nosnippet">
         <meta property="og:image" itemprop="image" content="{{asset('img/logo3.jpg')}}" />
         <meta property="og:url" itemprop="url" content="https://grupotyg.pe/" />
+        <meta property="og:type" content="website" />
         <!-- FB -->
         <meta property="fb:app_id" content="" />
         <meta property="fb:admins" content="" />
