@@ -121,7 +121,7 @@
                         <div class="services-content-icon">
                             <i class="fa fa-code fa-7x mb-4 text-primary"></i>
                             <h4 class="mb-3">Diseño Web</h4>
-                            <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                            <p class="mb-4">Adaptamos los diferentes elementos web a un protocolo responsive avanzado. El acceso multidispositivo está garantizado.</p>
                             <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leer más</a>
                         </div>
                     </div>
@@ -133,7 +133,7 @@
                         <div class="services-content-icon">
                             <i class="fa fa-file-code fa-7x mb-4 text-primary"></i>
                             <h4 class="mb-3">Desarrollo Web</h4>
-                            <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                            <p class="mb-4">Identifica puntos de mejora y transforma tus procesos para ahorrar tiempo y dinero.</p>
                             <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leer más</a>
                         </div>
                     </div>
@@ -145,7 +145,7 @@
                         <div class="services-content-icon">
                             <i class="fas fa-chart-line fa-7x mb-4 text-primary"></i>
                             <h4 class="mb-3">Biseness Intelligence</h4>
-                            <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                            <p class="mb-4">Automatiza la creación de reportes y toma de decisiones informadas con Power Bi.</p>
                             <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leer más</a>
                         </div>
                     </div>
@@ -157,7 +157,7 @@
                         <div class="services-content-icon">
                             <i class="fas fa-shopping-cart fa-7x mb-4 text-primary"></i>
                             <h4 class="mb-3">E-Commerce</h4>
-                            <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                            <p class="mb-4">Una tienda virtual le ayudará a incrementar sus ventas, nosotros nos encargamos de desarrollar su Ecommerce.</p>
                             <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leer más</a>
                         </div>
                         
@@ -170,7 +170,7 @@
                         <div class="services-content-icon">
                             <i class="fas fa-palette fa-7x mb-4 text-primary"></i>
                             <h4 class="mb-3">Branding</h4>
-                            <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                            <p class="mb-4"> Creamos marcas con mucha personalidad; para profesionales que quieren mejorar la reputación y rentabilidad de su negocio.</p>
                             <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
                         </div>
                     </div>
@@ -181,8 +181,8 @@
                     <div class="p-4 text-center services-content">
                         <div class="services-content-icon">
                             <i class="fa fa-project-diagram fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">Asesoramiento TI</h4>
-                            <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                            <h4 class="mb-3">Servicios de TI</h4>
+                            <p class="mb-4">Brindamos servicios de asesoría, diseño, implementación, operación y soporte de las distintas soluciones de tecnología.</p>
                             <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
                         </div>
                     </div>
