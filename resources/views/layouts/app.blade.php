@@ -16,7 +16,7 @@
         <meta property="og:keywords" itemprop="keywords" content="tyg, tecnologia, ti, grupo, business, branding, asesoramiento, web, diseño, pagina, agencia">
         <meta name="googlebot" content="noindex">
         <meta name="googlebot-news" content="nosnippet">
-        <meta property="og:image" itemprop="image" content="/img/iso-02.png" />
+        <meta property="og:image" itemprop="image" content="{{asset('img/iso-02.png')}}" />
         <meta property="og:url" itemprop="url" content="https://grupotyg.pe/" />
         <!-- FB -->
         <meta property="fb:app_id" content="" />
