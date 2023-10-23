@@ -14,7 +14,7 @@
         <meta property="og:title" itemprop="headline" content="Grupo T&G Ingenieros" />
         <meta property="og:description" itemprop="description" content="Grupo TyG Ingenieros | Agencia innovadora de soluciones de TI" />
         <meta property="og:keywords" itemprop="keywords" content="tyg, tecnologia, ti, grupo, business, branding, asesoramiento, web, diseño, pagina, agencia">
-        <meta name="googlebot" content="noindex">
+        <!-- <meta name="googlebot" content="noindex"> -->
         <meta name="googlebot-news" content="nosnippet">
         <meta property="og:image" itemprop="image" content="{{asset('img/logo3.jpg')}}" />
         <meta property="og:url" itemprop="url" content="https://grupotyg.pe/" />
