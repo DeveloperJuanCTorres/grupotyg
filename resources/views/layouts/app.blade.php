@@ -20,7 +20,7 @@
         <meta property="og:url" itemprop="url" content="https://grupotyg.pe/" />
         <meta property="og:type" content="website" />
         <!-- FB -->
-        <meta property="fb:app_id" content="" />
+        <!-- <meta property="fb:app_id" content="" />
         <meta property="fb:admins" content="" />
         <meta property="fb:pages" content="" /> 
         <meta name="lang" content="es" itemprop="inLanguage" />
@@ -30,7 +30,7 @@
         <meta name="keywords" content="tyg, tecnologia, ti, grupo, business, branding, asesoramiento, web, diseño, pagina, agencia">
         <meta name="news_keywords" content="tyg, tecnologia, ti, grupo, business, branding, asesoramiento, web, diseño, pagina, agencia">
         <meta name="author" content="Ing. Juan Carlos Torres del Castillo">
-        <meta name='robots' content='index, follow' />
+        <meta name='robots' content='index, follow' /> -->
         <!-- APPLE -->
         <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-icon-60x60.png">
