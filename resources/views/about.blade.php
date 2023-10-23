@@ -66,9 +66,9 @@
             <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
                 <h5 class="text-primary">Sobre nosotros</h5>
                 <h1 class="mb-4">Acerca de la agencia GrupoTyG y sus innovadoras soluciones de TI</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus. Etiam gravida justo nec erat vestibulum, et malesuada augue laoreet.</p>
-                <p class="mb-4">Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus.</p>
-                <a href="" class="btn btn-secondary rounded-pill px-5 py-3 text-white">More Details</a>
+                <p>Somos una empresa de tecnologías de la información que dearrolla consultorías e implementaciones empresariales orientada a modernizar y automatizar procesos estratégicos, considerando los objetivos de cada uno de nuestros clientes para lograr aumentar su rendimiento y efectividad en sus unidades de negocio. Es decir, brindamos un servicio personalizado para ofrecerle la mejor solución.</p>
+                <p class="mb-4">Tenemos los conocimientos, la experiencia y los contactos para diseñar y poner en marcha tu proyecto o área de TI a la medida de tus necesidades y tu presupuesto.</p>
+                <!-- <a href="" class="btn btn-secondary rounded-pill px-5 py-3 text-white">More Details</a> -->
             </div>
         </div>
     </div>
