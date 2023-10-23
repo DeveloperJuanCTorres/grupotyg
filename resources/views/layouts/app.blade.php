@@ -49,6 +49,18 @@
 
         <link href="/img/iso-02.png" rel="icon" type="image/x-icon"> 
 
+        <!-- GOOGLE ANALYTICS -->
+        <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-T06FB7DMGS"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-T06FB7DMGS');
+            </script>
+        <!-- FIN GOOGLE ANALYTICS -->
+
     <!-- Fonts -->
     <!-- <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet"> -->
