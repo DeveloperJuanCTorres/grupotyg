@@ -96,10 +96,10 @@
                             <p class="m-0">{{$user->designacion}}</p>
                         </div>
                         <div class="team-icon d-flex justify-content-center pb-4">
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" target="_blank" href="{{$user->link_facebook}}"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-secondary text-white rounded-circle m-1" target="_blank" href="{{$user->link_facebook}}"><i class="fab fa-facebook-f"></i></a>                            
+                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" target="_blank" href="{{$user->link_instagram}}"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" target="_blank" href="{{$user->link_linkedin}}"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" target="_blank" href="{{$user->link_web}}"><i class="fas fa-link"></i></a>
                         </div>
                     </div>
                 </div>
