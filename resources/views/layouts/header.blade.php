@@ -11,7 +11,7 @@
                     <small class="me-3 text-white-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>Lima, perú</small>
                     <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>informes@grupotyg.pe</small>
                 </div>
-                <div id="note" class="text-secondary d-none d-xl-flex"><small>Nota : Pagina en construcción</small></div>
+                <div id="note" class="text-secondary d-none d-xl-flex"><small style="font-size: 20px;">Cyber wow! 20% de descuento</small></div>
                 <div class="top-link">
                     <a href="https://www.facebook.com/profile.php?id=61552672404418&mibextid=ZbWKwL" target="_blank" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>
                     <a href="https://instagram.com/grupotyg_ingenieros?igshid=emhoOG0zbTAxdTlm" target="_blank" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-instagram text-primary"></i></a>
