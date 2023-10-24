@@ -66,7 +66,7 @@
                 <h1 class="mb-4">{{$service->name}}</h1>
                 <h5 class="text-primary">Acerca del servicio</h5>
                 <p>{{$service->description_corto}}</p>
-                <p>{{$service->description}}</p>
+                <p>{!!$service->description!!}</p>
                 <!-- <a href="$project->link_pagina" target="_blank" class="btn btn-secondary rounded-pill px-5 py-3 text-white">Ver proyecto</a> -->
             </div>
         </div>
