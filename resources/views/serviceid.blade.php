@@ -67,7 +67,7 @@
                 <h5 class="text-primary">Acerca del servicio</h5>
                 <p>{{$service->description_corto}}</p>
                 <p>{!!$service->description!!}</p>
-                <!-- <a href="$project->link_pagina" target="_blank" class="btn btn-secondary rounded-pill px-5 py-3 text-white">Ver proyecto</a> -->
+                <a href="/contact" class="btn btn-secondary rounded-pill px-5 py-3 text-white">Contáctanos</a>
             </div>
         </div>
     </div>
