@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\User;
 use App\Models\Project;
+use App\Models\Service;
 
 class AdminController extends Controller
 {
@@ -13,8 +14,9 @@ class AdminController extends Controller
         $posts = Post::all();
         $users = User::all();
         $projects = Project::all();
+        $services = Service::all();
         $nav = 'Inicio';
-        return view('home',compact('nav','posts','users','projects'));
+        return view('home',compact('nav','posts','users','projects','services'));
     }
 
     public function nosotros(){

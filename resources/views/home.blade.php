@@ -115,19 +115,21 @@
             <h1>Servicios específicamente para su negocio</h1>
         </div>
         <div class="row g-5 services-inner">
+            @foreach($services as $item)
             <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                 <div class="services-item bg-light">
                     <div class="p-4 text-center services-content">
                         <div class="services-content-icon">
-                            <i class="fa fa-code fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">Diseño Web</h4>
-                            <p class="mb-4">Adaptamos los diferentes elementos web a un protocolo responsive avanzado. El acceso multidispositivo está garantizado.</p>
+                            <i class="{{$item->icono}} fa-7x mb-4 text-primary"></i>
+                            <h4 class="mb-3">{{$item->name}}</h4>
+                            <p class="mb-4">{{$item->description_corto}}</p>
                             <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leer más</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+            @endforeach
+            <!-- <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
                 <div class="services-item bg-light">
                     <div class="p-4 text-center services-content">
                         <div class="services-content-icon">
@@ -187,7 +189,7 @@
                         </div>
                     </div>
                 </div>
-            </div>            
+            </div>             -->
         </div>
     </div>
 </div>
