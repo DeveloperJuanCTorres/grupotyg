@@ -21,6 +21,7 @@ use App\Http\Controllers\AdminController;
 Route::get('/',[AdminController::class, 'index'])->name('index');
 Route::get('/about',[AdminController::class, 'nosotros'])->name('about');
 Route::get('/service',[AdminController::class, 'servicios'])->name('service');
+Route::get('/service/{service}',[adminController::class,'servicioid'])->name('serviceid');
 Route::get('/project',[AdminController::class, 'proyectos'])->name('project');
 Route::get('/project/{project}',[adminController::class,'proyectoid'])->name('projectid');
 Route::get('/blog',[AdminController::class, 'posts'])->name('blog');

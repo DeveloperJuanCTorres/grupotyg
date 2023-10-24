@@ -26,10 +26,16 @@ class AdminController extends Controller
     }
 
     public function servicios(){
+        $services = Service::all();
         $nav = 'Servicios';
-        return view('service',compact('nav'));
+        return view('service',compact('nav','services'));
     }
-
+    
+    public function servicioid(Service $service)
+    {
+        $nav = 'Servicios';
+        return view('serviceid',compact('nav','service'));
+    }
     public function proyectos(){
         $nav = 'Proyectos';
         $projects = Project::all();
@@ -39,7 +45,6 @@ class AdminController extends Controller
     public function proyectoid(Project $project)
     {
         $nav = 'Proyectos';
-        //dd($project);
         return view('projectid',compact('nav','project'));
     }
 

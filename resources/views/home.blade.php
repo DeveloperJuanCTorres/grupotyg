@@ -123,73 +123,12 @@
                             <i class="{{$item->icono}} fa-7x mb-4 text-primary"></i>
                             <h4 class="mb-3">{{$item->name}}</h4>
                             <p class="mb-4">{{$item->description_corto}}</p>
-                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leer más</a>
+                            <a href="{{route('serviceid',$item)}}" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leer más</a>
                         </div>
                     </div>
                 </div>
             </div>
-            @endforeach
-            <!-- <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                <div class="services-item bg-light">
-                    <div class="p-4 text-center services-content">
-                        <div class="services-content-icon">
-                            <i class="fa fa-file-code fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">Desarrollo Web</h4>
-                            <p class="mb-4">Identifica puntos de mejora y transforma tus procesos para ahorrar tiempo y dinero.</p>
-                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leer más</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                <div class="services-item bg-light">
-                    <div class="p-4 text-center services-content">
-                        <div class="services-content-icon">
-                            <i class="fas fa-chart-line fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">Biseness Intelligence</h4>
-                            <p class="mb-4">Automatiza la creación de reportes y toma de decisiones informadas con Power Bi.</p>
-                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leer más</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                <div class="services-item bg-light">
-                    <div class="p-4 text-center services-content">
-                        <div class="services-content-icon">
-                            <i class="fas fa-shopping-cart fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">E-Commerce</h4>
-                            <p class="mb-4">Una tienda virtual le ayudará a incrementar sus ventas, nosotros nos encargamos de desarrollar su Ecommerce.</p>
-                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leer más</a>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                <div class="services-item bg-light">
-                    <div class="p-4 text-center services-content">
-                        <div class="services-content-icon">
-                            <i class="fas fa-palette fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">Branding</h4>
-                            <p class="mb-4"> Creamos marcas con mucha personalidad; para profesionales que quieren mejorar la reputación y rentabilidad de su negocio.</p>
-                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                <div class="services-item bg-light">
-                    <div class="p-4 text-center services-content">
-                        <div class="services-content-icon">
-                            <i class="fa fa-project-diagram fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">Servicios de TI</h4>
-                            <p class="mb-4">Brindamos servicios de asesoría, diseño, implementación, operación y soporte de las distintas soluciones de tecnología.</p>
-                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>             -->
+            @endforeach            
         </div>
     </div>
 </div>
