@@ -17,11 +17,11 @@
                     <div class="col-lg-3 col-md-6">
                         <a href="#" class="h3 text-secondary">Enlace corto</a>
                         <div class="mt-4 d-flex flex-column short-link">
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Sobre nosotros</a>
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contáctenos</a>
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Nuestros servicios</a>
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Nuestros proyectos</a>
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Blog más reciente</a>
+                            <a href="/about" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Sobre nosotros</a>
+                            <a href="/contact" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contáctenos</a>
+                            <a href="/service" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Nuestros servicios</a>
+                            <a href="/project" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Nuestros proyectos</a>
+                            <a href="/blog" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Blog más reciente</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -31,7 +31,7 @@
                             <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Política de privacidad</a>
                             <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Ayuda</a>
                             <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Preguntas frecuentes</a>
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contacto</a>
+                            <a href="/contact" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contacto</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">

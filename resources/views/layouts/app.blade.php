@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'GrupoTyG') }}</title>
 
     <!-- META -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -76,7 +76,7 @@
 
         <!-- Libraries Stylesheet -->
         <?php
-            $version = '1993.1.4';
+            $version = '1993.1.5';
         ?>
         <link href="{{asset('lib/animate/animate.min.css')}}?v=<?php echo $version ?>" rel="stylesheet">
         <link href="{{asset('lib/owlcarousel/assets/owl.carousel.min.css')}}?v=<?php echo $version ?>" rel="stylesheet">
