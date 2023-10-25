@@ -10,15 +10,17 @@
     <title>{{ config('app.name', 'GrupoTyG') }}</title>
 
     <!-- META -->
+    <meta name="description" content="Grupo TyG Ingenieros | Agencia innovadora de soluciones de TI">
+    <link rel="canonical" href="https://grupotyg.pe">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta property="og:title" itemprop="headline" content="Grupo T&G Ingenieros" />
-        <meta property="og:description" itemprop="description" content="Grupo TyG Ingenieros | Agencia innovadora de soluciones de TI" />
+        <meta property="og:title" itemprop="headline" content="GrupoTyG">
+        <meta property="og:description" itemprop="description" content="Grupo TyG Ingenieros | Agencia innovadora de soluciones de TI">
         <meta property="og:keywords" itemprop="keywords" content="tyg, tecnologia, ti, grupo, business, branding, asesoramiento, web, diseño, pagina, agencia">
         <!-- <meta name="googlebot" content="noindex"> -->
         <meta name="googlebot-news" content="nosnippet">
-        <meta property="og:image" itemprop="image" content="{{asset('img/logo3.jpg')}}" />
-        <meta property="og:url" itemprop="url" content="https://grupotyg.pe/" />
-        <meta property="og:type" content="website" />
+        <meta property="og:image" itemprop="image" content="{{asset('img/logo3.jpg')}}">
+        <meta property="og:url" itemprop="url" content="https://grupotyg.pe">
+        <meta property="og:type" content="website">
         <!-- FB -->
         <!-- <meta property="fb:app_id" content="" />
         <meta property="fb:admins" content="" />
@@ -76,7 +78,7 @@
 
         <!-- Libraries Stylesheet -->
         <?php
-            $version = '1993.1.5';
+            $version = '1993.1.6';
         ?>
         <link href="{{asset('lib/animate/animate.min.css')}}?v=<?php echo $version ?>" rel="stylesheet">
         <link href="{{asset('lib/owlcarousel/assets/owl.carousel.min.css')}}?v=<?php echo $version ?>" rel="stylesheet">
