@@ -7,6 +7,8 @@ use App\Models\Post;
 use App\Models\User;
 use App\Models\Project;
 use App\Models\Service;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\Contactanos;
 
 class AdminController extends Controller
 {
@@ -63,5 +65,16 @@ class AdminController extends Controller
     public function contactanos(){
         $nav = 'Contactanos';
         return view('contact',compact('nav'));
+    }
+
+    public function correo(Request $request)
+    {
+       $correo = new Contactanos($request);
+        try {
+            Mail::to('informes@grupotyg.pe')->send($correo);
+            return response()->json(['status' => true, 'msg' => "El correo fue enviado satisfactoriamente"]);
+        } catch (\Exception $e) {
+            return response()->json(['status' => false, 'msg' => "Hubo un error al enviar, inténtalo de nuevo más tarde."]);
+        }
     }
 }
