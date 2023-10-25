@@ -399,19 +399,22 @@
                 <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
                     <div class="p-5 rounded contact-form contact">
                         <div class="mb-4">
-                            <input type="text" class="form-control border-0 py-3" placeholder="Su nombre">
+                            <input id="nombre" type="text" class="form-control border-0 py-3" placeholder="Su nombre">
                         </div>
                         <div class="mb-4">
-                            <input type="email" class="form-control border-0 py-3" placeholder="Tu Email">
+                            <input id="telefono" type="number" class="form-control border-0 py-3" placeholder="Teléfono de contacto">
                         </div>
                         <div class="mb-4">
-                            <input type="text" class="form-control border-0 py-3" placeholder="Proyecto">
+                            <input id="email" type="email" class="form-control border-0 py-3" placeholder="Tu Email">
                         </div>
                         <div class="mb-4">
-                            <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10" placeholder="Mensaje"></textarea>
+                            <input id="servicio" type="text" class="form-control border-0 py-3" placeholder="Servicio">
+                        </div>
+                        <div class="mb-4">
+                            <textarea id="mensaje" class="w-100 form-control border-0 py-3" rows="6" cols="6" placeholder="Mensaje"></textarea>
                         </div>
                         <div class="text-start">
-                            <button class="btn bg-primary text-white py-3 px-5" type="button">Enviar mensaje</button>
+                            <button class="btn bg-primary text-white py-3 px-5 Enviarconsulta" type="button">Enviar mensaje</button>
                         </div>
                     </div>
                 </div>
@@ -422,3 +425,105 @@
 <!-- Contact End -->
 
 @endsection
+
+@push('javascript')
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        let token = $('meta[name="csrf-token"]').attr('content');
+
+        $(function() {
+            $(".Enviarconsulta").on('click',function () {
+                var nombre = $("#nombre").val();
+                var telefono = $("#telefono").val();
+                var email = $("#email").val();
+                var servicio = $("#servicio").val();
+                var mensaje = $("#mensaje").val();
+                if(nombre == ''){
+                    Swal.fire({
+                        icon:'warning',
+                        text: "Tienes que ingresar tu nombre",
+                    });
+                    return false;
+                }
+                if(telefono == ''){
+                    Swal.fire({
+                        icon:'warning',
+                        text: "Tienes que ingresar un número de contacto",
+                    });
+                    return false;
+                }
+                if(email == ''){
+                    Swal.fire({
+                        icon:'warning',
+                        text: "Tienes que ingresar una correo de contacto",
+                    });
+                    return false;
+                }
+                if(servicio == ''){
+                    Swal.fire({
+                        icon:'warning',
+                        text: "Ingresa el servicio en la cual estas interesado",
+                    });
+                    return false;
+                }
+                if(mensaje == ''){
+                    Swal.fire({
+                        icon:'warning',
+                        text: "Tienes que ingresar un mensaje",
+                    });
+                    return false;
+                }
+                Swal.fire({
+                    header: '...',
+                    title: 'loading...',
+                    allowOutsideClick:false,
+                    didOpen: () => {
+                        Swal.showLoading()
+                    }
+                });
+
+                $.ajax({
+                    url: "/correo",
+                    method: "post",
+                    dataType: 'json',
+                    data: {
+                        _token: token,
+                        nombre : nombre,
+                        telefono : telefono,
+                        email : email,
+                        servicio : servicio,
+                        mensaje: mensaje,
+                    },
+                    success: function (response) {   
+                        if (response.status) {
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'OK',
+                                text: response.msg,
+                            })                 
+                        } else {
+                            Swal.fire({
+                                icon: 'warning',
+                                title: 'Oops...',
+                                text: response.msg,
+                            })
+                        }
+                        $("#nombre").val('');
+                        $("#telefono").val('');
+                        $("#email").val('');
+                        $("#servicio").val('');
+                        $("#mensaje").val('');
+                    },
+                    error: function () {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...!!',
+                            text: 'Algo salió mal, Inténtalo más tarde!',
+                        })
+                    }
+                });
+            });
+        })
+    </script>
+@endpush
