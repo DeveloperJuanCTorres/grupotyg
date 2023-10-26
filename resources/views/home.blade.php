@@ -434,7 +434,7 @@
       </div>
       <div class="modal-body" style="padding: 0;">
         <img src="{{asset('img/octubre.png')}}" width="100%" alt="">
-        <a href="https://wa.me/51978209130" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Click aquí</button></a>
+        <a href="https://wa.me/51978209130" class="me-2"><button type="button" class="flotante btn btn-secondary rounded-pill carousel-content-btn1 animated fadeInLeft">Click aquí</button></a>
         <!-- <a href="https://wa.me/51978209130" target="_blank" class="btn bg-secondary text-white flotante">Click aquí</a> -->
       </div>
       <!-- <div class="modal-footer">
