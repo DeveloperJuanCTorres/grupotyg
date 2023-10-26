@@ -14,6 +14,19 @@
     }
 }
 
+.flotante{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    bottom: 30px;
+    right: 10px;
+}
+
+.flotante:hover{
+  background-color: white;
+  color: #011133;
+}
+
 .rounded1{
     display: block;
     margin-left: auto;
