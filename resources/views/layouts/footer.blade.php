@@ -6,12 +6,12 @@
                         <a href="index.html">
                             <h1 class="text-white fw-bold d-block">Grupo<span class="text-secondary">TyG</span> </h1>
                         </a>
-                        <p class="mt-4 text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere delectus qui placeat inventore consectetur repellendus optio debitis.</p>
+                        <p class="mt-4 text-light">Somos una empresa de tecnologías de la información que desarrolla consultorías e implementaciones empresariales orientada a modernizar y automatizar procesos estratégicos.</p>
                         <div class="d-flex hightech-link">
                             <a href="https://www.facebook.com/profile.php?id=61552672404418&mibextid=ZbWKwL" target="_blank" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-primary"></i></a>
                             <a href="https://instagram.com/grupotyg_ingenieros?igshid=emhoOG0zbTAxdTlm" target="_blank" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-instagram text-primary"></i></a>
                             <a href="https://www.tiktok.com/@grupotyg_ing?_t=8gksOxTpIST&_r=1" target="_blank" class="btn-light nav-fill btn btn-square rounded-circle me-2"><svg class="text-primary" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg></a>                            
-                            <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
+                            <a href="https://www.linkedin.com/company/grupo-tyg-ingenieros/" target="_blank" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -35,7 +35,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <a href="#" class="h3 text-secondary">Contact Us</a>
+                        <a href="#" class="h3 text-secondary">Contáctanos</a>
                         <div class="text-white mt-4 d-flex flex-column contact-link">
                             <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Lima, Perú</a>
                             <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i> +51 978209130</a> 
