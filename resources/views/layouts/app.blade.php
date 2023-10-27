@@ -78,7 +78,7 @@
 
         <!-- Libraries Stylesheet -->
         <?php
-            $version = '1993.1.9';
+            $version = '1993.2.1';
         ?>
         <link href="{{asset('lib/animate/animate.min.css')}}?v=<?php echo $version ?>" rel="stylesheet">
         <link href="{{asset('lib/owlcarousel/assets/owl.carousel.min.css')}}?v=<?php echo $version ?>" rel="stylesheet">
