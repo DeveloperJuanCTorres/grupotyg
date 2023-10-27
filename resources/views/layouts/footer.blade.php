@@ -1,10 +1,11 @@
 <!-- Footer Start -->
-<div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
+<div class="container-fluid footer bg-primary wow fadeIn" style="border-radius: 40px 40px 0 0;" data-wow-delay=".3s">
             <div class="container pt-5 pb-4">
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
-                        <a href="index.html">
-                            <h1 class="text-white fw-bold d-block">Grupo<span class="text-secondary">TyG</span> </h1>
+                        <a href="index.html" style="display: flex;">
+                            <img style="margin-right: 10px;" class="mt-2" src="{{asset('img/iso-02.png')}}" height="30" alt="">
+                            <h1 class="text-white fw-bold d-block mobil-pt2">Grupo<span class="text-secondary">TyG</span> </h1>
                         </a>
                         <p class="mt-4 text-light">Somos una empresa de tecnologías de la información que desarrolla consultorías e implementaciones empresariales orientada a modernizar y automatizar procesos estratégicos.</p>
                         <div class="d-flex hightech-link">
