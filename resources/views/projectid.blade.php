@@ -65,7 +65,7 @@
                 
                 <h1 class="mb-4">{{$project->nombre_negocio}}</h1>
                 <h5 class="text-primary">Sobre el proyecto</h5>
-                <p>{{$project->descripcion}}</p>
+                <p>{!!$project->descripcion!!}</p>
                 <a href="{{$project->link_pagina}}" target="_blank" class="btn btn-secondary rounded-pill px-5 py-3 text-white">Ver proyecto</a>
             </div>
         </div>
