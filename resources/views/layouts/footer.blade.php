@@ -3,7 +3,7 @@
             <div class="container pt-5 pb-4">
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
-                        <a href="index.html" style="display: flex;">
+                        <a href="/" style="display: flex;">
                             <img style="margin-right: 10px;" class="mt-2" src="{{asset('img/iso-02.png')}}" height="30" alt="">
                             <h1 class="text-white fw-bold d-block mobil-pt2">Grupo<span class="text-secondary">TyG</span> </h1>
                         </a>
