@@ -453,7 +453,8 @@
         
 
         $(function() {
-            $('#exampleModalToggle').modal('toggle');
+            //$('#exampleModalToggle').modal('toggle');
+
             $(".Enviarconsulta").on('click',function () {
                 var nombre = $("#nombre").val();
                 var telefono = $("#telefono").val();
