@@ -4,7 +4,7 @@
     </div>
     <!-- Spinner End -->
     <!-- Topbar Start -->
-    <div class="container-fluid bg-dark py-2 d-none d-md-flex">
+    <div class="container-fluid bg-dark py-2 d-md-flex">
         <div class="container">
             <div class="d-flex justify-content-between topbar">
                 <div class="top-info">
