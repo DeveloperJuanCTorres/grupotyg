@@ -7,7 +7,7 @@
     <div class="container-fluid bg-dark py-2 d-md-flex">
         <div class="container">
             <div class="d-flex justify-content-between topbar">
-                <div class="top-info">
+                <div class="top-info d-none">
                     <small class="me-3 text-white-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>Lima, perú</small>
                     <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>informes@grupotyg.pe</small>
                 </div>
