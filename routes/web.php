@@ -28,6 +28,7 @@ Route::get('/blog',[AdminController::class, 'posts'])->name('blog');
 Route::get('/blog/{blog}',[adminController::class,'postid'])->name('blogid');
 Route::get('/contact',[AdminController::class, 'contactanos'])->name('contact');
 
+
 Route::post('/correo',[adminController::class,'correo']);
 
 
