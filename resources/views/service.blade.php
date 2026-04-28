@@ -1,80 +1,99 @@
 @extends('layouts.app')
 
 @section('content')
-<!-- Page Header Start -->
-<div class="container-fluid page-header py-5">
-    <div class="container text-center py-5">
-        <h1 class="display-2 text-white mb-4 animated slideInDown">Servicios</h1>
-        <nav aria-label="breadcrumb animated slideInDown">
-            <ol class="breadcrumb justify-content-center mb-0">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                <li class="breadcrumb-item" aria-current="page">Servicios</li>
-            </ol>
-        </nav>
-    </div>
-</div>
-<!-- Page Header End -->
 
-
-<!-- Fact Start -->
-<div class="container-fluid bg-secondary py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
-                <div class="d-flex counter">
-                    <h1 class="me-3 text-primary counter-value">99</h1>
-                    <h5 class="text-white mt-1">Éxito en conseguir un cliente satisfecho</h5>
-                </div>
+<div class="pt-16 pb-2xl flex-grow hero-gradient">
+    <!-- Hero Section -->
+    <header class="max-w-7xl mx-auto px-8 mb-24 text-center">
+        <div class="inline-block px-4 py-1.5 mb-6 rounded-full bg-primary-container/20 border border-primary/30 text-primary font-label-sm uppercase tracking-widest">
+            Ingeniería de precisión para el futuro
+        </div>
+        <h1 class="font-display-xl text-display-xl mb-6 text-white max-w-4xl mx-auto">
+            Sistemas avanzados, <span class="text-secondary">ejecución</span> impecable.
+        </h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+            Diseñamos y construimos arquitecturas de software de alto rendimiento que impulsan la escala empresarial y la transformación digital.
+        </p>
+    </header>
+    <!-- Standardized Services Grid -->
+    <section class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+        <!-- Facturación Electrónica -->
+        <div class="glass-card rounded-3xl p-8 flex flex-col group hover:border-secondary transition-all hover:-translate-y-2">
+            <div class="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center mb-8">
+                <span class="material-symbols-outlined text-secondary text-4xl" style="font-variation-settings: 'FILL' 1">receipt_long</span>
             </div>
-            <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
-                <div class="d-flex counter">
-                    <h1 class="me-3 text-primary counter-value">25</h1>
-                    <h5 class="text-white mt-1">Miles de negocios exitosos</h5>
-                </div>
+            <h3 class="text-headline-md font-headline-md text-white mb-4">Facturación Electrónica</h3>
+            <p class="text-on-surface-variant text-sm flex-grow">Sistema integral de facturación cumpliendo con todas las normativas tributarias vigentes.</p>
+            <div class="mt-8 flex items-center text-secondary font-bold text-sm cursor-pointer group/link">
+                Saber más
+                <span class="material-symbols-outlined ml-2 text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
             </div>
-            <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
-                <div class="d-flex counter">
-                    <h1 class="me-3 text-primary counter-value">120</h1>
-                    <h5 class="text-white mt-1">Clientes totales que aman la alta tecnología</h5>
-                </div>
+        </div>
+        @foreach($services as $service)
+        <div class="glass-card rounded-3xl p-8 flex flex-col group hover:border-primary transition-all hover:-translate-y-2">
+            <div class="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-8">
+                <i class="{{$service->icono}} text-4xl text-primary"></i>
             </div>
-            <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
-                <div class="d-flex counter">
-                    <h1 class="me-3 text-primary counter-value">5</h1>
-                    <h5 class="text-white mt-1">Reseñas de estrellas dadas por clientes satisfechos.</h5>
+            <h3 class="text-headline-md font-headline-md text-white mb-4">{{ $service->name }}</h3>
+            <p class="text-on-surface-variant text-sm flex-grow">{{ $service->description_corto }}</p>
+            <div class="mt-8 flex items-center text-primary font-bold text-sm cursor-pointer group/link">
+                Saber más
+                <span class="material-symbols-outlined ml-2 text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+            </div>
+        </div>
+        @endforeach
+    </section>
+    <!-- Tech Stack Section -->
+    <section class="max-w-7xl mx-auto px-8 mt-32 text-center">
+        <h2 class="font-headline-lg text-headline-lg text-white mb-16 uppercase tracking-widest">Nucleo tecnológico</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-items-center opacity-60">
+            <div class="flex flex-col items-center gap-2 group hover:opacity-100 transition-all">
+                <span class="material-symbols-outlined text-4xl" data-icon="database">database</span>
+                <span class="text-label-sm font-label-sm tracking-widest">POSTGRESQL</span>
+            </div>
+            <div class="flex flex-col items-center gap-2 group hover:opacity-100 transition-all">
+                <span class="material-symbols-outlined text-4xl" data-icon="terminal">terminal</span>
+                <span class="text-label-sm font-label-sm tracking-widest">NODE.JS</span>
+            </div>
+            <div class="flex flex-col items-center gap-2 group hover:opacity-100 transition-all">
+                <span class="material-symbols-outlined text-4xl" data-icon="layers">layers</span>
+                <span class="text-label-sm font-label-sm tracking-widest">REACT</span>
+            </div>
+            <div class="flex flex-col items-center gap-2 group hover:opacity-100 transition-all">
+                <span class="material-symbols-outlined text-4xl" data-icon="memory">memory</span>
+                <span class="text-label-sm font-label-sm tracking-widest">AI &amp; ML</span>
+            </div>
+            <div class="flex flex-col items-center gap-2 group hover:opacity-100 transition-all">
+                <span class="material-symbols-outlined text-4xl" data-icon="cloud">cloud</span>
+                <span class="text-label-sm font-label-sm tracking-widest">AWS/GCP</span>
+            </div>
+            <div class="flex flex-col items-center gap-2 group hover:opacity-100 transition-all">
+                <span class="material-symbols-outlined text-4xl" data-icon="token">token</span>
+                <span class="text-label-sm font-label-sm tracking-widest">TYPESCRIPT</span>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="max-w-7xl mx-auto px-8 mt-32">
+        <div class="relative overflow-hidden glass-card rounded-3xl p-2xl text-center border-primary/20">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-primary/10 blur-[120px] -translate-y-1/2 translate-x-1/2"></div>
+            <div class="relative z-10">
+                <h2 class="font-display-xl text-headline-lg md:text-display-xl text-white mb-8">¿Listo para iniciar la compilación?</h2>
+                <p class="text-body-lg text-on-surface-variant max-w-xl mx-auto mb-12">
+                    Asóciate con un equipo que domine la ingeniería de alto rendimiento.
+                </p>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                    <button class="bg-primary text-on-primary px-12 py-5 rounded-lg font-bold text-lg hover:scale-105 transition-all">
+                        Iniciar proyecto
+                    </button>
+                    <button class="border border-white/10 hover:bg-white/5 text-white px-12 py-5 rounded-lg font-bold text-lg transition-all">
+                        HABLAR CON UN INGENIERO
+                    </button>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </div>
-<!-- Fact End -->
 
 
-<!-- Services Start -->
-<div class="container-fluid services py-5 my-5">
-    <div class="container py-5">
-        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-            <h5 class="text-primary">Nuestros Servicios</h5>
-            <h1>Servicios específicamente para su negocio</h1>
-        </div>
-        <div class="row g-5 services-inner">
-            @foreach($services as $item)
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                <div class="services-item bg-light">
-                    <div class="p-4 text-center services-content">
-                        <div class="services-content-icon">
-                            <i class="{{$item->icono}} fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">{{$item->name}}</h4>
-                            <p class="mb-4">{{$item->description_corto}}</p>
-                            <a href="{{route('serviceid',$item)}}" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leer más</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            @endforeach            
-        </div>
-    </div>
-</div>
-<!-- Services End -->
 @endsection
