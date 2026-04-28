@@ -27,6 +27,7 @@ Route::get('/project/{project}',[adminController::class,'proyectoid'])->name('pr
 Route::get('/blog',[AdminController::class, 'posts'])->name('blog');
 Route::get('/blog/{blog}',[adminController::class,'postid'])->name('blogid');
 Route::get('/contact',[AdminController::class, 'contactanos'])->name('contact');
+Route::get('/store',[AdminController::class, 'tienda'])->name('store');
 
 
 Route::post('/correo',[adminController::class,'correo']);

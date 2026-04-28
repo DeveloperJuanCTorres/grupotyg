@@ -1,76 +1,80 @@
-<!-- Spinner Start -->
-<div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" role="status"></div>
-    </div>
-    <!-- Spinner End -->
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark py-2 d-none d-md-flex">
-        <div class="container">
-            <div class="d-flex justify-content-between topbar">
-                <div class="top-info">
-                    <small class="me-3 text-white-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>Lima, perú</small>
-                    <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>informes@grupotyg.pe</small>
-                </div>
-                <div id="note" class="text-secondary d-none d-xl-flex"><small style="font-size: 20px;">{{setting('site.parametro_oferta')}}</small></div>
-                <div class="top-link">
-                    <a href="https://www.facebook.com/profile.php?id=61552672404418&mibextid=ZbWKwL" target="_blank" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>
-                    <a href="https://instagram.com/grupotyg_ingenieros?igshid=emhoOG0zbTAxdTlm" target="_blank" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-instagram text-primary"></i></a>
-                    <a href="https://www.tiktok.com/@grupotyg_ing?_t=8gksOxTpIST&_r=1" target="_blank" class="bg-light nav-fill btn btn-sm-square rounded-circle"><svg class="text-primary" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg></a>
-                    <a href="https://www.linkedin.com/company/grupo-tyg-ingenieros/" target="_blank" class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
+<header class="fixed top-0 w-full z-50 bg-zinc-950/80 backdrop-blur-[20px] border-b border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
 
-    <!-- Navbar Start -->
-    <div class="container-fluid bg-primary">
-        <div class="container">
-            <nav class="navbar navbar-dark navbar-expand-lg py-0">
-                <a href="/" class="navbar-brand" style="display: flex;">
-                    <img style="margin-right: 10px;" class="mt-2" src="{{asset('img/iso-02.png')}}" height="30" alt="">
-                    <h1 class="text-white fw-bold d-block mobil-pt2">Grupo<span class="text-secondary">TyG</span> </h1>
-                </a>
-                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                        <a href="/" class="nav-item nav-link {{$nav=='Inicio'?'active':''}}">Home</a>
-                        <a href="/about" class="nav-item nav-link {{$nav=='Nosotros'?'active':''}}">Nosotros</a>
-                        <a href="/service" class="nav-item nav-link {{$nav=='Servicios'?'active':''}}">Servicios</a>
-                        <a href="/project" class="nav-item nav-link {{$nav=='Proyectos'?'active':''}}">Proyectos</a>
-                        <a href="/blog" class="nav-item nav-link {{$nav=='Posts'?'active':''}}">Blog</a>
-                        <!-- <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu rounded">
-                                <a href="blog.html" class="dropdown-item">Nuestro Blog</a>
-                                <a href="team.html" class="dropdown-item">Nuestro Equipo</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimoniales</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
-                            </div>
-                        </div> -->
-                        <a href="/contact" class="nav-item nav-link {{$nav=='Contactanos'?'active':''}}">Contactanos</a>
-                    </div>
-                </div>
-                <div class="d-none d-xl-flex flex-shirink-0">
-                    <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
-                        <a href="" class="position-relative animated tada infinite">
-                            <i class="fa fa-phone-alt text-white fa-2x"></i>
-                            <div class="position-absolute" style="top: -7px; left: 20px;">
-                                <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="d-flex flex-column pe-4 border-end">
-                        <span class="text-white-50">¿Tiene alguna pregunta?</span>
-                        <span class="text-secondary">Lllamar: + 51 978 209 130</span>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-center ms-4 ">
-                        <a href="#"><i class="bi bi-search text-white fa-2x"></i> </a>
-                    </div>
-                </div>
-            </nav>
+    <div class="flex justify-between items-center px-6 py-4 max-w-screen-2xl mx-auto">
+
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+            <img src="{{asset('img/iso-02.png')}}" class="w-10 h-10 object-contain" alt="">
+            <span class="text-xl font-bold text-white">
+                Grupo <span class="text-primary">TyG</span>
+            </span>
+        </div>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex items-center space-x-8">
+
+            <a href="/" 
+               class="{{ request()->is('/') ? 'text-indigo-400 border-b-2 border-indigo-500 pb-1' : 'text-zinc-400 hover:text-white' }}">
+               Inicio
+            </a>
+
+            <a href="{{ route('store') }}" 
+               class="{{ request()->routeIs('store') ? 'text-indigo-400 border-b-2 border-indigo-500 pb-1' : 'text-zinc-400 hover:text-white' }}">
+               Tienda
+            </a>
+
+            <a href="{{ route('service') }}" 
+               class="{{ request()->routeIs('service') ? 'text-indigo-400 border-b-2 border-indigo-500 pb-1' : 'text-zinc-400 hover:text-white' }}">
+               Servicios
+            </a>
+
+            <a href="{{ route('contact') }}" 
+               class="{{ request()->routeIs('contact') ? 'text-indigo-400 border-b-2 border-indigo-500 pb-1' : 'text-zinc-400 hover:text-white' }}">
+               Contacto
+            </a>
+
+        </nav>
+
+        <!-- Right -->
+        <div class="flex items-center space-x-4">
+
+            <!-- Desktop search -->
+            <div class="hidden lg:flex items-center bg-white/5 rounded-full px-4 py-2 border border-white/10">
+                <span class="material-symbols-outlined text-zinc-400 text-sm mr-2">search</span>
+                <input class="bg-transparent border-none focus:ring-0 text-sm text-white placeholder-zinc-500 w-48" placeholder="Search tech solutions..." type="text" />
+            </div>
+
+            <!-- Icons -->
+            <span class="material-symbols-outlined text-zinc-400 hover:text-white cursor-pointer">shopping_cart</span>
+            <span class="material-symbols-outlined text-zinc-400 hover:text-white cursor-pointer">account_circle</span>
+            <button class="bg-indigo-500 hover:bg-indigo-600 text-white px-5 py-2 rounded-lg font-bold transition-all scale-95 active:scale-90">Comenzar</button>
+
+            <!-- Mobile button -->
+            <button id="menuBtn" class="md:hidden text-white">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
         </div>
     </div>
-    <!-- Navbar End -->
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden px-6 pb-4">
+
+        <a href="/" class="block py-2 text-white">Inicio</a>
+        <a href="{{ route('store') }}" class="block py-2 text-white">Tienda</a>
+        <a href="{{ route('service') }}" class="block py-2 text-white">Servicios</a>
+        <a href="{{ route('contact') }}" class="block py-2 text-white">Contacto</a>
+
+    </div>
+</header>
+
+<script>
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+</script>
+
+
+

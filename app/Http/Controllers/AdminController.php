@@ -67,6 +67,11 @@ class AdminController extends Controller
         return view('contact',compact('nav'));
     }
 
+    public function tienda(){
+        $nav = 'Tienda';
+        return view('store',compact('nav'));
+    }
+
     public function correo(Request $request)
     {
        $correo = new Contactanos($request);
