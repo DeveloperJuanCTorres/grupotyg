@@ -1,0 +1,291 @@
+@extends('layouts.app')
+
+@section('content')
+
+<!-- Hero Section -->
+<section class="relative overflow-hidden hero-pattern min-h-[819px] flex items-center px-6">
+    <div class="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-surface pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-2xl items-center relative z-10">
+        <div class="space-y-xl">
+            <span class="inline-block px-md py-xs rounded-full bg-primary/10 border border-primary/20 text-primary font-label-sm uppercase tracking-widest">Sistema SASS</span>
+            <h1 class="font-display-xl text-display-xl text-white leading-none">Facturación Electrónica Pro</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                Potencie su PYME con un sistema de facturación electrónica de alto rendimiento. Logre un cumplimiento normativo impecable, automatice los flujos de trabajo y haga crecer su negocio con seguridad de nivel institucional.
+            </p>
+            <div class="flex flex-wrap gap-md pt-md">                
+                <button class="glass-card text-white px-xl py-md rounded-xl font-headline-md font-bold hover:bg-white/10 transition-colors">
+                    Ver demo
+                </button>
+            </div>
+        </div>
+        <div class="hidden lg:block relative">
+            <div class="absolute -inset-4 bg-primary/20 blur-[100px] rounded-full"></div>
+            <img class="relative z-10 w-full rounded-2xl border border-white/10 shadow-2xl" 
+                data-alt="futuristic digital dashboard showing financial metrics and cloud architecture nodes with blue and violet neon lights" 
+                src="{{asset ('img/fac.png')}}" />
+        </div>
+    </div>
+</section>
+<!-- Overview Section -->
+<!-- <section class="py-3xl px-6 bg-surface-container-lowest">
+    <div class="max-w-5xl mx-auto text-center space-y-lg">
+        <h2 class="font-headline-lg text-headline-lg text-white">¡Estamos listos para su negocio!</h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Facturación Electrónica Pro no es solo una herramienta de facturación, sino una infraestructura esencial para la pyme moderna. Acortamos la brecha entre las complejas regulaciones gubernamentales y sus operaciones comerciales diarias. Gracias a una arquitectura en la nube de alta disponibilidad, garantizamos que sus datos estén siempre accesibles, sus transacciones sean instantáneas y su cumplimiento normativo sea automático.
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-lg pt-xl">
+            <div class="text-center">
+                <div class="text-display-xl font-display-xl text-primary mb-xs">99.9</div>
+                <div class="text-label-sm font-label-sm text-outline-variant uppercase tracking-widest">Tiempo de actividad %</div>
+            </div>
+            <div class="text-center">
+                <div class="text-display-xl font-display-xl text-primary mb-xs">50k+</div>
+                <div class="text-label-sm font-label-sm text-outline-variant uppercase tracking-widest">Facturas Mensuales</div>
+            </div>
+            <div class="text-center">
+                <div class="text-display-xl font-display-xl text-primary mb-xs">0.2s</div>
+                <div class="text-label-sm font-label-sm text-outline-variant uppercase tracking-widest">Latencia</div>
+            </div>
+            <div class="text-center">
+                <div class="text-display-xl font-display-xl text-primary mb-xs">100%</div>
+                <div class="text-label-sm font-label-sm text-outline-variant uppercase tracking-widest">Cumplimiento Tributario</div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- Key Features Grid -->
+<section class="py-3xl px-6 bg-surface-container-lowest">
+    <div class="max-w-7xl mx-auto">
+        <div class="mb-2xl">
+            <h2 class="font-headline-lg text-headline-lg text-white mb-md">Key Features</h2>
+            <p class="font-body-md text-on-surface-variant max-w-2xl">Engineered for speed, security, and absolute precision in every transaction.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
+            <!-- Feature 1 -->
+            <div class="glass-card p-xl rounded-2xl group hover:border-primary/50 transition-all duration-300">
+                <span class="material-symbols-outlined text-primary text-4xl mb-lg" data-icon="verified">verified</span>
+                <h3 class="font-headline-md text-white mb-md">Real-time Compliance</h3>
+                <p class="text-on-surface-variant font-body-md">Instant synchronization with tax authorities to ensure every invoice meets current legal standards automatically.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="glass-card p-xl rounded-2xl group hover:border-primary/50 transition-all duration-300">
+                <span class="material-symbols-outlined text-primary text-4xl mb-lg" data-icon="sync_alt">sync_alt</span>
+                <h3 class="font-headline-md text-white mb-md">Auto-sync ERP</h3>
+                <p class="text-on-surface-variant font-body-md">Seamlessly integrate with your existing ERP or accounting software through our robust RESTful API layer.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="glass-card p-xl rounded-2xl group hover:border-primary/50 transition-all duration-300">
+                <span class="material-symbols-outlined text-primary text-4xl mb-lg" data-icon="draw">draw</span>
+                <h3 class="font-headline-md text-white mb-md">Digital Signatures</h3>
+                <p class="text-on-surface-variant font-body-md">Advanced cryptographic signing for every document, providing legally binding authenticity and tamper-proof security.</p>
+            </div>
+            <!-- Feature 4 -->
+            <div class="glass-card p-xl rounded-2xl group hover:border-primary/50 transition-all duration-300">
+                <span class="material-symbols-outlined text-primary text-4xl mb-lg" data-icon="analytics">analytics</span>
+                <h3 class="font-headline-md text-white mb-md">Detailed Reporting</h3>
+                <p class="text-on-surface-variant font-body-md">Gain deep insights into your revenue streams with customizable analytics dashboards and automated period reports.</p>
+            </div>
+            <!-- Feature 5 -->
+            <div class="glass-card p-xl rounded-2xl group hover:border-primary/50 transition-all duration-300">
+                <span class="material-symbols-outlined text-primary text-4xl mb-lg" data-icon="lock">lock</span>
+                <h3 class="font-headline-md text-white mb-md">Secure Storage</h3>
+                <p class="text-on-surface-variant font-body-md">Encrypted cloud storage for up to 10 years, ensuring your historical data is safe and easily retrievable for audits.</p>
+            </div>
+            <!-- Feature 6 -->
+            <div class="glass-card p-xl rounded-2xl group hover:border-primary/50 transition-all duration-300">
+                <span class="material-symbols-outlined text-primary text-4xl mb-lg" data-icon="rocket_launch">rocket_launch</span>
+                <h3 class="font-headline-md text-white mb-md">Batch Processing</h3>
+                <p class="text-on-surface-variant font-body-md">Process thousands of invoices simultaneously with our high-throughput queue system without any performance lag.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Pricing Section -->
+<section class="py-3xl px-6 bg-surface-container overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-2xl space-y-md">
+            <h2 class="font-headline-lg text-headline-lg text-white">Nuestros planes</h2>
+            <p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">Automatiza la gestión de tu negocio a muy bajo costo</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-lg items-stretch">
+            <!-- Plan Básico -->
+            <div class="glass-card bg-surface-container-lowest p-xl rounded-3xl flex flex-col border-white/5 hover:border-white/20 transition-all duration-300">
+                <div class="mb-lg">
+                    <h3 class="font-headline-md text-white mb-xs">Plan Básico</h3>
+                    <div class="flex items-baseline gap-xs">
+                        <span class="text-3xl font-display-xl text-white">30</span>
+                        <span class="text-on-surface-variant font-label-sm uppercase tracking-widest">soles / mes</span>
+                    </div>
+                </div>
+                <ul class="space-y-md mb-2xl flex-grow">
+                    <li class="flex gap-md items-center text-on-surface-variant">
+                        <span class="material-symbols-outlined text-primary text-lg">receipt_long</span>
+                        <span class="font-body-md">100 receipts/month</span>
+                    </li>
+                    <li class="flex gap-md items-center text-on-surface-variant">
+                        <span class="material-symbols-outlined text-primary text-lg">support_agent</span>
+                        <span class="font-body-md">Included Support</span>
+                    </li>
+                    <li class="flex gap-md items-center text-on-surface-variant">
+                        <span class="material-symbols-outlined text-primary text-lg">group</span>
+                        <span class="font-body-md">10 Users</span>
+                    </li>
+                    <li class="flex gap-md items-center text-on-surface-variant">
+                        <span class="material-symbols-outlined text-primary text-lg">warehouse</span>
+                        <span class="font-body-md">2 Warehouses</span>
+                    </li>
+                </ul>
+                <button class="w-full py-md rounded-xl border border-white/20 text-white font-headline-md font-bold hover:bg-white/5 transition-all">
+                    Get Started
+                </button>
+            </div>
+            <!-- Plan Pro -->
+            <div class="glass-card bg-surface-container-lowest p-xl rounded-3xl flex flex-col border-primary/40 relative shadow-[0_0_40px_rgba(192,193,255,0.1)] scale-105 z-10">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary px-md py-xs rounded-full">
+                    <span class="text-on-primary font-label-sm uppercase tracking-widest">Recommended</span>
+                </div>
+                <div class="mb-lg">
+                    <h3 class="font-headline-md text-white mb-xs">Plan Pro</h3>
+                    <div class="flex items-baseline gap-xs">
+                        <span class="text-3xl font-display-xl text-primary">100</span>
+                        <span class="text-on-surface-variant font-label-sm uppercase tracking-widest">soles / mes</span>
+                    </div>
+                </div>
+                <ul class="space-y-md mb-2xl flex-grow">
+                    <li class="flex gap-md items-center text-white">
+                        <span class="material-symbols-outlined text-primary text-lg">receipt_long</span>
+                        <span class="font-body-md">500 receipts/month</span>
+                    </li>
+                    <li class="flex gap-md items-center text-white">
+                        <span class="material-symbols-outlined text-primary text-lg">verified</span>
+                        <span class="font-body-md">Priority Support</span>
+                    </li>
+                    <li class="flex gap-md items-center text-white">
+                        <span class="material-symbols-outlined text-primary text-lg">group</span>
+                        <span class="font-body-md">50 Users</span>
+                    </li>
+                    <li class="flex gap-md items-center text-white">
+                        <span class="material-symbols-outlined text-primary text-lg">warehouse</span>
+                        <span class="font-body-md">5 Warehouses</span>
+                    </li>
+                    <li class="flex gap-md items-center text-white">
+                        <span class="material-symbols-outlined text-primary text-lg">monitoring</span>
+                        <span class="font-body-md">Advanced Analytics</span>
+                    </li>
+                </ul>
+                <button class="w-full py-md rounded-xl bg-primary text-on-primary font-headline-md font-bold hover:shadow-[0_0_25px_rgba(192,193,255,0.5)] transition-all">
+                    Get Started
+                </button>
+            </div>
+            <!-- Plan Enterprise -->
+            <div class="glass-card bg-surface-container-lowest p-xl rounded-3xl flex flex-col border-white/5 hover:border-white/20 transition-all duration-300">
+                <div class="mb-lg">
+                    <h3 class="font-headline-md text-white mb-xs">Plan Enterprise</h3>
+                    <div class="flex items-baseline gap-xs">
+                        <span class="text-3xl font-display-xl text-white">150</span>
+                        <span class="text-on-surface-variant font-label-sm uppercase tracking-widest">soles / mes</span>
+                    </div>
+                </div>
+                <ul class="space-y-md mb-2xl flex-grow">
+                    <li class="flex gap-md items-center text-on-surface-variant">
+                        <span class="material-symbols-outlined text-primary text-lg">all_inclusive</span>
+                        <span class="font-body-md">Unlimited receipts</span>
+                    </li>
+                    <li class="flex gap-md items-center text-on-surface-variant">
+                        <span class="material-symbols-outlined text-primary text-lg">headset_mic</span>
+                        <span class="font-body-md">24/7 Dedicated Support</span>
+                    </li>
+                    <li class="flex gap-md items-center text-on-surface-variant">
+                        <span class="material-symbols-outlined text-primary text-lg">groups_3</span>
+                        <span class="font-body-md">Unlimited Users</span>
+                    </li>
+                    <li class="flex gap-md items-center text-on-surface-variant">
+                        <span class="material-symbols-outlined text-primary text-lg">domain</span>
+                        <span class="font-body-md">Unlimited Warehouses</span>
+                    </li>
+                    <li class="flex gap-md items-center text-on-surface-variant">
+                        <span class="material-symbols-outlined text-primary text-lg">integration_instructions</span>
+                        <span class="font-body-md">Custom Integrations</span>
+                    </li>
+                </ul>
+                <button class="w-full py-md rounded-xl border border-white/20 text-white font-headline-md font-bold hover:bg-white/5 transition-all">
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Benefits Section -->
+<section class="py-3xl px-6 bg-surface-container-lowest">
+    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-2xl">
+        <div class="flex-1 space-y-xl">
+            <h2 class="font-headline-lg text-headline-lg text-white">Engineered for Efficiency</h2>
+            <div class="space-y-lg">
+                <div class="flex gap-md">
+                    <div class="mt-1 w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+                        <span class="material-symbols-outlined text-on-secondary-container text-sm">bolt</span>
+                    </div>
+                    <div>
+                        <h4 class="font-headline-md text-white text-lg">Increased Productivity</h4>
+                        <p class="text-on-surface-variant">Reduce manual billing time by 85% through automation and intelligent templating.</p>
+                    </div>
+                </div>
+                <div class="flex gap-md">
+                    <div class="mt-1 w-8 h-8 rounded-full bg-tertiary-container flex items-center justify-center shrink-0">
+                        <span class="material-symbols-outlined text-on-tertiary-container text-sm">shield</span>
+                    </div>
+                    <div>
+                        <h4 class="font-headline-md text-white text-lg">Enterprise Security</h4>
+                        <p class="text-on-surface-variant">Your data is protected by military-grade AES-256 encryption and multi-factor authentication.</p>
+                    </div>
+                </div>
+                <div class="flex gap-md">
+                    <div class="mt-1 w-8 h-8 rounded-full bg-primary-container flex items-center justify-center shrink-0">
+                        <span class="material-symbols-outlined text-on-primary-container text-sm">savings</span>
+                    </div>
+                    <div>
+                        <h4 class="font-headline-md text-white text-lg">Cost Optimization</h4>
+                        <p class="text-on-surface-variant">Eliminate paper, postage, and manual archival costs while reducing the risk of tax penalties.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-1 w-full">
+            <div class="relative p-gutter">
+                <div class="absolute inset-0 bg-indigo-500/10 rounded-[40px] blur-3xl"></div>
+                <div class="relative glass-card aspect-video rounded-[32px] overflow-hidden flex items-center justify-center">
+                    <img class="w-full h-full object-cover opacity-60" data-alt="abstract architectural visualization of data flow and connections in a dark blue and white modern office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGuQamDw_xuly-0aC-BVA4rweqNIwRNKFIUnjOAeWzxe7P_17zMfxrgYgk7uibavanRX-82mdckqoakKMwg8E9CA6SNF9H9c9f_bgh9Ao-kx70TKVSqpUZ57WRrtW8BGwFHXfUjzxT9qODHygC4OSDtMczRuFTXu-gNeFInSDzuHKnr3Vt4uzukgTS26dRZf7ftqG8HD0JPwGYzTyQgNfk_XEy2itxwiL3mxuGhN5_bW0ChLcB9C36Hl_XN5MZFUfDNLLM0UloiPin" />
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <button class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-xl hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-3xl">play_arrow</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonial -->
+<section class="py-3xl px-6 relative overflow-hidden">
+    <div class="max-w-4xl mx-auto relative z-10">
+        <div class="glass-card p-2xl rounded-3xl text-center space-y-xl border-primary/20">
+            <span class="material-symbols-outlined text-primary text-6xl opacity-50">format_quote</span>
+            <h3 class="font-headline-lg text-white italic font-light leading-snug">
+                "Since implementing Technova's invoicing pro, our accounting department has cut reporting cycles by two weeks. The compliance is bulletproof and the interface is incredibly intuitive."
+            </h3>
+            <div class="flex flex-col items-center gap-sm">
+                <div class="w-16 h-16 rounded-full border-2 border-primary p-xs">
+                    <img class="w-full h-full object-cover rounded-full" data-alt="professional businessman headshot with clean haircut and blazer against neutral dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDQRLqur-dSKM4UmpHOSsT6qym5dmtO-c38cj1380I9p43amWRVnGSteES_j3j63glMlJQxhdLU63o9gJDlIbnDpufFObKXJDXF9vQDdToxvU5wPEV4FgYHaqpVqr-meIhT-WJXDaBg1H9R26lv94Mq6oneUb74QBDLYht9IDIBRv0cBYslLMQg0XqfY0W1Yu-BMTAiDIKqKqBTh6Ra5rTOCyQXzJsYLPWR9-_sEcrBh1qck4maOxO8UX8FUJt3KyNCOok12fQhbNt" />
+                </div>
+                <div>
+                    <div class="font-headline-md text-white text-lg">Marcus Sterling</div>
+                    <div class="font-label-sm text-outline-variant uppercase tracking-widest">CTO, Apex Logistics</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@endsection

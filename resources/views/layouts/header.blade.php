@@ -46,8 +46,8 @@
 
             <!-- Icons -->
             <span class="material-symbols-outlined text-zinc-400 hover:text-white cursor-pointer">shopping_cart</span>
-            <span class="material-symbols-outlined text-zinc-400 hover:text-white cursor-pointer">account_circle</span>
-            <button class="bg-indigo-500 hover:bg-indigo-600 text-white px-5 py-2 rounded-lg font-bold transition-all scale-95 active:scale-90">Comenzar</button>
+            <!-- <span class="material-symbols-outlined text-zinc-400 hover:text-white cursor-pointer">account_circle</span> -->
+            <!-- <button class="bg-indigo-500 hover:bg-indigo-600 text-white px-5 py-2 rounded-lg font-bold transition-all scale-95 active:scale-90">Comenzar</button> -->
 
             <!-- Mobile button -->
             <button id="menuBtn" class="md:hidden text-white">

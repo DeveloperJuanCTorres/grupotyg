@@ -12,69 +12,76 @@ use App\Mail\Contactanos;
 
 class AdminController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         $posts = Post::all();
         $users = User::all();
         $projects = Project::all();
         $services = Service::all();
         $nav = 'Inicio';
-        return view('home',compact('nav','posts','users','projects','services'));
+        return view('home', compact('nav', 'posts', 'users', 'projects', 'services'));
     }
 
-    public function nosotros(){
+    public function nosotros()
+    {
         $users = User::all();
         $nav = 'Nosotros';
-        return view('about',compact('nav','users'));
+        return view('about', compact('nav', 'users'));
     }
 
-    public function servicios(){
+    public function servicios()
+    {
         $services = Service::all();
         $nav = 'Servicios';
-        return view('service',compact('nav','services'));
+        return view('service', compact('nav', 'services'));
     }
-    
+
     public function servicioid(Service $service)
     {
         $nav = 'Servicios';
-        return view('serviceid',compact('nav','service'));
+        return view('serviceid', compact('nav', 'service'));
     }
-    public function proyectos(){
+    public function proyectos()
+    {
         $nav = 'Proyectos';
         $projects = Project::all();
-        return view('project',compact('nav','projects'));
-    }    
+        return view('project', compact('nav', 'projects'));
+    }
 
     public function proyectoid(Project $project)
     {
         $nav = 'Proyectos';
-        return view('projectid',compact('nav','project'));
+        return view('projectid', compact('nav', 'project'));
     }
 
-    public function posts(){
+    public function posts()
+    {
         $posts = Post::all();
         $nav = 'Posts';
-        return view('blog',compact('nav','posts'));
+        return view('blog', compact('nav', 'posts'));
     }
 
     public function postid(Post $blog)
     {
         $nav = 'Posts';
-        return view('blogid',compact('nav','blog'));
+        return view('blogid', compact('nav', 'blog'));
     }
 
-    public function contactanos(){
+    public function contactanos()
+    {
         $nav = 'Contactanos';
-        return view('contact',compact('nav'));
+        return view('contact', compact('nav'));
     }
 
-    public function tienda(){
+    public function tienda()
+    {
         $nav = 'Tienda';
-        return view('store',compact('nav'));
+        return view('store', compact('nav'));
     }
 
     public function correo(Request $request)
     {
-       $correo = new Contactanos($request);
+        $correo = new Contactanos($request);
         try {
             Mail::to('informes@grupotyg.pe')->send($correo);
             return response()->json(['status' => true, 'msg' => "El correo fue enviado satisfactoriamente"]);
@@ -82,5 +89,11 @@ class AdminController extends Controller
             return response()->json(['status' => false, 'msg' => $e->getMessage()]);
             // return response()->json(['status' => false, 'msg' => "Hubo un error al enviar, inténtalo de nuevo más tarde."]);
         }
+    }
+
+    public function facturacion()
+    {
+        $nav = 'Facturación';
+        return view('facturacion', compact('nav'));
     }
 }

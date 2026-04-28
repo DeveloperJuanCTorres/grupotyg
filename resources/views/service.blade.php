@@ -24,10 +24,10 @@
             </div>
             <h3 class="text-headline-md font-headline-md text-white mb-4">Facturación Electrónica</h3>
             <p class="text-on-surface-variant text-sm flex-grow">Sistema integral de facturación cumpliendo con todas las normativas tributarias vigentes.</p>
-            <div class="mt-8 flex items-center text-secondary font-bold text-sm cursor-pointer group/link">
+            <a href="{{route('facturacion')}}" class="mt-8 flex items-center text-secondary font-bold text-sm cursor-pointer group/link">
                 Saber más
                 <span class="material-symbols-outlined ml-2 text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
-            </div>
+            </a>
         </div>
         @foreach($services as $service)
         <div class="glass-card rounded-3xl p-8 flex flex-col group hover:border-primary transition-all hover:-translate-y-2">

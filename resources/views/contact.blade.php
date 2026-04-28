@@ -1,233 +1,221 @@
 @extends('layouts.app')
 
 @section('content')
-<!-- Page Header Start -->
-<div class="container-fluid page-header py-5">
-    <div class="container text-center py-5">
-        <h1 class="display-2 text-white mb-4 animated slideInDown">Contáctanos</h1>
-        <nav aria-label="breadcrumb animated slideInDown">
-            <ol class="breadcrumb justify-content-center mb-0">
-                <li class="breadcrumb-item"><a href="/">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                <li class="breadcrumb-item" aria-current="page">Contáctanos</li>
-            </ol>
-        </nav>
-    </div>
-</div>
-<!-- Page Header End -->
 
+<div class="flex-grow pt-32 pb-2xl px-6 md:px-margin max-w-screen-2xl mx-auto w-full">
+    <!-- Hero Section -->
+    <header class="mb-2xl">
+        <h1 class="font-display-xl text-display-xl text-white mb-md">Get in touch with the future.</h1>
+        <p class="text-body-lg text-on-surface-variant max-w-2xl font-body-lg">
+            Whether you have questions about our precision systems or want to discuss enterprise solutions, our technical team is ready to assist.
+        </p>
+    </header>
+    <!-- Split Layout Design -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-2xl">
+        <!-- Contact Form Side -->
+        <div class="glass-surface p-lg md:p-2xl rounded-xl shadow-2xl">
+            <h2 class="font-headline-lg text-headline-lg text-white mb-lg">Send us a message</h2>
+            <form class="space-y-lg">
 
-<!-- Fact Start -->
-<div class="container-fluid bg-secondary py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
-                <div class="d-flex counter">
-                    <h1 class="me-3 text-primary counter-value">99</h1>
-                    <h5 class="text-white mt-1">Éxito en conseguir un cliente satisfecho</h5>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-lg">
+                    <div class="flex flex-col gap-xs">
+                        <label class="text-label-sm text-on-surface-variant uppercase">Full Name</label>
+                        <input id="nombre" class="bg-surface-container-low border rounded-lg p-md text-white" placeholder="John Doe" type="text" />
+                    </div>
+
+                    <div class="flex flex-col gap-xs">
+                        <label class="text-label-sm text-on-surface-variant uppercase">Email</label>
+                        <input id="email" class="bg-surface-container-low border rounded-lg p-md text-white" placeholder="correo@email.com" type="email" />
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-xs">
+                    <label class="text-label-sm text-on-surface-variant uppercase">Teléfono</label>
+                    <input id="telefono" class="bg-surface-container-low border rounded-lg p-md text-white" placeholder="+51 999 999 999" type="tel" />
+                </div>
+
+                <div class="flex flex-col gap-xs">
+                    <label class="text-label-sm text-on-surface-variant uppercase">Servicio</label>
+                    <input id="servicio" class="bg-surface-container-low border rounded-lg p-md text-white" placeholder="Ej: Página web, sistema, ecommerce..." type="text" />
+                </div>
+
+                <div class="flex flex-col gap-xs">
+                    <label class="text-label-sm text-on-surface-variant uppercase">Mensaje</label>
+                    <textarea id="mensaje" class="bg-surface-container-low border rounded-lg p-md text-white resize-none" rows="5"></textarea>
+                </div>
+
+                <button type="button"
+                    class="Enviarconsulta w-full bg-gradient-to-r from-primary to-secondary text-white py-md rounded-lg">
+                    Enviar Consulta
+                </button>
+
+            </form>
+        </div>
+        <!-- Office Details & Map Side -->
+        <div class="flex flex-col gap-lg">
+            <!-- Details Card -->
+            <div class="glass-surface p-lg md:p-xl rounded-xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-lg">
+                    <div class="flex flex-col gap-sm">
+                        <div class="flex items-center gap-sm text-secondary">
+                            <span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+                            <span class="font-label-sm uppercase tracking-widest">Global HQ</span>
+                        </div>
+                        <p class="text-body-md text-white font-headline-md">
+                            256 Precision Way<br />
+                            Tech District, SF 94105
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-sm">
+                        <div class="flex items-center gap-sm text-secondary">
+                            <span class="material-symbols-outlined" data-icon="mail">mail</span>
+                            <span class="font-label-sm uppercase tracking-widest">General Inquiries</span>
+                        </div>
+                        <p class="text-body-md text-white font-headline-md">
+                            hello@technova.io<br />
+                            +1 (800) TECH-NOVA
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-lg pt-lg border-t border-white/5 grid grid-cols-2 gap-lg">
+                    <div>
+                        <span class="text-label-sm text-on-surface-variant block mb-xs">SUPPORT</span>
+                        <p class="text-white">Mon — Fri: 24/7</p>
+                    </div>
+                    <div>
+                        <span class="text-label-sm text-on-surface-variant block mb-xs">SALES</span>
+                        <p class="text-white">9AM — 6PM PST</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
-                <div class="d-flex counter">
-                    <h1 class="me-3 text-primary counter-value">25</h1>
-                    <h5 class="text-white mt-1">Miles de negocios exitosos</h5>
+            <!-- Embedded Map Replacement (Visual UI Element) -->
+            <div class="relative rounded-xl overflow-hidden glass-surface h-full min-h-[400px] border border-white/10 group">
+                <img class="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-60 transition-all duration-700" data-alt="high contrast dark mode architectural map of a modern city center with neon blue and purple accents" data-location="San Francisco" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkKr5Vt8tkpfFLD-oHEVG1mX3_LCKAx2xH2JsnYAUNVGiJzmy8oeawtWJ-U4eFmnDBI1NWl8VNZEnSgX0o2e4E_WV_t_OLDrZQ9ZkWwb0FuTxJpiqEpZUkAS4ZwpsVFd8VcOskjzGQ-2WroBLAastICWv8n-6wgQkpjEZExp4TWK9uAALGuamXUqWekSi6TxTG3SmpyAB4CyBVuJigoaSLQwr3mVJEb0HFfZhY0LKSqp8032I-aWQ9RVl7d6Ox7ZcaS--E2DxlxOU2" />
+                <div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-sm">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-primary rounded-full animate-ping opacity-25"></div>
+                        <div class="relative bg-primary text-on-primary p-md rounded-full shadow-2xl">
+                            <span class="material-symbols-outlined" data-icon="hub">hub</span>
+                        </div>
+                    </div>
+                    <div class="bg-surface-container p-sm px-md rounded-full border border-white/10 shadow-xl backdrop-blur-md">
+                        <span class="text-white font-label-sm">TECHNOVA HQ</span>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
-                <div class="d-flex counter">
-                    <h1 class="me-3 text-primary counter-value">120</h1>
-                    <h5 class="text-white mt-1">Clientes totales que aman la alta tecnología</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
-                <div class="d-flex counter">
-                    <h1 class="me-3 text-primary counter-value">5</h1>
-                    <h5 class="text-white mt-1">Reseñas de estrellas dadas por clientes satisfechos.</h5>
+                <div class="absolute bottom-6 right-6">
+                    <button class="bg-surface-container-high/80 backdrop-blur-md p-sm rounded-lg border border-white/10 hover:bg-white/10 transition-colors">
+                        <span class="material-symbols-outlined text-white" data-icon="open_in_new">open_in_new</span>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Fact End -->
 
 
-<!-- Contact Start -->
-<div class="container-fluid py-5 mb-5">
-    <div class="container">
-        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-            <h5 class="text-primary">Ponerse en contacto</h5>
-            <h1 class="mb-3">Contacto para cualquier consulta</h1>
-            
-        </div>
-        <div class="contact-detail position-relative p-5 contact">
-            <div class="row g-5 mb-5 justify-content-center">
-                <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".3s">
-                    <div class="d-flex bg-light p-3 rounded">
-                        <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
-                            <i class="fas fa-map-marker-alt text-white"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h4 class="text-primary">Dirección</h4>
-                            <a href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6" target="_blank" class="h5 contact-h6">Lima, Perú</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".5s">
-                    <div class="d-flex bg-light p-3 rounded">
-                        <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
-                            <i class="fa fa-phone text-white"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h4 class="text-primary">Llámanos</h4>
-                            <a class="h5" href="tel:+0123456789" target="_blank">+51 978209130</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".7s">
-                    <div class="d-flex bg-light p-3 rounded">
-                        <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
-                            <i class="fa fa-envelope text-white"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h4 class="text-primary">Email</h4>
-                            <a class="h5 contact-h6" href="mailto:info@example.com" target="_blank">informes@grupotyg.com</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay=".3s">
-                    <div class="p-5 h-100 rounded contact-map contact">
-                        <iframe class="rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.4710403339755!2d-73.82241512404069!3d40.685622471397615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26749046ee14f%3A0xea672968476d962c!2s123rd%20St%2C%20Queens%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1686493221834!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
-                    <div class="p-5 rounded contact-form contact">
-                        <div class="mb-4">
-                            <input id="nombre" type="text" class="form-control border-0 py-3" placeholder="Su nombre">
-                        </div>
-                        <div class="mb-4">
-                            <input id="telefono" type="number" class="form-control border-0 py-3" placeholder="Telefono">
-                        </div>
-                        <div class="mb-4">
-                            <input id="email" type="email" class="form-control border-0 py-3" placeholder="Tu Email">
-                        </div>
-                        <div class="mb-4">
-                            <input id="servicio" type="text" class="form-control border-0 py-3" placeholder="Servicio">
-                        </div>
-                        <div class="mb-4">
-                            <textarea id="mensaje" class="w-100 form-control border-0 py-3" rows="6" cols="6" placeholder="Mensaje"></textarea>
-                        </div>
-                        <div class="text-start">
-                            <button class="btn bg-primary text-white py-3 px-5 Enviarconsulta" type="button">Enviar mensaje</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> 
-</div>
-<!-- Contact End -->
+
 @endsection
 
 @push('javascript')
-	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <script>
-        let token = $('meta[name="csrf-token"]').attr('content');
+<script>
+    let token = $('meta[name="csrf-token"]').attr('content');
 
-        $(function() {
-            $(".Enviarconsulta").on('click',function () {
-                var nombre = $("#nombre").val();
-                var telefono = $("#telefono").val();
-                var email = $("#email").val();
-                var servicio = $("#servicio").val();
-                var mensaje = $("#mensaje").val();
-                if(nombre == ''){
-                    Swal.fire({
-                        icon:'warning',
-                        text: "Tienes que ingresar tu nombre",
-                    });
-                    return false;
-                }
-                if(telefono == ''){
-                    Swal.fire({
-                        icon:'warning',
-                        text: "Tienes que ingresar un número de contacto",
-                    });
-                    return false;
-                }
-                if(email == ''){
-                    Swal.fire({
-                        icon:'warning',
-                        text: "Tienes que ingresar una correo de contacto",
-                    });
-                    return false;
-                }
-                if(servicio == ''){
-                    Swal.fire({
-                        icon:'warning',
-                        text: "Ingresa el servicio en la cual estas interesado",
-                    });
-                    return false;
-                }
-                if(mensaje == ''){
-                    Swal.fire({
-                        icon:'warning',
-                        text: "Tienes que ingresar un mensaje",
-                    });
-                    return false;
-                }
+    $(function() {
+        $(".Enviarconsulta").on('click', function() {
+            var nombre = $("#nombre").val();
+            var telefono = $("#telefono").val();
+            var email = $("#email").val();
+            var servicio = $("#servicio").val();
+            var mensaje = $("#mensaje").val();
+            if (nombre == '') {
                 Swal.fire({
-                    header: '...',
-                    title: 'loading...',
-                    allowOutsideClick:false,
-                    didOpen: () => {
-                        Swal.showLoading()
-                    }
+                    icon: 'warning',
+                    text: "Tienes que ingresar tu nombre",
                 });
+                return false;
+            }
+            if (telefono == '') {
+                Swal.fire({
+                    icon: 'warning',
+                    text: "Tienes que ingresar un número de contacto",
+                });
+                return false;
+            }
+            if (email == '') {
+                Swal.fire({
+                    icon: 'warning',
+                    text: "Tienes que ingresar una correo de contacto",
+                });
+                return false;
+            }
+            if (servicio == '') {
+                Swal.fire({
+                    icon: 'warning',
+                    text: "Ingresa el servicio en la cual estas interesado",
+                });
+                return false;
+            }
+            if (mensaje == '') {
+                Swal.fire({
+                    icon: 'warning',
+                    text: "Tienes que ingresar un mensaje",
+                });
+                return false;
+            }
+            Swal.fire({
+                header: '...',
+                title: 'loading...',
+                allowOutsideClick: false,
+                didOpen: () => {
+                    Swal.showLoading()
+                }
+            });
 
-                $.ajax({
-                    url: "/correo",
-                    method: "post",
-                    dataType: 'json',
-                    data: {
-                        _token: token,
-                        nombre : nombre,
-                        telefono : telefono,
-                        email : email,
-                        servicio : servicio,
-                        mensaje: mensaje,
-                    },
-                    success: function (response) {   
-                        if (response.status) {
-                            Swal.fire({
-                                icon: 'success',
-                                title: 'OK',
-                                text: response.msg,
-                            })                 
-                        } else {
-                            Swal.fire({
-                                icon: 'warning',
-                                title: 'Oops...',
-                                text: response.msg,
-                            })
-                        }
-                        $("#nombre").val('');
-                        $("#telefono").val('');
-                        $("#email").val('');
-                        $("#servicio").val('');
-                        $("#mensaje").val('');
-                    },
-                    error: function () {
+            $.ajax({
+                url: "/correo",
+                method: "post",
+                dataType: 'json',
+                data: {
+                    _token: token,
+                    nombre: nombre,
+                    telefono: telefono,
+                    email: email,
+                    servicio: servicio,
+                    mensaje: mensaje,
+                },
+                success: function(response) {
+                    if (response.status) {
                         Swal.fire({
-                            icon: 'error',
-                            title: 'Oops...!!',
-                            text: 'Algo salió mal, Inténtalo más tarde!',
+                            icon: 'success',
+                            title: 'OK',
+                            text: response.msg,
+                        })
+                    } else {
+                        Swal.fire({
+                            icon: 'warning',
+                            title: 'Oops...',
+                            text: response.msg,
                         })
                     }
-                });
+                    $("#nombre").val('');
+                    $("#telefono").val('');
+                    $("#email").val('');
+                    $("#servicio").val('');
+                    $("#mensaje").val('');
+                },
+                error: function() {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...!!',
+                        text: 'Algo salió mal, Inténtalo más tarde!',
+                    })
+                }
             });
-        })
-    </script>
-    @endpush
+        });
+    })
+</script>
+@endpush

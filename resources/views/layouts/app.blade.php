@@ -79,6 +79,7 @@
   <!-- <link href="{{asset('css/bootstrap.min.css')}}?v=<?php echo $version ?>" rel="stylesheet"> -->
 
   <!-- Template Stylesheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
@@ -241,12 +242,18 @@
       js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
-  </script>  
+  </script>
   @include('layouts.header')
   <main class="pt-16">
-    @yield('content')    
+    @yield('content')
   </main>
-
+  <!-- WhatsApp Floating Icon -->
+  <a
+    href="https://wa.me/51978209130?text=Hola,%20quiero%20información"
+    target="_blank"
+    class="fixed bottom-6 right-6 z-50 w-14 h-14 flex items-center justify-center bg-[#25D366] text-white rounded-full shadow-[0_0_20px_rgba(37,211,102,0.4)] hover:scale-110 transition-all duration-300 hover:shadow-[0_0_30px_rgba(37,211,102,0.7)]">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+  </a>
   @include('layouts.footer')
   <!-- JavaScript Libraries -->
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>

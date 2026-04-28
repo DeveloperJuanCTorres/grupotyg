@@ -53,10 +53,10 @@
                         Optimice su flujo de trabajo financiero con facturación de nivel empresarial. Garantice el cumplimiento tributario al 100 % con firmas digitales automatizadas.
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <button class="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-bold flex items-center group/btn transition-all hover:shadow-[0_0_20px_rgba(0,162,230,0.4)]">
+                        <a href="{{route('facturacion')}}" class="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-bold flex items-center group/btn transition-all hover:shadow-[0_0_20px_rgba(0,162,230,0.4)]">
                             Ver planes
                             <span class="material-symbols-outlined ml-2 group-hover/btn:translate-x-1 transition-transform">payments</span>
-                        </button>
+                        </a>
                         <button class="glass-card text-white px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-all">
                             Más información
                         </button>
@@ -179,12 +179,12 @@
                 </div>
                 <div class="flex flex-wrap gap-4">
                     <button class="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-bold flex items-center group transition-all hover:shadow-[0_0_20px_rgba(0,162,230,0.4)]">
-                        Try Demo
+                        Ver demo
                         <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">play_circle</span>
                     </button>
-                    <button class="glass-card text-white px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-all border-white/20">
-                        Learn More
-                    </button>
+                    <a href="{{route('facturacion')}}" class="glass-card text-white px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-all border-white/20">
+                        Más información
+                    </a>
                 </div>
             </div>
             <div class="order-1 lg:order-2">
@@ -231,10 +231,10 @@
             </div>
             <h3 class="text-headline-md font-headline-md text-white mb-4">Facturación Electrónica</h3>
             <p class="text-on-surface-variant text-sm flex-grow">Sistema integral de facturación cumpliendo con todas las normativas tributarias vigentes.</p>
-            <div class="mt-8 flex items-center text-secondary font-bold text-sm cursor-pointer group/link">
+            <a href="{{route('facturacion')}}" class="mt-8 flex items-center text-secondary font-bold text-sm cursor-pointer group/link">
                 Saber más
                 <span class="material-symbols-outlined ml-2 text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
-            </div>
+            </a>
         </div>
         @foreach($services as $service)
         <div class="glass-card rounded-3xl p-8 flex flex-col group hover:border-primary transition-all hover:-translate-y-2">
@@ -243,10 +243,10 @@
             </div>
             <h3 class="text-headline-md font-headline-md text-white mb-4">{{ $service->name }}</h3>
             <p class="text-on-surface-variant text-sm flex-grow">{{ $service->description_corto }}</p>
-            <div class="mt-8 flex items-center text-primary font-bold text-sm cursor-pointer group/link">
+            <a href="#" class="mt-8 flex items-center text-primary font-bold text-sm cursor-pointer group/link">
                 Saber más
                 <span class="material-symbols-outlined ml-2 text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
-            </div>
+            </a>
         </div>
         @endforeach
     </div>
