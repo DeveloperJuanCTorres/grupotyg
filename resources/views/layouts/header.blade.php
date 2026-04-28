@@ -28,6 +28,11 @@
                Servicios
             </a>
 
+            <a href="{{ route('project') }}" 
+               class="{{ request()->routeIs('project') ? 'text-indigo-400 border-b-2 border-indigo-500 pb-1' : 'text-zinc-400 hover:text-white' }}">
+               Proyectos
+            </a>
+
             <a href="{{ route('contact') }}" 
                class="{{ request()->routeIs('contact') ? 'text-indigo-400 border-b-2 border-indigo-500 pb-1' : 'text-zinc-400 hover:text-white' }}">
                Contacto
@@ -62,6 +67,7 @@
         <a href="/" class="block py-2 text-white">Inicio</a>
         <a href="{{ route('store') }}" class="block py-2 text-white">Tienda</a>
         <a href="{{ route('service') }}" class="block py-2 text-white">Servicios</a>
+        <a href="{{ route('project') }}" class="block py-2 text-white">Proyectos</a>
         <a href="{{ route('contact') }}" class="block py-2 text-white">Contacto</a>
 
     </div>

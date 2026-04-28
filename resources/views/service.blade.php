@@ -36,10 +36,10 @@
             </div>
             <h3 class="text-headline-md font-headline-md text-white mb-4">{{ $service->name }}</h3>
             <p class="text-on-surface-variant text-sm flex-grow">{{ $service->description_corto }}</p>
-            <div class="mt-8 flex items-center text-primary font-bold text-sm cursor-pointer group/link">
+            <!-- <div class="mt-8 flex items-center text-primary font-bold text-sm cursor-pointer group/link">
                 Saber más
                 <span class="material-symbols-outlined ml-2 text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
-            </div>
+            </div> -->
         </div>
         @endforeach
     </section>

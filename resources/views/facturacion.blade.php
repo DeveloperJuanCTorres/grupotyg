@@ -57,45 +57,46 @@
 <section class="py-3xl px-6 bg-surface-container-lowest">
     <div class="max-w-7xl mx-auto">
         <div class="mb-2xl">
-            <h2 class="font-headline-lg text-headline-lg text-white mb-md">Key Features</h2>
-            <p class="font-body-md text-on-surface-variant max-w-2xl">Engineered for speed, security, and absolute precision in every transaction.</p>
+            <h2 class="font-headline-lg text-headline-lg text-white mb-md">¡Estamos listos para su negocio!</h2>
+            <p class="font-body-md text-on-surface-variant max-w-2xl">Si necesita un software de gestión empresarial, ha venido al lugar correcto.</p>
+            <p class="font-body-md text-on-surface-variant max-w-2xl">¡Tenemos un diseño modular limpio y moderno que seguramente se adaptará a su negocio!</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
             <!-- Feature 1 -->
             <div class="glass-card p-xl rounded-2xl group hover:border-primary/50 transition-all duration-300">
-                <span class="material-symbols-outlined text-primary text-4xl mb-lg" data-icon="verified">verified</span>
-                <h3 class="font-headline-md text-white mb-md">Real-time Compliance</h3>
-                <p class="text-on-surface-variant font-body-md">Instant synchronization with tax authorities to ensure every invoice meets current legal standards automatically.</p>
+                <i class="fas fa-store-alt fa-lg text-primary text-4xl mb-lg"></i>
+                <h3 class="font-headline-md text-white mb-md">Tienda departamental</h3>
+                <p class="text-on-surface-variant font-body-md">No busque más, nuestro software integral para tiendas departamentales. Ya sea que necesite vender ropa, zapatos, bolsos o cualquier otro tipo de artículo, nuestro software lo tiene cubierto. Además, nuestra interfaz fácil de usar facilita comenzar a vender de inmediato. Entonces, ¿por qué esperar? ¡Empiece hoy!</p>
             </div>
             <!-- Feature 2 -->
             <div class="glass-card p-xl rounded-2xl group hover:border-primary/50 transition-all duration-300">
-                <span class="material-symbols-outlined text-primary text-4xl mb-lg" data-icon="sync_alt">sync_alt</span>
-                <h3 class="font-headline-md text-white mb-md">Auto-sync ERP</h3>
-                <p class="text-on-surface-variant font-body-md">Seamlessly integrate with your existing ERP or accounting software through our robust RESTful API layer.</p>
+                <i class="fas fa-store fa-lg text-primary text-4xl mb-lg"></i>
+                <h3 class="font-headline-md text-white mb-md">Venta al por mayor al por menor</h3>
+                <p class="text-on-surface-variant font-body-md">Un conjunto completo de funciones para gestionar tiendas minoristas y mayoristas. Establezca múltiples precios para diferentes segmentos de clientes o diferentes ubicaciones comerciales.</p>
             </div>
             <!-- Feature 3 -->
             <div class="glass-card p-xl rounded-2xl group hover:border-primary/50 transition-all duration-300">
-                <span class="material-symbols-outlined text-primary text-4xl mb-lg" data-icon="draw">draw</span>
-                <h3 class="font-headline-md text-white mb-md">Digital Signatures</h3>
-                <p class="text-on-surface-variant font-body-md">Advanced cryptographic signing for every document, providing legally binding authenticity and tamper-proof security.</p>
+                <i class="fas fa-notes-medical fa-lg text-primary text-4xl mb-lg"></i>
+                <h3 class="font-headline-md text-white mb-md">Farmacias / Boticas</h3>
+                <p class="text-on-surface-variant font-body-md">Nuestro software es perfecto para cualquier empresa farmacéutica. Puede establecer fechas de vencimiento de productos y números de lote, y venderlos en diferentes unidades de medida. Deje de vender artículos caducados y por caducar a los clientes. Consulte los informes detallados sobre el vencimiento de existencias por número de lote</p>
             </div>
             <!-- Feature 4 -->
             <div class="glass-card p-xl rounded-2xl group hover:border-primary/50 transition-all duration-300">
-                <span class="material-symbols-outlined text-primary text-4xl mb-lg" data-icon="analytics">analytics</span>
-                <h3 class="font-headline-md text-white mb-md">Detailed Reporting</h3>
-                <p class="text-on-surface-variant font-body-md">Gain deep insights into your revenue streams with customizable analytics dashboards and automated period reports.</p>
+                <i class="fas fa-prescription-bottle fa-lg text-primary text-4xl mb-lg"></i>
+                <h3 class="font-headline-md text-white mb-md">Licorería</h3>
+                <p class="text-on-surface-variant font-body-md">Fácil de usar para todas las licorerías. Vender en ml de simple vender la botella, puedes gestionarlos fácilmente.</p>
             </div>
             <!-- Feature 5 -->
             <div class="glass-card p-xl rounded-2xl group hover:border-primary/50 transition-all duration-300">
-                <span class="material-symbols-outlined text-primary text-4xl mb-lg" data-icon="lock">lock</span>
-                <h3 class="font-headline-md text-white mb-md">Secure Storage</h3>
-                <p class="text-on-surface-variant font-body-md">Encrypted cloud storage for up to 10 years, ensuring your historical data is safe and easily retrievable for audits.</p>
+                <i class="fas fa-mobile-alt fa-lg text-primary text-4xl mb-lg"></i>
+                <h3 class="font-headline-md text-white mb-md">Móviles y Electrónica</h3>
+                <p class="text-on-surface-variant font-body-md">Registre el número de serie del inventario, venda artículos con un número de serie particular</p>
             </div>
             <!-- Feature 6 -->
             <div class="glass-card p-xl rounded-2xl group hover:border-primary/50 transition-all duration-300">
-                <span class="material-symbols-outlined text-primary text-4xl mb-lg" data-icon="rocket_launch">rocket_launch</span>
-                <h3 class="font-headline-md text-white mb-md">Batch Processing</h3>
-                <p class="text-on-surface-variant font-body-md">Process thousands of invoices simultaneously with our high-throughput queue system without any performance lag.</p>
+                <i class="fas fa-wrench fa-lg text-primary text-4xl mb-lg"></i>
+                <h3 class="font-headline-md text-white mb-md">Tienda de reparacion</h3>
+                <p class="text-on-surface-variant font-body-md">Un conjunto completo de funciones para gestionar el negocio de reparaciones, crear hojas de trabajo, asignar hojas de trabajo al técnico, estado de reparación y convertir hojas de trabajo en facturas. Autoenlace para que los clientes verifiquen el progreso de la reparación</p>
             </div>
         </div>
     </div>

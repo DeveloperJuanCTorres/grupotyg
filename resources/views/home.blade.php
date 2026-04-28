@@ -243,10 +243,10 @@
             </div>
             <h3 class="text-headline-md font-headline-md text-white mb-4">{{ $service->name }}</h3>
             <p class="text-on-surface-variant text-sm flex-grow">{{ $service->description_corto }}</p>
-            <a href="#" class="mt-8 flex items-center text-primary font-bold text-sm cursor-pointer group/link">
+            <!-- <a href="#" class="mt-8 flex items-center text-primary font-bold text-sm cursor-pointer group/link">
                 Saber más
                 <span class="material-symbols-outlined ml-2 text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
-            </a>
+            </a> -->
         </div>
         @endforeach
     </div>
@@ -328,6 +328,27 @@
     </div>
 </section>
 
+<!-- CTA Footer Section -->
+<section class="max-w-7xl mx-auto px-8 mt-32">
+    <div class="relative overflow-hidden glass-card rounded-3xl p-2xl text-center border-primary/20">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-primary/10 blur-[120px] -translate-y-1/2 translate-x-1/2"></div>
+        <div class="relative z-10">
+            <h2 class="font-display-xl text-headline-lg md:text-display-xl text-white mb-8">¿Listo para iniciar la compilación?</h2>
+            <p class="text-body-lg text-on-surface-variant max-w-xl mx-auto mb-12">
+                Asóciate con un equipo que domine la ingeniería de alto rendimiento.
+            </p>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                <button class="bg-primary text-on-primary px-12 py-5 rounded-lg font-bold text-lg hover:scale-105 transition-all">
+                    Iniciar proyecto
+                </button>
+                <button class="border border-white/10 hover:bg-white/5 text-white px-12 py-5 rounded-lg font-bold text-lg transition-all">
+                    HABLAR CON UN INGENIERO
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Testimonials -->
 <section class="py-3xl">
     <div class="max-w-7xl mx-auto px-8">
@@ -365,22 +386,6 @@
                         <div class="text-xs text-on-surface-variant">Founder, Apex Logic</div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CTA Footer Section -->
-<section class="max-w-7xl mx-auto px-8 mb-2xl">
-    <div class="bg-indigo-600 rounded-[40px] p-2xl overflow-hidden relative text-center">
-        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
-        <div class="absolute -top-1/2 -left-1/4 w-full h-full bg-white/10 blur-[120px] rounded-full"></div>
-        <div class="relative z-10 space-y-8">
-            <h2 class="font-display-xl text-white text-5xl md:text-display-xl">Ready to Architect Your Future?</h2>
-            <p class="text-white/80 text-body-lg max-w-2xl mx-auto">Join the world's most innovative companies and start building software that scales infinitely.</p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <button class="bg-white text-indigo-600 px-10 py-5 rounded-2xl font-black text-lg hover:scale-105 transition-transform">Schedule a Strategy Call</button>
-                <button class="bg-indigo-700/50 backdrop-blur-sm text-white border border-white/30 px-10 py-5 rounded-2xl font-black text-lg hover:bg-indigo-700 transition-colors">Review Case Studies</button>
             </div>
         </div>
     </div>
