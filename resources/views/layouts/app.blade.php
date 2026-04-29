@@ -70,7 +70,7 @@
 
   <!-- Libraries Stylesheet -->
   <?php
-  $version = '1993.2.3';
+  $version = '1993.2.4';
   ?>
   <!-- <link href="{{asset('lib/animate/animate.min.css')}}?v=<?php echo $version ?>" rel="stylesheet">
   <link href="{{asset('lib/owlcarousel/assets/owl.carousel.min.css')}}?v=<?php echo $version ?>" rel="stylesheet"> -->

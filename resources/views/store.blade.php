@@ -5,8 +5,8 @@
     <div class="max-w-screen-2xl mx-auto px-6">
         <!-- Header Section -->
         <div class="mb-2xl">
-            <h1 class="font-display-xl text-display-xl mb-md">Precision Hardware</h1>
-            <p class="text-on-surface-variant font-body-lg max-w-2xl">Experience technical excellence with our curated selection of high-performance computing, enterprise printing solutions, and digital infrastructure.</p>
+            <h1 class="font-display-xl text-display-xl mb-md">Tienda virtual</h1>
+            <p class="text-on-surface-variant font-body-lg max-w-2xl">Experimente la excelencia técnica con nuestra cuidada selección de soluciones informáticas de alto rendimiento, soluciones de impresión empresarial e infraestructura digital.</p>
         </div>
         <div class="flex flex-col lg:flex-row gap-gutter">
             <!-- Sidebar Filters -->
@@ -14,7 +14,7 @@
                 <div class="glass-surface rounded-xl p-lg sticky top-32">
                     <div class="flex items-center gap-sm mb-lg">
                         <span class="material-symbols-outlined text-primary" data-icon="tune">tune</span>
-                        <h2 class="font-headline-md text-headline-md">Filters</h2>
+                        <h2 class="font-headline-md text-headline-md">Filtros</h2>
                     </div>
                     <!-- Category -->
                     <div class="mb-xl">

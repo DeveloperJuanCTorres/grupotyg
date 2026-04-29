@@ -24,7 +24,7 @@
             </a>
 
             <a href="{{ route('service') }}" 
-               class="{{ request()->routeIs('service') || request()->routeIs('service.*') ? 'text-indigo-400 border-b-2 border-indigo-500 pb-1' : 'text-zinc-400 hover:text-white' }}">
+               class="{{ request()->routeIs('service') || request()->routeIs('facturacion') || request()->routeIs('service.*') ? 'text-indigo-400 border-b-2 border-indigo-500 pb-1' : 'text-zinc-400 hover:text-white' }}">
                Servicios
             </a>
 

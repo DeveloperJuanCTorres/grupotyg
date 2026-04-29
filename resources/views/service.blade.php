@@ -43,6 +43,26 @@
         </div>
         @endforeach
     </section>
+    <!-- CTA Section -->
+    <section class="max-w-7xl mx-auto px-8 mt-32">
+        <div class="relative overflow-hidden glass-card rounded-3xl p-2xl text-center border-primary/20">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-primary/10 blur-[120px] -translate-y-1/2 translate-x-1/2"></div>
+            <div class="relative z-10">
+                <h2 class="font-display-xl text-headline-lg md:text-display-xl text-white mb-8">¿Listo para iniciar la compilación?</h2>
+                <p class="text-body-lg text-on-surface-variant max-w-xl mx-auto mb-12">
+                    Asóciate con un equipo que domine la ingeniería de alto rendimiento.
+                </p>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                    <button class="bg-primary text-on-primary px-12 py-5 rounded-lg font-bold text-lg hover:scale-105 transition-all">
+                        Iniciar proyecto
+                    </button>
+                    <button class="border border-white/10 hover:bg-white/5 text-white px-12 py-5 rounded-lg font-bold text-lg transition-all">
+                        HABLAR CON UN INGENIERO
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Tech Stack Section -->
     <section class="max-w-7xl mx-auto px-8 mt-32 text-center">
         <h2 class="font-headline-lg text-headline-lg text-white mb-16 uppercase tracking-widest">Nucleo tecnológico</h2>
@@ -73,26 +93,7 @@
             </div>
         </div>
     </section>
-    <!-- CTA Section -->
-    <section class="max-w-7xl mx-auto px-8 mt-32">
-        <div class="relative overflow-hidden glass-card rounded-3xl p-2xl text-center border-primary/20">
-            <div class="absolute top-0 right-0 w-96 h-96 bg-primary/10 blur-[120px] -translate-y-1/2 translate-x-1/2"></div>
-            <div class="relative z-10">
-                <h2 class="font-display-xl text-headline-lg md:text-display-xl text-white mb-8">¿Listo para iniciar la compilación?</h2>
-                <p class="text-body-lg text-on-surface-variant max-w-xl mx-auto mb-12">
-                    Asóciate con un equipo que domine la ingeniería de alto rendimiento.
-                </p>
-                <div class="flex flex-col md:flex-row items-center justify-center gap-6">
-                    <button class="bg-primary text-on-primary px-12 py-5 rounded-lg font-bold text-lg hover:scale-105 transition-all">
-                        Iniciar proyecto
-                    </button>
-                    <button class="border border-white/10 hover:bg-white/5 text-white px-12 py-5 rounded-lg font-bold text-lg transition-all">
-                        HABLAR CON UN INGENIERO
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 </div>
 
 
