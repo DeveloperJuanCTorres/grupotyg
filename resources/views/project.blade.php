@@ -30,12 +30,12 @@
     <!-- Grid Layout -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
         <!-- Card 1 -->
-         @foreach($projects as $project)
+        @foreach($projects as $project)
         <div class="glass-card rounded-xl overflow-hidden group transition-all duration-300 flex flex-col">
             <div class="aspect-video relative overflow-hidden">
-                <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
-                        data-alt="Futuristic dark blue interface with neon lines and abstract data visualization, professional tech aesthetic" 
-                        src="{{asset ('storage/' . $project->imagen)}}" />
+                <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    data-alt="Futuristic dark blue interface with neon lines and abstract data visualization, professional tech aesthetic"
+                    src="{{asset ('storage/' . $project->imagen)}}" />
                 <div class="absolute top-md left-md">
                     <span class="px-md py-1 bg-slate-950/60 backdrop-blur-md border border-white/10 rounded-full font-label-sm text-secondary uppercase tracking-tighter">{{$project->nombre_negocio}}</span>
                 </div>
@@ -45,10 +45,10 @@
                 <p class="text-on-surface-variant font-body-md mb-lg line-clamp-2">{{ $project->descripcion }}</p>
                 <div class="mt-auto flex items-center justify-between">
                     <span class="text-slate-500 font-label-sm italic">2024 Release</span>
-                    <button class="flex items-center gap-2 text-primary font-label-sm uppercase tracking-widest group/btn">
-                        View Case Study
+                    <a class="flex items-center gap-2 text-primary font-label-sm uppercase tracking-widest group/btn" href="{{route('project.detail',$project)}}">
+                        Ver proyecto
                         <span class="material-symbols-outlined text-[18px] transition-transform group-hover/btn:translate-x-1">arrow_forward</span>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -63,70 +63,4 @@
 </div>
 
 
-
-
-
-
-
-<!-- Fact Start -->
-<div class="container-fluid bg-secondary py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
-                <div class="d-flex counter">
-                    <h1 class="me-3 text-primary counter-value">99</h1>
-                    <h5 class="text-white mt-1">Éxito en conseguir un cliente satisfecho</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
-                <div class="d-flex counter">
-                    <h1 class="me-3 text-primary counter-value">25</h1>
-                    <h5 class="text-white mt-1">Miles de negocios exitosos</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
-                <div class="d-flex counter">
-                    <h1 class="me-3 text-primary counter-value">120</h1>
-                    <h5 class="text-white mt-1">Clientes totales que aman la alta tecnología</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
-                <div class="d-flex counter">
-                    <h1 class="me-3 text-primary counter-value">5</h1>
-                    <h5 class="text-white mt-1">Reseñas de estrellas dadas por clientes satisfechos.</h5>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Fact End -->
-
-
-<!-- Project Start -->
-<div class="container-fluid project py-5 mb-5">
-    <div class="container">
-        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-            <h5 class="text-primary">Nuestros Proyectos</h5>
-            <h1>Nuestros proyectos recientemente completados</h1>
-        </div>
-        <div class="row g-5">
-            @foreach($projects as $project)
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                <div class="project-item">
-                    <div class="project-img">
-                        <img src="{{config('url')}}/storage/{{$project->imagen}}" class="img-fluid w-100 rounded" alt="">
-                        <div class="project-content">
-                            <a href="{{route('projectid',$project)}}" class="text-center">
-                                <h4 class="text-secondary">{{$project->titulo}}</h4>
-                                <p class="m-0 text-white">{{$project->subtitulo}}</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</div>
-<!-- Project End -->
 @endsection

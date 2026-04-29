@@ -20,4 +20,5 @@ class Project extends Model
         'nombre_negocio',
         'logo_negocio'
     ];
+    
 }

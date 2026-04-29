@@ -19,22 +19,22 @@
             </a>
 
             <a href="{{ route('store') }}" 
-               class="{{ request()->routeIs('store') ? 'text-indigo-400 border-b-2 border-indigo-500 pb-1' : 'text-zinc-400 hover:text-white' }}">
+               class="{{ request()->routeIs('store') || request()->routeIs('store.*') ? 'text-indigo-400 border-b-2 border-indigo-500 pb-1' : 'text-zinc-400 hover:text-white' }}">
                Tienda
             </a>
 
             <a href="{{ route('service') }}" 
-               class="{{ request()->routeIs('service') ? 'text-indigo-400 border-b-2 border-indigo-500 pb-1' : 'text-zinc-400 hover:text-white' }}">
+               class="{{ request()->routeIs('service') || request()->routeIs('service.*') ? 'text-indigo-400 border-b-2 border-indigo-500 pb-1' : 'text-zinc-400 hover:text-white' }}">
                Servicios
             </a>
 
             <a href="{{ route('project') }}" 
-               class="{{ request()->routeIs('project') ? 'text-indigo-400 border-b-2 border-indigo-500 pb-1' : 'text-zinc-400 hover:text-white' }}">
+               class="{{ request()->routeIs('project') || request()->routeIs('project.*') ? 'text-indigo-400 border-b-2 border-indigo-500 pb-1' : 'text-zinc-400 hover:text-white' }}">
                Proyectos
             </a>
 
             <a href="{{ route('contact') }}" 
-               class="{{ request()->routeIs('contact') ? 'text-indigo-400 border-b-2 border-indigo-500 pb-1' : 'text-zinc-400 hover:text-white' }}">
+               class="{{ request()->routeIs('contact') || request()->routeIs('contact.*') ? 'text-indigo-400 border-b-2 border-indigo-500 pb-1' : 'text-zinc-400 hover:text-white' }}">
                Contacto
             </a>
 
