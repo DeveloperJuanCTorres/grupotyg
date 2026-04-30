@@ -4,9 +4,9 @@
 
         <!-- Logo -->
         <div class="flex items-center space-x-2">
-            <img src="{{asset('img/iso-02.png')}}" class="w-10 h-10 object-contain" alt="">
-            <span class="text-xl font-bold text-white">
-                Grupo <span class="text-primary">TyG</span>
+            <img src="{{asset('img/isotipo-tyg.png')}}" class="w-12 h-12 object-contain" alt="">
+            <span class="text-xl font-bold text-primary">
+                Grupo TyG
             </span>
         </div>
 
