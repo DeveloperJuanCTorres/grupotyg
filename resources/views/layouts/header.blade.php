@@ -5,7 +5,7 @@
         <!-- Logo -->
         <div class="flex items-center space-x-2">
             <img src="{{asset('img/isotipo-tyg.png')}}" class="w-12 h-12 object-contain" alt="">
-            <span class="text-xl font-bold text-primary">
+            <span class="text-2xl font-bold text-primary">
                 Grupo TyG
             </span>
         </div>
