@@ -2,7 +2,7 @@
     <div class="max-w-7xl mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 uppercase tracking-widest text-xs">
         <div class="space-y-6">
             <div class="flex items-center space-x-2">
-                <img src="{{asset('img/isotipo-tyg.png')}}" class="object-contain" width="70" alt="">
+                <img src="{{asset('img/isotipo-master.png')}}" class="object-contain" width="70" alt="">
                 <span class="text-2xl font-bold text-primary" style="text-transform: none !important;">
                     Grupo TyG
                 </span>

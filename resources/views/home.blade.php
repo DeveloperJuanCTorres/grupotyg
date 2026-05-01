@@ -63,7 +63,8 @@
                     </div>
                 </div>
                 <div class="hidden lg:block">
-                    <img alt="digital invoicing interface" class="rounded-3xl border border-white/10 shadow-2xl w-full h-[500px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm-JSe0g0LpHBKR1jd_9Q_hEDWW5svEQwZonFwpq_KxDdpS7UKSrHevrCPB04s7V8VZpFt1lXsANanCYACWHXOYzzJzNA1LTD1skFKkugdWkFtRXBKPyMURuNcZxkHRijaM04N_kZ47YBcGYnDbInZDOQlYarNYrGzVQ2FGm4lr0Q7_Dpq4Uhb80wPuqqmW90I0ZT05umOlY5abk-XQfZ4511MCh0NAh_sndb0rJbkhoajYtn_aupX_4RtUGavTpCgW8tt1uMhY8Xj" />
+                    <img alt="digital invoicing interface" class="rounded-3xl border border-white/10 shadow-2xl w-full h-[500px] object-cover" 
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm-JSe0g0LpHBKR1jd_9Q_hEDWW5svEQwZonFwpq_KxDdpS7UKSrHevrCPB04s7V8VZpFt1lXsANanCYACWHXOYzzJzNA1LTD1skFKkugdWkFtRXBKPyMURuNcZxkHRijaM04N_kZ47YBcGYnDbInZDOQlYarNYrGzVQ2FGm4lr0Q7_Dpq4Uhb80wPuqqmW90I0ZT05umOlY5abk-XQfZ4511MCh0NAh_sndb0rJbkhoajYtn_aupX_4RtUGavTpCgW8tt1uMhY8Xj" />
                 </div>
             </div>
         </div>
