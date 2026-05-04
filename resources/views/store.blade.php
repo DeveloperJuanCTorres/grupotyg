@@ -54,7 +54,7 @@
             </aside>
             <!-- Product Grid -->
             <div class="flex-grow">
-                <div id="product-container" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-3 gap-gutter">
+                <div id="product-container" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-gutter">
                     @include('products')
                     
                 </div>
