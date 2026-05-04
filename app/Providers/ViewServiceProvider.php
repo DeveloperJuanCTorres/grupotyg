@@ -25,10 +25,10 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        View::composer('*', function ($view) {
-            $company = Company::first(); // o find(1)
+        // View::composer('*', function ($view) {
+        //     $company = Company::first();
 
-            $view->with('company', $company);
-        });
+        //     $view->with('company', $company);
+        // });
     }
 }
