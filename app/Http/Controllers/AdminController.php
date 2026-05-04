@@ -100,7 +100,7 @@ class AdminController extends Controller
         }
 
         // 🔥 SIN appends
-        $products = $query->paginate(12);
+        $products = $query->paginate(9);
 
         if ($request->ajax()) {
             return view('products', compact('products'))->render();
