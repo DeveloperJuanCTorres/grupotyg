@@ -29,7 +29,7 @@
                         </div>
                     </div>
                     <!-- Brand -->
-                    <div>
+                    <div class="mb-xl">
                         <h3 class="text-label-sm uppercase text-zinc-500 mb-md">Marcas</h3>
                         <div class="space-y-sm">
                             @foreach($brands as $brand)
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <!-- Price Range -->
-                    <div class="mb-xl">
+                    <div>
                         <h3 class="text-label-sm uppercase text-zinc-500 mb-md">Rango de Precio</h3>
                         <input id="priceRange" class="w-full accent-primary h-1 bg-white/10 rounded-full appearance-none" type="range" 
                                 min="0" max="5000" value="5000"/>
