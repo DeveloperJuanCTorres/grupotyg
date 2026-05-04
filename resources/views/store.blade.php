@@ -28,16 +28,6 @@
                             @endforeach
                         </div>
                     </div>
-                    <!-- Price Range -->
-                    <div class="mb-xl">
-                        <h3 class="text-label-sm uppercase text-zinc-500 mb-md">Rango de Precio</h3>
-                        <input id="priceRange" class="w-full accent-primary h-1 bg-white/10 rounded-full appearance-none" type="range" 
-                                min="0" max="5000" value="5000"/>
-                        <div class="flex justify-between mt-sm text-label-sm text-on-surface-variant">
-                            <span>S/. 0</span>
-                            <span id="priceValue">S/. 5,000+</span>
-                        </div>
-                    </div>
                     <!-- Brand -->
                     <div>
                         <h3 class="text-label-sm uppercase text-zinc-500 mb-md">Marcas</h3>
@@ -50,6 +40,16 @@
                             @endforeach
                         </div>
                     </div>
+                    <!-- Price Range -->
+                    <div class="mb-xl">
+                        <h3 class="text-label-sm uppercase text-zinc-500 mb-md">Rango de Precio</h3>
+                        <input id="priceRange" class="w-full accent-primary h-1 bg-white/10 rounded-full appearance-none" type="range" 
+                                min="0" max="5000" value="5000"/>
+                        <div class="flex justify-between mt-sm text-label-sm text-on-surface-variant">
+                            <span>S/. 0</span>
+                            <span id="priceValue">S/. 5,000+</span>
+                        </div>
+                    </div>                    
                 </div>
             </aside>
             <!-- Product Grid -->
