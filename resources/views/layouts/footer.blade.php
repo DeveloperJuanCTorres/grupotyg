@@ -2,16 +2,28 @@
     <div class="max-w-7xl mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 uppercase tracking-widest text-xs">
         <div class="space-y-6">
             <div class="flex items-center space-x-2">
-                <img src="{{asset('img/isotipo-master.png')}}" class="object-contain" width="70" alt="">
+                <img src="{{asset('storage/' . $company->logo)}}" class="object-contain" width="70" alt="">
                 <span class="text-2xl font-bold text-primary" style="text-transform: none !important;">
                     Grupo TyG
                 </span>
             </div>
-            <p class="text-zinc-500 normal-case tracking-normal">Precision systems for the next decade of digital evolution.</p>
+            <p class="text-zinc-500 normal-case tracking-normal">P{{$company->descripcion}}</p>
             <div class="flex space-x-4">
-                <span class="material-symbols-outlined text-zinc-500 hover:text-indigo-400 cursor-pointer transition-colors">share</span>
-                <span class="material-symbols-outlined text-zinc-500 hover:text-indigo-400 cursor-pointer transition-colors">language</span>
-                <span class="material-symbols-outlined text-zinc-500 hover:text-indigo-400 cursor-pointer transition-colors">mail</span>
+                <a href="{{$company->facebook_link}}" target="_blank" class="text-zinc-500 hover:text-indigo-400 transition-colors">
+                    <i class="fa-brands fa-facebook-f text-xl"></i>
+                </a>
+
+                <a href="{{$company->instagram_link}}" target="_blank" class="text-zinc-500 hover:text-indigo-400 transition-colors">
+                    <i class="fa-brands fa-instagram text-xl"></i>
+                </a>
+
+                <a href="{{$company->tiktok_link}}" target="_blank" class="text-zinc-500 hover:text-indigo-400 transition-colors">
+                    <i class="fa-brands fa-tiktok text-xl"></i>
+                </a>
+
+                <a href="{{$company->youtube_link}}" target="_blank" class="text-zinc-500 hover:text-indigo-400 transition-colors">
+                    <i class="fa-brands fa-youtube text-xl"></i>
+                </a>
             </div>
         </div>
         <div class="space-y-6">

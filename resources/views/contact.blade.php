@@ -5,21 +5,21 @@
 <div class="flex-grow pt-32 pb-2xl px-6 md:px-margin max-w-screen-2xl mx-auto w-full">
     <!-- Hero Section -->
     <header class="mb-2xl">
-        <h1 class="font-display-xl text-display-xl text-white mb-md">Get in touch with the future.</h1>
+        <h1 class="font-display-xl text-display-xl text-white mb-md">Conéctate con el futuro.</h1>
         <p class="text-body-lg text-on-surface-variant max-w-2xl font-body-lg">
-            Whether you have questions about our precision systems or want to discuss enterprise solutions, our technical team is ready to assist.
+            Tanto si tiene preguntas sobre nuestro sistema de facturación electrónica como si desea hablar sobre soluciones empresariales, nuestro equipo técnico está listo para ayudarle.
         </p>
     </header>
     <!-- Split Layout Design -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-2xl">
         <!-- Contact Form Side -->
         <div class="glass-surface p-lg md:p-2xl rounded-xl shadow-2xl">
-            <h2 class="font-headline-lg text-headline-lg text-white mb-lg">Send us a message</h2>
+            <h2 class="font-headline-lg text-headline-lg text-white mb-lg">Envíanos un mensaje</h2>
             <form class="space-y-lg">
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-lg">
                     <div class="flex flex-col gap-xs">
-                        <label class="text-label-sm text-on-surface-variant uppercase">Full Name</label>
+                        <label class="text-label-sm text-on-surface-variant uppercase">Nombre completo</label>
                         <input id="nombre" class="bg-surface-container-low border rounded-lg p-md text-white" placeholder="John Doe" type="text" />
                     </div>
 
@@ -58,33 +58,35 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-lg">
                     <div class="flex flex-col gap-sm">
                         <div class="flex items-center gap-sm text-secondary">
-                            <span class="material-symbols-outlined" data-icon="location_on">location_on</span>
-                            <span class="font-label-sm uppercase tracking-widest">Global HQ</span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span class="font-label-sm uppercase tracking-widest">Ubicados en</span>
                         </div>
                         <p class="text-body-md text-white font-headline-md">
-                            256 Precision Way<br />
-                            Tech District, SF 94105
+                            {{ $company->direccion_1 }}<br />
+                            {{ $company->direccion_2 }}<br />
+                            {{ $company->direccion_3 }}
                         </p>
                     </div>
                     <div class="flex flex-col gap-sm">
                         <div class="flex items-center gap-sm text-secondary">
-                            <span class="material-symbols-outlined" data-icon="mail">mail</span>
-                            <span class="font-label-sm uppercase tracking-widest">General Inquiries</span>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span class="font-label-sm uppercase tracking-widest">Consultas Generales</span>
                         </div>
                         <p class="text-body-md text-white font-headline-md">
-                            hello@technova.io<br />
-                            +1 (800) TECH-NOVA
+                            {{$company->email}}<br />
+                            {{$company->telefono_1}} <br>
+                            {{$company->telefono_2}}
                         </p>
                     </div>
                 </div>
                 <div class="mt-lg pt-lg border-t border-white/5 grid grid-cols-2 gap-lg">
                     <div>
-                        <span class="text-label-sm text-on-surface-variant block mb-xs">SUPPORT</span>
-                        <p class="text-white">Mon — Fri: 24/7</p>
+                        <span class="text-label-sm text-on-surface-variant block mb-xs">SOPORTE</span>
+                        <p class="text-white">Lun — Vier: 24/5</p>
                     </div>
                     <div>
-                        <span class="text-label-sm text-on-surface-variant block mb-xs">SALES</span>
-                        <p class="text-white">9AM — 6PM PST</p>
+                        <span class="text-label-sm text-on-surface-variant block mb-xs">VENTAS</span>
+                        <p class="text-white">9AM — 7PM Agente Comercial</p>
                     </div>
                 </div>
             </div>

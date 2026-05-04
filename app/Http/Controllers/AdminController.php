@@ -9,6 +9,9 @@ use App\Models\Project;
 use App\Models\Service;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\Contactanos;
+use App\Models\Brand;
+use App\Models\Product;
+use App\Models\Taxonomy;
 
 class AdminController extends Controller
 {
@@ -73,10 +76,37 @@ class AdminController extends Controller
         return view('contact', compact('nav'));
     }
 
-    public function tienda()
+    public function tienda(Request $request)
     {
         $nav = 'Tienda';
-        return view('store', compact('nav'));
+        $brands = Brand::all();
+        $categories = Taxonomy::all();
+
+        $query = Product::with(['brand', 'category']);
+
+        // 🔹 Marca
+        if ($request->filled('brand')) {
+            $query->where('brand_id', $request->brand);
+        }
+
+        // 🔹 Categoría
+        if ($request->filled('category')) {
+            $query->where('taxonomy_id', $request->category);
+        }
+
+        // 🔹 Precio
+        if ($request->filled('price')) {
+            $query->where('price_final', '<=', $request->price);
+        }
+
+        // 🔥 SIN appends
+        $products = $query->paginate(1);
+
+        if ($request->ajax()) {
+            return view('products', compact('products'))->render();
+        }
+
+        return view('store', compact('nav', 'brands', 'categories', 'products'));
     }
 
     public function correo(Request $request)
