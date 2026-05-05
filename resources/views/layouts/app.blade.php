@@ -249,7 +249,7 @@
   </main>
   <!-- WhatsApp Floating Icon -->
   <a
-    href="https://wa.me/51978209130?text=Hola,%20quiero%20información"
+    href="https://wa.me/51972378043?text=Hola,%20quiero%20información"
     target="_blank"
     class="fixed bottom-6 right-6 z-50 w-14 h-14 flex items-center justify-center bg-[#25D366] text-white rounded-full shadow-[0_0_20px_rgba(37,211,102,0.4)] hover:scale-110 transition-all duration-300 hover:shadow-[0_0_30px_rgba(37,211,102,0.7)]">
     <i class="fa-brands fa-whatsapp text-2xl"></i>
@@ -266,6 +266,7 @@
 
   <script src="{{asset('js/main.js')}}"></script> -->
   @stack('javascript')
+  
 </body>
 
 </html>

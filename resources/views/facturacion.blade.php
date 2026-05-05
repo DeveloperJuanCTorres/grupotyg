@@ -220,15 +220,15 @@
 <section class="py-3xl px-6 bg-surface-container-lowest">
     <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-2xl">
         <div class="flex-1 space-y-xl">
-            <h2 class="font-headline-lg text-headline-lg text-white">Engineered for Efficiency</h2>
+            <h2 class="font-headline-lg text-headline-lg text-white">Diseñado para la eficiencia</h2>
             <div class="space-y-lg">
                 <div class="flex gap-md">
                     <div class="mt-1 w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
                         <span class="material-symbols-outlined text-on-secondary-container text-sm">bolt</span>
                     </div>
                     <div>
-                        <h4 class="font-headline-md text-white text-lg">Increased Productivity</h4>
-                        <p class="text-on-surface-variant">Reduce manual billing time by 85% through automation and intelligent templating.</p>
+                        <h4 class="font-headline-md text-white text-lg">Mayor productividad</h4>
+                        <p class="text-on-surface-variant">Reduzca el tiempo de facturación manual en un 85 % mediante la automatización y el uso de plantillas inteligentes.</p>
                     </div>
                 </div>
                 <div class="flex gap-md">
@@ -236,8 +236,8 @@
                         <span class="material-symbols-outlined text-on-tertiary-container text-sm">shield</span>
                     </div>
                     <div>
-                        <h4 class="font-headline-md text-white text-lg">Enterprise Security</h4>
-                        <p class="text-on-surface-variant">Your data is protected by military-grade AES-256 encryption and multi-factor authentication.</p>
+                        <h4 class="font-headline-md text-white text-lg">Seguridad Empresarial</h4>
+                        <p class="text-on-surface-variant">Sus datos están protegidos por encriptación de grado militar AES-256 y autenticación de múltiples factores.</p>
                     </div>
                 </div>
                 <div class="flex gap-md">
@@ -245,8 +245,8 @@
                         <span class="material-symbols-outlined text-on-primary-container text-sm">savings</span>
                     </div>
                     <div>
-                        <h4 class="font-headline-md text-white text-lg">Cost Optimization</h4>
-                        <p class="text-on-surface-variant">Eliminate paper, postage, and manual archival costs while reducing the risk of tax penalties.</p>
+                        <h4 class="font-headline-md text-white text-lg">Optimización de Costos</h4>
+                        <p class="text-on-surface-variant">Elimine los costos de papel, correo y archivo manual mientras reduce el riesgo de sanciones fiscales.</p>
                     </div>
                 </div>
             </div>
@@ -254,14 +254,18 @@
         <div class="flex-1 w-full">
             <div class="relative p-gutter">
                 <div class="absolute inset-0 bg-indigo-500/10 rounded-[40px] blur-3xl"></div>
-                <div class="relative glass-card aspect-video rounded-[32px] overflow-hidden flex items-center justify-center">
-                    <img class="w-full h-full object-cover opacity-60" data-alt="abstract architectural visualization of data flow and connections in a dark blue and white modern office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGuQamDw_xuly-0aC-BVA4rweqNIwRNKFIUnjOAeWzxe7P_17zMfxrgYgk7uibavanRX-82mdckqoakKMwg8E9CA6SNF9H9c9f_bgh9Ao-kx70TKVSqpUZ57WRrtW8BGwFHXfUjzxT9qODHygC4OSDtMczRuFTXu-gNeFInSDzuHKnr3Vt4uzukgTS26dRZf7ftqG8HD0JPwGYzTyQgNfk_XEy2itxwiL3mxuGhN5_bW0ChLcB9C36Hl_XN5MZFUfDNLLM0UloiPin" />
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <button class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-xl hover:scale-110 transition-transform">
-                            <span class="material-symbols-outlined text-3xl">play_arrow</span>
-                        </button>
-                    </div>
+
+                <div class="relative glass-card aspect-video rounded-[32px] overflow-hidden">
+                    <iframe 
+                        class="w-full h-full rounded-[32px]"
+                        src="https://www.youtube.com/embed/qg36PAl5K5k?rel=0"
+                        title="Video de facturación electrónica"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
                 </div>
+
             </div>
         </div>
     </div>

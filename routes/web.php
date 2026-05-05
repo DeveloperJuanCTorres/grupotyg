@@ -34,7 +34,8 @@ Route::get('/store',[AdminController::class, 'tienda'])->name('store');
 Route::get('facturacion',[AdminController::class, 'facturacion'])->name('facturacion');
 
 
-Route::post('/correo',[adminController::class,'correo']);
+Route::post('/correo',[adminController::class,'correo'])->name('correo');
+// Route::post('/contact-send', [adminController::class, 'send'])->name('contact.send');
 
 
 Route::group(['prefix' => 'admin'], function () {
