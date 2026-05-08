@@ -98,11 +98,11 @@
                     <div class="relative">
                         <div class="absolute inset-0 bg-primary rounded-full animate-ping opacity-25"></div>
                         <div class="relative bg-primary text-on-primary p-md rounded-full shadow-2xl">
-                            <span class="material-symbols-outlined" data-icon="hub">hub</span>
+                            <i class="fa-solid fa-circle-nodes"></i>
                         </div>
                     </div>
                     <div class="bg-surface-container p-sm px-md rounded-full border border-white/10 shadow-xl backdrop-blur-md">
-                        <span class="text-white font-label-sm">TECHNOVA HQ</span>
+                        <span class="text-white font-label-sm">Grupo TyG</span>
                     </div>
                 </div>
                 <div class="absolute bottom-6 right-6">
