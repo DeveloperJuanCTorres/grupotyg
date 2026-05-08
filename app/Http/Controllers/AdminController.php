@@ -47,7 +47,7 @@ class AdminController extends Controller
     public function proyectos()
     {
         $nav = 'Proyectos';
-        $projects = Project::all();
+        $projects = Project::latest()->get();
         return view('project', compact('nav', 'projects'));
     }
 
