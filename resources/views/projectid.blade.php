@@ -45,7 +45,7 @@
                             <p class="font-label-sm text-outline">UPTIME SLA</p>
                         </div>
                     </div>
-
+                    @if($project->link_pagina)
                     <div class="pt-md">
                         <a href="{{$project->link_pagina}}" 
                         target="_blank"
@@ -54,7 +54,7 @@
                             Ver Proyecto
                         </a>
                     </div>
-
+                    @endif
                 </div>
             </div>
             <!-- Featured Image -->
