@@ -98,7 +98,7 @@
                     <div class="relative">
                         <div class="absolute inset-0 bg-primary rounded-full animate-ping opacity-25"></div>
                         <div class="relative bg-primary text-on-primary p-md rounded-full shadow-2xl">
-                            <i class="fa-solid fa-circle-nodes"></i>
+                            <i class="fa-solid fa-map-marker-alt"></i>
                         </div>
                     </div>
                     <div class="bg-surface-container p-sm px-md rounded-full border border-white/10 shadow-xl backdrop-blur-md">
