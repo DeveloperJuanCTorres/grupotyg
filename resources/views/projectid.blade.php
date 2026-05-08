@@ -35,7 +35,7 @@
                     <p class="font-body-md text-outline">
                         {!!$project->descripcion!!}
                     </p>
-                    <div class="pt-lg flex gap-md">
+                    <div class="pt-lg flex flex-col lg:flex-row gap-md">
                         <div class="glass p-lg rounded-xl flex-1 bg-secondary/10">
                             <p class="text-display-xl font-display-xl text-secondary">0.8ms</p>
                             <p class="font-label-sm text-outline">AVG LATENCY</p>
