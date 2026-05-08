@@ -45,6 +45,16 @@
                             <p class="font-label-sm text-outline">UPTIME SLA</p>
                         </div>
                     </div>
+
+                    <div class="pt-md">
+                        <a href="{{$project->link_pagina}}" 
+                        target="_blank"
+                        class="inline-flex items-center gap-2 px-lg py-md rounded-xl bg-secondary text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                            
+                            Ver Proyecto
+                        </a>
+                    </div>
+
                 </div>
             </div>
             <!-- Featured Image -->
