@@ -20,19 +20,19 @@
 
 <div class="max-w-[1440px] mx-auto px-margin pb-3xl">
     <!-- Filter Tabs (Internal Navigation) -->
-    <div class="flex flex-wrap justify-center gap-md mb-2xl">
+    <!-- <div class="flex flex-wrap justify-center gap-md mb-2xl">
         <button class="px-lg py-2 rounded-full glass-card text-primary font-label-sm uppercase border-primary/30">Todos los proyectos</button>
         <button class="px-lg py-2 rounded-full glass-card text-slate-400 font-label-sm uppercase hover:text-white transition-colors">IA &amp; Datos</button>
         <button class="px-lg py-2 rounded-full glass-card text-slate-400 font-label-sm uppercase hover:text-white transition-colors">Web3</button>
         <button class="px-lg py-2 rounded-full glass-card text-slate-400 font-label-sm uppercase hover:text-white transition-colors">Enterprise</button>
         <button class="px-lg py-2 rounded-full glass-card text-slate-400 font-label-sm uppercase hover:text-white transition-colors">Laboratorio</button>
-    </div>
+    </div> -->
     <!-- Grid Layout -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
         <!-- Card 1 -->
         @foreach($projects as $project)
         <div class="glass-card rounded-xl overflow-hidden group transition-all duration-300 flex flex-col">
-            <div class="aspect-video relative overflow-hidden">
+            <div class="relative overflow-hidden">
                 <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     data-alt="Futuristic dark blue interface with neon lines and abstract data visualization, professional tech aesthetic"
                     src="{{asset ('storage/' . $project->imagen)}}" />

@@ -49,11 +49,11 @@
             </div>
             <!-- Featured Image -->
             <div class="col-span-12 lg:col-span-7">
-                <div class="relative group overflow-hidden rounded-2xl aspect-video">
+                <div class="relative group overflow-hidden rounded-2xl">
                     <img alt="Digital Interface" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         data-alt="Futuristic dark blue high-tech server room with glowing blue fiber optic cables and digital data overlay in minimalist style"
                         src="{{asset('storage/' . $project->imagen)}}" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t"></div>
                     <div class="absolute bottom-lg left-lg">
                         <span class="glass px-md py-xs rounded-full text-white font-label-sm">Infraestructura primaria</span>
                     </div>
