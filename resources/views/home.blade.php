@@ -5,9 +5,9 @@
     
     <section class="tyg-hero tyg-grid" aria-label="Presentación de Grupo TyG">
         <div class="tyg-orb tyg-orb-a" aria-hidden="true"></div><div class="tyg-orb tyg-orb-b" aria-hidden="true"></div>
-        <div class="tyg-shell tyg-hero-grid">
+        <div class="tyg-shell tyg-hero-grid pt-5">
             <div class="tyg-hero-copy" data-reveal>
-                <div class="tyg-eyebrow"><span class="tyg-live"></span> GRUPO TYG INGENIEROS <span class="tyg-eyebrow-divider">/</span> TECNOLOGÍA E INNOVACIÓN</div>
+                <!-- <div class="tyg-eyebrow"><span class="tyg-live"></span> GRUPO TYG INGENIEROS <span class="tyg-eyebrow-divider">/</span> TECNOLOGÍA E INNOVACIÓN</div> -->
                 <h1>Convertimos tus ideas en <span class="tyg-gradient-text">tecnología que impulsa negocios.</span></h1>
                 <p>Desarrollamos páginas web, tiendas virtuales, sistemas empresariales y soluciones de facturación electrónica que acompañan el crecimiento de tu empresa.</p>
                 <div class="tyg-actions"><button class="tyg-btn tyg-btn-primary" type="button" data-open-contact>Iniciar un proyecto <span aria-hidden="true">↗</span></button><a class="tyg-btn tyg-btn-outline" href="#servicios">Explorar soluciones <span aria-hidden="true">↓</span></a></div>
