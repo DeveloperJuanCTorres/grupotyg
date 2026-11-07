@@ -201,7 +201,10 @@
     }
   </script>
 
-  <link href="{{asset('css/style.css')}}?v=<?php echo $version ?>" rel="stylesheet">
+  <!-- <link href="{{asset('css/style.css')}}?v=<?php echo $version ?>" rel="stylesheet"> -->
+  <link href="{{asset('css/grupotyg-home.css')}}?v=<?php echo $version ?>" rel="stylesheet">
+  <link href="{{asset('css/grupotyg-layout.css')}}?v=<?php echo $version ?>" rel="stylesheet">
+  <link href="{{asset('css/grupotyg-services.css')}}?v=<?php echo $version ?>" rel="stylesheet">
 
   <!-- <link href="{{asset('css/mystyle.css')}}?v=<?php echo $version ?>" rel="stylesheet"> -->
 
@@ -244,7 +247,7 @@
     }(document, 'script', 'facebook-jssdk'));
   </script>
   @include('layouts.header')
-  <main class="pt-16">
+  <main>
     @yield('content')
   </main>
   <!-- WhatsApp Floating Icon -->
@@ -265,6 +268,9 @@
 
 
   <script src="{{asset('js/main.js')}}"></script> -->
+  <script src="{{asset('js/grupotyg-home.js')}}"></script>
+  <script src="{{asset('js/grupotyg-layout.js')}}"></script>
+  <script src="{{asset('js/grupotyg-services.js')}}"></script>
   @stack('javascript')
   
 </body>

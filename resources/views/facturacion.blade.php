@@ -1,296 +1,107 @@
 @extends('layouts.app')
 
+@push('css')
+<link rel="stylesheet" href="{{ asset('css/grupotyg-facturacion.css') }}?v=2.1">
+@endpush
+
 @section('content')
-
-<!-- Hero Section -->
-<section class="relative overflow-hidden hero-pattern min-h-[819px] flex items-center px-6">
-    <div class="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-surface pointer-events-none"></div>
-    <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-2xl items-center relative z-10">
-        <div class="space-y-xl">
-            <span class="inline-block px-md py-xs rounded-full bg-primary/10 border border-primary/20 text-primary font-label-sm uppercase tracking-widest">Sistema SASS</span>
-            <h1 class="font-display-xl text-display-xl text-white leading-none">Facturación Electrónica Pro</h1>
-            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
-                Potencie su PYME con un sistema de facturación electrónica de alto rendimiento. Logre un cumplimiento normativo impecable, automatice los flujos de trabajo y haga crecer su negocio con seguridad de nivel institucional.
-            </p>
-            <div class="flex flex-wrap gap-md pt-md">                
-                <button class="glass-card text-white px-xl py-md rounded-xl font-headline-md font-bold hover:bg-white/10 transition-colors">
-                    Ver demo
-                </button>
-            </div>
+<div class="ft-page" id="factyg-top">
+  <section class="ft-hero">
+    <div class="ft-aurora ft-aurora-a" aria-hidden="true"></div><div class="ft-aurora ft-aurora-b" aria-hidden="true"></div>
+    <div class="ft-container ft-hero-grid">
+      <div class="ft-hero-copy ft-reveal">
+        <div class="ft-brand-lockup"><img src="{{ asset('img/factyg-logo-horizontal.png') }}" alt="FacTyG — ERP de facturación electrónica" width="520" height="174" fetchpriority="high"></div>
+        <div class="ft-eyebrow"><span class="ft-dot"></span> ERP DE FACTURACIÓN ELECTRÓNICA</div>
+        <h1>Facturar es solo el comienzo. <span>Controla todo tu negocio.</span></h1>
+        <p>Una solución para emitir comprobantes electrónicos y organizar las operaciones de tu empresa desde una experiencia práctica, clara y profesional.</p>
+        <div class="ft-hero-actions">
+          <a class="ft-btn ft-btn-primary" href="#ft-planes">Conocer los planes <span aria-hidden="true">↗</span></a>
+          <a class="ft-btn ft-btn-ghost" href="#ft-demo">Ver el sistema <span aria-hidden="true">▶</span></a>
         </div>
-        <div class="hidden lg:block relative">
-            <div class="absolute -inset-4 bg-primary/20 blur-[100px] rounded-full"></div>
-            <img class="relative z-10 w-full rounded-2xl border border-white/10 shadow-2xl" 
-                data-alt="futuristic digital dashboard showing financial metrics and cloud architecture nodes with blue and violet neon lights" 
-                src="{{asset ('img/fac.png')}}" />
-        </div>
+        <div class="ft-hero-points"><span>✓ Facturación electrónica</span><span>✓ Gestión comercial</span><span>✓ Opciones para diferentes negocios</span></div>
+      </div>
+      <div class="ft-hero-visual ft-reveal">
+        <div class="ft-visual-glow"></div>
+        <div class="ft-visual-top"><span class="ft-live-dot"></span> Tu negocio, mejor organizado</div>
+        <div class="ft-screen"><img src="{{ asset('img/fac.png') }}" alt="Vista del sistema de facturación electrónica FacTyG" loading="eager"></div>
+        <div class="ft-visual-bottom"><img class="ft-brand-mini" src="{{ asset('img/factyg-isotipo.png') }}" alt="" loading="lazy"><div><strong>FacTyG</strong><small>Gestión empresarial y facturación</small></div><span class="ft-visual-check material-symbols-outlined" aria-hidden="true">verified</span></div>
+      </div>
     </div>
-</section>
-<!-- Overview Section -->
-<!-- <section class="py-3xl px-6 bg-surface-container-lowest">
-    <div class="max-w-5xl mx-auto text-center space-y-lg">
-        <h2 class="font-headline-lg text-headline-lg text-white">¡Estamos listos para su negocio!</h2>
-        <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-            Facturación Electrónica Pro no es solo una herramienta de facturación, sino una infraestructura esencial para la pyme moderna. Acortamos la brecha entre las complejas regulaciones gubernamentales y sus operaciones comerciales diarias. Gracias a una arquitectura en la nube de alta disponibilidad, garantizamos que sus datos estén siempre accesibles, sus transacciones sean instantáneas y su cumplimiento normativo sea automático.
-        </p>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-lg pt-xl">
-            <div class="text-center">
-                <div class="text-display-xl font-display-xl text-primary mb-xs">99.9</div>
-                <div class="text-label-sm font-label-sm text-outline-variant uppercase tracking-widest">Tiempo de actividad %</div>
-            </div>
-            <div class="text-center">
-                <div class="text-display-xl font-display-xl text-primary mb-xs">50k+</div>
-                <div class="text-label-sm font-label-sm text-outline-variant uppercase tracking-widest">Facturas Mensuales</div>
-            </div>
-            <div class="text-center">
-                <div class="text-display-xl font-display-xl text-primary mb-xs">0.2s</div>
-                <div class="text-label-sm font-label-sm text-outline-variant uppercase tracking-widest">Latencia</div>
-            </div>
-            <div class="text-center">
-                <div class="text-display-xl font-display-xl text-primary mb-xs">100%</div>
-                <div class="text-label-sm font-label-sm text-outline-variant uppercase tracking-widest">Cumplimiento Tributario</div>
-            </div>
-        </div>
-    </div>
-</section> -->
-<!-- Key Features Grid -->
-<section class="py-3xl px-6 bg-surface-container-lowest">
-    <div class="max-w-7xl mx-auto">
-        <div class="mb-2xl">
-            <h2 class="font-headline-lg text-headline-lg text-white mb-md">¡Estamos listos para su negocio!</h2>
-            <p class="font-body-md text-on-surface-variant max-w-2xl">Si necesita un software de gestión empresarial, ha venido al lugar correcto.</p>
-            <p class="font-body-md text-on-surface-variant max-w-2xl">¡Tenemos un diseño modular limpio y moderno que seguramente se adaptará a su negocio!</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
-            <!-- Feature 1 -->
-            <div class="glass-card p-xl rounded-2xl group hover:border-primary/50 transition-all duration-300">
-                <i class="fas fa-store-alt fa-lg text-primary text-4xl mb-lg"></i>
-                <h3 class="font-headline-md text-white mb-md">Tienda departamental</h3>
-                <p class="text-on-surface-variant font-body-md">No busque más, nuestro software integral para tiendas departamentales. Ya sea que necesite vender ropa, zapatos, bolsos o cualquier otro tipo de artículo, nuestro software lo tiene cubierto. Además, nuestra interfaz fácil de usar facilita comenzar a vender de inmediato. Entonces, ¿por qué esperar? ¡Empiece hoy!</p>
-            </div>
-            <!-- Feature 2 -->
-            <div class="glass-card p-xl rounded-2xl group hover:border-primary/50 transition-all duration-300">
-                <i class="fas fa-store fa-lg text-primary text-4xl mb-lg"></i>
-                <h3 class="font-headline-md text-white mb-md">Venta al por mayor al por menor</h3>
-                <p class="text-on-surface-variant font-body-md">Un conjunto completo de funciones para gestionar tiendas minoristas y mayoristas. Establezca múltiples precios para diferentes segmentos de clientes o diferentes ubicaciones comerciales.</p>
-            </div>
-            <!-- Feature 3 -->
-            <div class="glass-card p-xl rounded-2xl group hover:border-primary/50 transition-all duration-300">
-                <i class="fas fa-notes-medical fa-lg text-primary text-4xl mb-lg"></i>
-                <h3 class="font-headline-md text-white mb-md">Farmacias / Boticas</h3>
-                <p class="text-on-surface-variant font-body-md">Nuestro software es perfecto para cualquier empresa farmacéutica. Puede establecer fechas de vencimiento de productos y números de lote, y venderlos en diferentes unidades de medida. Deje de vender artículos caducados y por caducar a los clientes. Consulte los informes detallados sobre el vencimiento de existencias por número de lote</p>
-            </div>
-            <!-- Feature 4 -->
-            <div class="glass-card p-xl rounded-2xl group hover:border-primary/50 transition-all duration-300">
-                <i class="fas fa-prescription-bottle fa-lg text-primary text-4xl mb-lg"></i>
-                <h3 class="font-headline-md text-white mb-md">Licorería</h3>
-                <p class="text-on-surface-variant font-body-md">Fácil de usar para todas las licorerías. Vender en ml de simple vender la botella, puedes gestionarlos fácilmente.</p>
-            </div>
-            <!-- Feature 5 -->
-            <div class="glass-card p-xl rounded-2xl group hover:border-primary/50 transition-all duration-300">
-                <i class="fas fa-mobile-alt fa-lg text-primary text-4xl mb-lg"></i>
-                <h3 class="font-headline-md text-white mb-md">Móviles y Electrónica</h3>
-                <p class="text-on-surface-variant font-body-md">Registre el número de serie del inventario, venda artículos con un número de serie particular</p>
-            </div>
-            <!-- Feature 6 -->
-            <div class="glass-card p-xl rounded-2xl group hover:border-primary/50 transition-all duration-300">
-                <i class="fas fa-wrench fa-lg text-primary text-4xl mb-lg"></i>
-                <h3 class="font-headline-md text-white mb-md">Tienda de reparacion</h3>
-                <p class="text-on-surface-variant font-body-md">Un conjunto completo de funciones para gestionar el negocio de reparaciones, crear hojas de trabajo, asignar hojas de trabajo al técnico, estado de reparación y convertir hojas de trabajo en facturas. Autoenlace para que los clientes verifiquen el progreso de la reparación</p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Pricing Section -->
-<section class="py-3xl px-6 bg-surface-container overflow-hidden">
-    <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-2xl space-y-md">
-            <h2 class="font-headline-lg text-headline-lg text-white">Nuestros planes</h2>
-            <p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">Automatiza la gestión de tu negocio a muy bajo costo</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-lg items-stretch">
-            <!-- Plan Básico -->
-            <div class="glass-card bg-surface-container-lowest p-xl rounded-3xl flex flex-col border-white/5 hover:border-white/20 transition-all duration-300">
-                <div class="mb-lg">
-                    <h3 class="font-headline-md text-white mb-xs">Plan Básico</h3>
-                    <div class="flex items-baseline gap-xs">
-                        <span class="text-3xl font-display-xl text-white">30</span>
-                        <span class="text-on-surface-variant font-label-sm uppercase tracking-widest">soles / mes</span>
-                    </div>
-                </div>
-                <ul class="space-y-md mb-2xl flex-grow">
-                    <li class="flex gap-md items-center text-on-surface-variant">
-                        <span class="material-symbols-outlined text-primary text-lg">receipt_long</span>
-                        <span class="font-body-md">100 receipts/month</span>
-                    </li>
-                    <li class="flex gap-md items-center text-on-surface-variant">
-                        <span class="material-symbols-outlined text-primary text-lg">support_agent</span>
-                        <span class="font-body-md">Included Support</span>
-                    </li>
-                    <li class="flex gap-md items-center text-on-surface-variant">
-                        <span class="material-symbols-outlined text-primary text-lg">group</span>
-                        <span class="font-body-md">10 Users</span>
-                    </li>
-                    <li class="flex gap-md items-center text-on-surface-variant">
-                        <span class="material-symbols-outlined text-primary text-lg">warehouse</span>
-                        <span class="font-body-md">2 Warehouses</span>
-                    </li>
-                </ul>
-                <button class="w-full py-md rounded-xl border border-white/20 text-white font-headline-md font-bold hover:bg-white/5 transition-all">
-                    Get Started
-                </button>
-            </div>
-            <!-- Plan Pro -->
-            <div class="glass-card bg-surface-container-lowest p-xl rounded-3xl flex flex-col border-primary/40 relative shadow-[0_0_40px_rgba(192,193,255,0.1)] scale-105 z-10">
-                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary px-md py-xs rounded-full">
-                    <span class="text-on-primary font-label-sm uppercase tracking-widest">Recommended</span>
-                </div>
-                <div class="mb-lg">
-                    <h3 class="font-headline-md text-white mb-xs">Plan Pro</h3>
-                    <div class="flex items-baseline gap-xs">
-                        <span class="text-3xl font-display-xl text-primary">100</span>
-                        <span class="text-on-surface-variant font-label-sm uppercase tracking-widest">soles / mes</span>
-                    </div>
-                </div>
-                <ul class="space-y-md mb-2xl flex-grow">
-                    <li class="flex gap-md items-center text-white">
-                        <span class="material-symbols-outlined text-primary text-lg">receipt_long</span>
-                        <span class="font-body-md">500 receipts/month</span>
-                    </li>
-                    <li class="flex gap-md items-center text-white">
-                        <span class="material-symbols-outlined text-primary text-lg">verified</span>
-                        <span class="font-body-md">Priority Support</span>
-                    </li>
-                    <li class="flex gap-md items-center text-white">
-                        <span class="material-symbols-outlined text-primary text-lg">group</span>
-                        <span class="font-body-md">50 Users</span>
-                    </li>
-                    <li class="flex gap-md items-center text-white">
-                        <span class="material-symbols-outlined text-primary text-lg">warehouse</span>
-                        <span class="font-body-md">5 Warehouses</span>
-                    </li>
-                    <li class="flex gap-md items-center text-white">
-                        <span class="material-symbols-outlined text-primary text-lg">monitoring</span>
-                        <span class="font-body-md">Advanced Analytics</span>
-                    </li>
-                </ul>
-                <button class="w-full py-md rounded-xl bg-primary text-on-primary font-headline-md font-bold hover:shadow-[0_0_25px_rgba(192,193,255,0.5)] transition-all">
-                    Get Started
-                </button>
-            </div>
-            <!-- Plan Enterprise -->
-            <div class="glass-card bg-surface-container-lowest p-xl rounded-3xl flex flex-col border-white/5 hover:border-white/20 transition-all duration-300">
-                <div class="mb-lg">
-                    <h3 class="font-headline-md text-white mb-xs">Plan Enterprise</h3>
-                    <div class="flex items-baseline gap-xs">
-                        <span class="text-3xl font-display-xl text-white">150</span>
-                        <span class="text-on-surface-variant font-label-sm uppercase tracking-widest">soles / mes</span>
-                    </div>
-                </div>
-                <ul class="space-y-md mb-2xl flex-grow">
-                    <li class="flex gap-md items-center text-on-surface-variant">
-                        <span class="material-symbols-outlined text-primary text-lg">all_inclusive</span>
-                        <span class="font-body-md">Unlimited receipts</span>
-                    </li>
-                    <li class="flex gap-md items-center text-on-surface-variant">
-                        <span class="material-symbols-outlined text-primary text-lg">headset_mic</span>
-                        <span class="font-body-md">24/7 Dedicated Support</span>
-                    </li>
-                    <li class="flex gap-md items-center text-on-surface-variant">
-                        <span class="material-symbols-outlined text-primary text-lg">groups_3</span>
-                        <span class="font-body-md">Unlimited Users</span>
-                    </li>
-                    <li class="flex gap-md items-center text-on-surface-variant">
-                        <span class="material-symbols-outlined text-primary text-lg">domain</span>
-                        <span class="font-body-md">Unlimited Warehouses</span>
-                    </li>
-                    <li class="flex gap-md items-center text-on-surface-variant">
-                        <span class="material-symbols-outlined text-primary text-lg">integration_instructions</span>
-                        <span class="font-body-md">Custom Integrations</span>
-                    </li>
-                </ul>
-                <button class="w-full py-md rounded-xl border border-white/20 text-white font-headline-md font-bold hover:bg-white/5 transition-all">
-                    Get Started
-                </button>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Benefits Section -->
-<section class="py-3xl px-6 bg-surface-container-lowest">
-    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-2xl">
-        <div class="flex-1 space-y-xl">
-            <h2 class="font-headline-lg text-headline-lg text-white">Diseñado para la eficiencia</h2>
-            <div class="space-y-lg">
-                <div class="flex gap-md">
-                    <div class="mt-1 w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
-                        <span class="material-symbols-outlined text-on-secondary-container text-sm">bolt</span>
-                    </div>
-                    <div>
-                        <h4 class="font-headline-md text-white text-lg">Mayor productividad</h4>
-                        <p class="text-on-surface-variant">Reduzca el tiempo de facturación manual en un 85 % mediante la automatización y el uso de plantillas inteligentes.</p>
-                    </div>
-                </div>
-                <div class="flex gap-md">
-                    <div class="mt-1 w-8 h-8 rounded-full bg-tertiary-container flex items-center justify-center shrink-0">
-                        <span class="material-symbols-outlined text-on-tertiary-container text-sm">shield</span>
-                    </div>
-                    <div>
-                        <h4 class="font-headline-md text-white text-lg">Seguridad Empresarial</h4>
-                        <p class="text-on-surface-variant">Sus datos están protegidos por encriptación de grado militar AES-256 y autenticación de múltiples factores.</p>
-                    </div>
-                </div>
-                <div class="flex gap-md">
-                    <div class="mt-1 w-8 h-8 rounded-full bg-primary-container flex items-center justify-center shrink-0">
-                        <span class="material-symbols-outlined text-on-primary-container text-sm">savings</span>
-                    </div>
-                    <div>
-                        <h4 class="font-headline-md text-white text-lg">Optimización de Costos</h4>
-                        <p class="text-on-surface-variant">Elimine los costos de papel, correo y archivo manual mientras reduce el riesgo de sanciones fiscales.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="flex-1 w-full">
-            <div class="relative p-gutter">
-                <div class="absolute inset-0 bg-indigo-500/10 rounded-[40px] blur-3xl"></div>
+  </section>
 
-                <div class="relative glass-card aspect-video rounded-[32px] overflow-hidden">
-                    <iframe 
-                        class="w-full h-full rounded-[32px]"
-                        src="https://www.youtube.com/embed/qg36PAl5K5k?rel=0"
-                        title="Video de facturación electrónica"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                    </iframe>
-                </div>
+  <nav class="ft-section-nav" aria-label="Navegación de facturación"><div class="ft-container ft-section-nav-inner">
+    <a href="#ft-soluciones">Soluciones</a><a href="#ft-beneficios">Beneficios</a><a href="#ft-planes">Planes</a><a href="#ft-demo">Video demostrativo</a><a href="#ft-preguntas">Preguntas frecuentes</a>
+  </div></nav>
 
-            </div>
-        </div>
+  <section class="ft-section" id="ft-soluciones">
+    <div class="ft-container">
+      <div class="ft-heading ft-reveal"><div class="ft-kicker">SOLUCIONES POR NEGOCIO</div><h2>Un sistema que se adapta <span>a tu forma de trabajar.</span></h2><p>Explora las aplicaciones de FacTyG para distintos sectores comerciales. Consulta con nuestro equipo las funciones disponibles para tu plan.</p></div>
+      <div class="ft-sector-grid">
+        @php
+          $sectores = [
+            ['icon'=>'storefront','title'=>'Tiendas y comercios','desc'=>'Organiza ventas, productos y operaciones de tu tienda con una interfaz fácil de utilizar.','tag'=>'COMERCIO'],
+            ['icon'=>'inventory_2','title'=>'Mayoristas y minoristas','desc'=>'Gestiona operaciones comerciales para diferentes clientes y modalidades de venta.','tag'=>'DISTRIBUCIÓN'],
+            ['icon'=>'medication','title'=>'Farmacias y boticas','desc'=>'Consulta las opciones para el seguimiento de productos, lotes y fechas de vencimiento.','tag'=>'SALUD'],
+            ['icon'=>'local_bar','title'=>'Licorerías','desc'=>'Facilita el registro y la venta de artículos con diferentes presentaciones.','tag'=>'RETAIL'],
+            ['icon'=>'devices','title'=>'Móviles y electrónica','desc'=>'Organiza productos y consulta las funciones de control por número de serie.','tag'=>'TECNOLOGÍA'],
+            ['icon'=>'build','title'=>'Talleres y reparaciones','desc'=>'Gestiona servicios, trabajos y el seguimiento de las reparaciones de tus clientes.','tag'=>'SERVICIOS'],
+          ];
+        @endphp
+        @foreach($sectores as $sector)
+        <article class="ft-sector ft-reveal">
+          <div class="ft-sector-top"><div class="ft-icon"><span class="material-symbols-outlined" aria-hidden="true">{{ $sector['icon'] }}</span></div><span class="ft-sector-tag">{{ $sector['tag'] }}</span></div>
+          <h3>{{ $sector['title'] }}</h3><p>{{ $sector['desc'] }}</p>
+          <a href="https://wa.me/51972378043?text={{ urlencode('Hola, deseo información de FacTyG para ' . $sector['title']) }}" target="_blank" rel="noopener noreferrer">Consultar solución <span aria-hidden="true">↗</span></a>
+        </article>
+        @endforeach
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Testimonial -->
-<section class="py-3xl px-6 relative overflow-hidden">
-    <div class="max-w-4xl mx-auto relative z-10">
-        <div class="glass-card p-2xl rounded-3xl text-center space-y-xl border-primary/20">
-            <span class="material-symbols-outlined text-primary text-6xl opacity-50">format_quote</span>
-            <h3 class="font-headline-lg text-white italic font-light leading-snug">
-                "Since implementing Technova's invoicing pro, our accounting department has cut reporting cycles by two weeks. The compliance is bulletproof and the interface is incredibly intuitive."
-            </h3>
-            <div class="flex flex-col items-center gap-sm">
-                <div class="w-16 h-16 rounded-full border-2 border-primary p-xs">
-                    <img class="w-full h-full object-cover rounded-full" data-alt="professional businessman headshot with clean haircut and blazer against neutral dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDQRLqur-dSKM4UmpHOSsT6qym5dmtO-c38cj1380I9p43amWRVnGSteES_j3j63glMlJQxhdLU63o9gJDlIbnDpufFObKXJDXF9vQDdToxvU5wPEV4FgYHaqpVqr-meIhT-WJXDaBg1H9R26lv94Mq6oneUb74QBDLYht9IDIBRv0cBYslLMQg0XqfY0W1Yu-BMTAiDIKqKqBTh6Ra5rTOCyQXzJsYLPWR9-_sEcrBh1qck4maOxO8UX8FUJt3KyNCOok12fQhbNt" />
-                </div>
-                <div>
-                    <div class="font-headline-md text-white text-lg">Marcus Sterling</div>
-                    <div class="font-label-sm text-outline-variant uppercase tracking-widest">CTO, Apex Logistics</div>
-                </div>
-            </div>
-        </div>
+  <section class="ft-section ft-section-soft" id="ft-beneficios"><div class="ft-container ft-benefit-grid">
+    <div class="ft-reveal"><div class="ft-kicker">POR QUÉ FACTYG</div><h2>Menos tareas repetitivas. <span>Más tiempo para crecer.</span></h2><p class="ft-lead">FacTyG busca que las operaciones de tu negocio sean más ordenadas, desde el registro de una venta hasta la consulta de información comercial.</p>
+      <div class="ft-benefit-list"><div><span class="material-symbols-outlined">receipt_long</span><div><strong>Comprobantes electrónicos</strong><p>Centraliza la emisión y consulta de tus documentos comerciales.</p></div></div><div><span class="material-symbols-outlined">inventory</span><div><strong>Operaciones organizadas</strong><p>Administra la información de productos, ventas y clientes.</p></div></div><div><span class="material-symbols-outlined">monitoring</span><div><strong>Visibilidad para decidir</strong><p>Accede a información útil para dar seguimiento a tu actividad comercial.</p></div></div></div>
     </div>
-</section>
+    <div class="ft-showcase ft-reveal"><div class="ft-showcase-label"><span class="ft-dot"></span> UNA EXPERIENCIA MÁS SIMPLE</div><div class="ft-flow"><div><span class="material-symbols-outlined">shopping_cart_checkout</span><strong>Registra una venta</strong><small>Organiza tu operación</small></div><span class="material-symbols-outlined ft-flow-arrow">arrow_downward</span><div><span class="material-symbols-outlined">description</span><strong>Emite el comprobante</strong><small>Desde tu sistema</small></div><span class="material-symbols-outlined ft-flow-arrow">arrow_downward</span><div><span class="material-symbols-outlined">insights</span><strong>Consulta tus resultados</strong><small>Información para gestionar</small></div></div></div>
+  </div></section>
 
+  <section class="ft-section" id="ft-planes"><div class="ft-container">
+    <div class="ft-heading ft-reveal"><div class="ft-kicker">PLANES FACTYG</div><h2>Elige cómo quieres <span>hacer crecer tu negocio.</span></h2><p>Compara las alternativas y consulta qué incluye cada una antes de contratar.</p></div>
+    <div class="ft-pricing-grid">
+      @php
+        $planes = [
+          ['nombre'=>'Básico','precio'=>'30','descripcion'=>'Para negocios que están comenzando a organizar sus ventas.','features'=>['Hasta 100 comprobantes al mes','Soporte incluido','Hasta 10 usuarios','Hasta 2 almacenes'],'popular'=>false],
+          ['nombre'=>'Pro','precio'=>'100','descripcion'=>'Para empresas con más operaciones y necesidades de gestión.','features'=>['Hasta 500 comprobantes al mes','Soporte prioritario','Hasta 50 usuarios','Hasta 5 almacenes','Analítica avanzada'],'popular'=>true],
+          ['nombre'=>'Enterprise','precio'=>'150','descripcion'=>'Para operaciones que necesitan mayor capacidad y flexibilidad.','features'=>['Comprobantes sin límite indicado','Soporte dedicado','Usuarios sin límite indicado','Almacenes sin límite indicado','Integraciones a medida'],'popular'=>false],
+        ];
+      @endphp
+      @foreach($planes as $plan)
+      <article class="ft-price-card {{ $plan['popular'] ? 'ft-price-popular' : '' }} ft-reveal">
+        @if($plan['popular'])<div class="ft-popular-label">PLAN DESTACADO</div>@endif
+        <div class="ft-plan-title">{{ $plan['nombre'] }}</div><p class="ft-plan-desc">{{ $plan['descripcion'] }}</p>
+        <div class="ft-price"><small>S/</small><strong>{{ $plan['precio'] }}</strong><span>/ mes</span></div>
+        <div class="ft-plan-divider"></div><div class="ft-plan-includes">Características indicadas en el plan</div>
+        <ul>@foreach($plan['features'] as $feature)<li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span>{{ $feature }}</li>@endforeach</ul>
+        <a class="ft-btn {{ $plan['popular'] ? 'ft-btn-primary' : 'ft-btn-outline' }} ft-plan-button" href="https://wa.me/51972378043?text={{ urlencode('Hola, quiero consultar el precio, condiciones y disponibilidad del plan FacTyG ' . $plan['nombre']) }}" target="_blank" rel="noopener noreferrer">Consultar plan <span aria-hidden="true">↗</span></a>
+      </article>
+      @endforeach
+    </div>
+    <p class="ft-price-note">* Precios y características mostrados según la información de la página original. Confirma vigencia, impuestos, límites, soporte y condiciones comerciales antes de publicarlos como oferta definitiva.</p>
+  </div></section>
 
+  <section class="ft-section ft-section-soft" id="ft-demo"><div class="ft-container ft-demo-grid"><div class="ft-reveal"><div class="ft-kicker">CONOCE EL SISTEMA</div><h2>Mira FacTyG <span>en acción.</span></h2><p class="ft-lead">Descubre cómo puede ayudarte una solución de facturación y gestión empresarial. Si quieres evaluar su uso en tu negocio, conversemos.</p><a class="ft-btn ft-btn-primary" href="https://wa.me/51972378043?text={{ urlencode('Hola, quiero solicitar una demostración de FacTyG') }}" target="_blank" rel="noopener noreferrer">Solicitar demostración <span aria-hidden="true">↗</span></a></div><div class="ft-video-wrap ft-reveal"><iframe src="https://www.youtube-nocookie.com/embed/qg36PAl5K5k?rel=0" title="Video de facturación electrónica FacTyG" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div></section>
+
+  <section class="ft-section" id="ft-preguntas"><div class="ft-container ft-faq-grid"><div class="ft-reveal"><div class="ft-kicker">RESOLVEMOS TUS DUDAS</div><h2>Preguntas <span>frecuentes.</span></h2><p class="ft-lead">La elección de un sistema debe ser sencilla y transparente.</p></div><div class="ft-faq-list ft-reveal">
+    <details><summary>¿Puedo solicitar una demostración antes de contratar?<span class="material-symbols-outlined">add</span></summary><p>Sí, puedes contactar al equipo comercial para coordinar una presentación del sistema y revisar si se adapta a tus operaciones.</p></details>
+    <details><summary>¿Qué plan conviene a mi negocio?<span class="material-symbols-outlined">add</span></summary><p>Depende de tu volumen de comprobantes, usuarios, almacenes y las funciones que necesites. Nuestro equipo puede ayudarte a evaluar las alternativas.</p></details>
+    <details><summary>¿FacTyG se adapta a diferentes rubros?<span class="material-symbols-outlined">add</span></summary><p>La solución contempla escenarios comerciales como tiendas, mayoristas, farmacias y talleres. Consulta la disponibilidad de funciones específicas para tu actividad.</p></details>
+    <details><summary>¿Cómo puedo consultar las condiciones del servicio?<span class="material-symbols-outlined">add</span></summary><p>Escríbenos por WhatsApp para recibir información actualizada sobre precios, implementación, soporte y características de cada plan.</p></details>
+  </div></div></section>
+
+  <section class="ft-bottom-section"><div class="ft-container"><div class="ft-bottom-cta ft-reveal"><div><img class="ft-cta-brand" src="{{ asset('img/factyg-logo-horizontal.png') }}" alt="FacTyG" loading="lazy"><div class="ft-kicker">TU SIGUIENTE PASO</div><h2>Tu negocio puede operar <span>de una forma más inteligente.</span></h2><p>Cuéntanos qué necesitas y conoce cómo FacTyG puede acompañar el crecimiento de tu empresa.</p></div><a class="ft-btn ft-btn-primary" href="https://wa.me/51972378043?text={{ urlencode('Hola, quiero información para implementar FacTyG en mi negocio') }}" target="_blank" rel="noopener noreferrer">Hablar con un asesor <span aria-hidden="true">↗</span></a></div></div></section>
+</div>
 @endsection
+
+@push('javascript')
+<script src="{{ asset('js/grupotyg-facturacion.js') }}?v=2.1" defer></script>
+@endpush

@@ -1,66 +1,22 @@
-<footer class="bg-zinc-950 w-full border-t border-zinc-800 mt-auto">
-    <div class="max-w-7xl mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 uppercase tracking-widest text-xs">
-        <div class="space-y-6">
-            <div class="flex items-center space-x-2">
-                <img src="{{asset('storage/' . $company->logo)}}" class="object-contain" width="70" alt="">
-                <span class="text-2xl font-bold text-primary" style="text-transform: none !important;">
-                    Grupo TyG
-                </span>
-            </div>
-            <p class="text-zinc-500 normal-case tracking-normal">P{{$company->descripcion}}</p>
-            <div class="flex space-x-4">
-                <a href="{{$company->facebook_link}}" target="_blank" class="text-zinc-500 hover:text-indigo-400 transition-colors">
-                    <i class="fa-brands fa-facebook-f text-xl"></i>
-                </a>
-
-                <a href="{{$company->instagram_link}}" target="_blank" class="text-zinc-500 hover:text-indigo-400 transition-colors">
-                    <i class="fa-brands fa-instagram text-xl"></i>
-                </a>
-
-                <a href="{{$company->tiktok_link}}" target="_blank" class="text-zinc-500 hover:text-indigo-400 transition-colors">
-                    <i class="fa-brands fa-tiktok text-xl"></i>
-                </a>
-
-                <a href="{{$company->youtube_link}}" target="_blank" class="text-zinc-500 hover:text-indigo-400 transition-colors">
-                    <i class="fa-brands fa-youtube text-xl"></i>
-                </a>
-            </div>
+<footer class="tyg-footer relative overflow-hidden mt-auto" role="contentinfo">
+  <div class="tyg-footer-glow" aria-hidden="true"></div>
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 relative z-10">
+    <div class="tyg-footer-top py-14 md:py-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+      <div class="lg:col-span-1 space-y-5">
+        <a href="{{ route('index') }}" class="inline-flex items-center gap-3"><img src="{{ asset('storage/' . $company->logo) }}" alt="Grupo TyG Ingenieros" class="w-14 h-14 object-contain"><span class="flex flex-col"><strong class="text-white text-xl">Grupo <span class="tyg-gradient-text">TyG</span></strong><small class="text-slate-400 text-[10px] uppercase tracking-[.2em]">Tecnología e Innovación</small></span></a>
+        <p class="text-slate-400 text-sm leading-7">{{ $company->descripcion }}</p>
+        <div class="flex gap-3">
+          @foreach (['facebook_link' => 'fa-facebook-f', 'instagram_link' => 'fa-instagram', 'tiktok_link' => 'fa-tiktok', 'youtube_link' => 'fa-youtube'] as $field => $icon)
+            @if (!empty($company->{$field}))
+              <a class="tyg-social" href="{{ $company->{$field} }}" target="_blank" rel="noopener noreferrer" aria-label="{{ str_replace('_link', '', $field) }}"><i class="fa-brands {{ $icon }}"></i></a>
+            @endif
+          @endforeach
         </div>
-        <div class="space-y-6">
-            <h4 class="text-primary font-bold">Soluciones</h4>
-            <nav class="flex flex-col space-y-4 text-zinc-500">
-                <a class="hover:text-indigo-400 transition-colors" href="#">Facturación electrónica</a>
-                <a class="hover:text-indigo-400 transition-colors" href="#">Desarrollo web</a>
-                <a class="hover:text-indigo-400 transition-colors" href="#">Business Intelligence</a>
-                <a class="hover:text-indigo-400 transition-colors" href="#">E-Commerce</a>
-                <a class="hover:text-indigo-400 transition-colors" href="#">Servicios de TI</a>
-            </nav>
-        </div>
-        <div class="space-y-6">
-            <h4 class="text-primary font-bold">Recursos</h4>
-            <nav class="flex flex-col space-y-4 text-zinc-500">
-                <a class="hover:text-indigo-400 transition-colors" href="{{ route('index') }}">Inicio</a>
-                <a class="hover:text-indigo-400 transition-colors" href="{{ route('store') }}">Tienda</a>
-                <a class="hover:text-indigo-400 transition-colors" href="{{ route('service') }}">Servicios</a>
-                <a class="hover:text-indigo-400 transition-colors" href="{{ route('project') }}">Proyecto</a>
-            </nav>
-        </div>
-        <div class="space-y-6">
-            <h4 class="text-primary font-bold">Company</h4>
-            <nav class="flex flex-col space-y-4 text-zinc-500">
-                <a class="hover:text-indigo-400 transition-colors" href="#">Privacy</a>
-                <a class="hover:text-indigo-400 transition-colors" href="#">Terms</a>
-                <a class="hover:text-indigo-400 transition-colors" href="#">Careers</a>
-                <a class="hover:text-indigo-400 transition-colors" href="#">Ethics</a>
-            </nav>
-        </div>
+      </div>
+      <div><h3 class="tyg-footer-title">Soluciones</h3><nav class="tyg-footer-links" aria-label="Soluciones"><a href="{{ route('facturacion') }}">Facturación electrónica</a><a href="{{ route('service') }}">Desarrollo web</a><a href="{{ route('service') }}">E-Commerce</a><a href="{{ route('service') }}">Sistemas a medida</a><a href="{{ route('service') }}">Business Intelligence</a></nav></div>
+      <div><h3 class="tyg-footer-title">Explora</h3><nav class="tyg-footer-links" aria-label="Explora"><a href="{{ route('index') }}">Inicio</a><a href="{{ route('store') }}">Tienda tecnológica</a><a href="{{ route('service') }}">Servicios</a><a href="{{ route('project') }}">Proyectos</a><a href="{{ route('contact') }}">Contacto</a></nav></div>
+      <div><h3 class="tyg-footer-title">Conversemos</h3><p class="text-slate-400 text-sm leading-7 mb-5">¿Tienes un proyecto en mente? Podemos ayudarte a convertirlo en una solución digital.</p><a class="tyg-footer-contact" href="https://wa.me/51972378043" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined">chat</span> +51 972 378 043</a><a class="tyg-footer-contact" href="tel:+51978209130"><span class="material-symbols-outlined">call</span> +51 978 209 130</a><a class="tyg-footer-contact" href="mailto:informes@grupotyg.pe"><span class="material-symbols-outlined">mail</span> informes@grupotyg.pe</a><p class="text-slate-500 text-xs mt-4">Lima, Perú</p></div>
     </div>
-    <div class="max-w-7xl mx-auto px-8 py-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-zinc-500 font-space-grotesk uppercase tracking-widest text-[10px]">
-        <div>© 2026 GRUPO TYG INGENIEROS. TODOS LOS DERECHOS RESERVADOS.</div>
-        <!-- <div class="flex gap-8">
-            <a class="hover:text-white transition-colors" href="#">Sitemap</a>
-            <a class="hover:text-white transition-colors" href="#">Legal</a>
-            <a class="hover:text-white transition-colors" href="#">Security</a>
-        </div> -->
-    </div>
+    <div class="tyg-footer-bottom py-7 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-slate-500"><span>© {{ date('Y') }} Grupo TyG Ingenieros. Todos los derechos reservados.</span><span>Diseñado con <span class="text-cyan-400">tecnología e innovación</span>.</span></div>
+  </div>
 </footer>

@@ -1,223 +1,68 @@
 @extends('layouts.app')
 
+@push('css')
+<link rel="stylesheet" href="{{ asset('css/grupotyg-contact.css') }}">
+@endpush
+
 @section('content')
+<div class="tyg-contact relative overflow-hidden pt-32 pb-24 px-5 sm:px-8">
+    <div class="tyg-contact-orb" aria-hidden="true"></div>
+    <div class="max-w-7xl mx-auto relative z-10">
+        <header class="tyg-reveal text-center max-w-3xl mx-auto mb-16">
+            <span class="tyg-eyebrow"><span class="tyg-status-dot"></span> HABLEMOS DE TU PRÓXIMO PROYECTO</span>
+            <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold text-white tracking-tight leading-tight mt-6 mb-6">Grandes ideas.<br><span class="tyg-gradient-text">Conexiones reales.</span></h1>
+            <p class="text-base sm:text-lg text-slate-300 leading-relaxed">Cuéntanos qué quieres construir. En Grupo TyG Ingenieros convertimos tus necesidades en soluciones tecnológicas a medida.</p>
+        </header>
 
-<div class="flex-grow pt-32 pb-2xl px-6 md:px-margin max-w-screen-2xl mx-auto w-full">
-    <!-- Hero Section -->
-    <header class="mb-2xl">
-        <h1 class="font-display-xl text-display-xl text-white mb-md">Conéctate con el futuro.</h1>
-        <p class="text-body-lg text-on-surface-variant max-w-2xl font-body-lg">
-            Tanto si tiene preguntas sobre nuestro sistema de facturación electrónica como si desea hablar sobre soluciones empresariales, nuestro equipo técnico está listo para ayudarle.
-        </p>
-    </header>
-    <!-- Split Layout Design -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-2xl">
-        <!-- Contact Form Side -->
-        <div class="glass-surface p-lg md:p-2xl rounded-xl shadow-2xl">
-            <h2 class="font-headline-lg text-headline-lg text-white mb-lg">Envíanos un mensaje</h2>
-            <form class="space-y-lg">
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-lg">
-                    <div class="flex flex-col gap-xs">
-                        <label class="text-label-sm text-on-surface-variant uppercase">Nombre completo</label>
-                        <input id="nombre" class="bg-surface-container-low border rounded-lg p-md text-white" placeholder="John Doe" type="text" />
+        <div class="grid lg:grid-cols-12 gap-7 items-start">
+            <section class="tyg-contact-panel tyg-reveal lg:col-span-7 p-6 sm:p-10" aria-labelledby="contact-title">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="tyg-icon-box"><span class="material-symbols-outlined">outgoing_mail</span></div>
+                    <div><p class="text-xs tracking-[.2em] uppercase text-cyan-300 mb-1">Contacto directo</p><h2 id="contact-title" class="text-2xl sm:text-3xl font-bold text-white">Inicia una conversación</h2></div>
+                </div>
+                <form id="tygContactForm" action="{{ route('correo') }}" method="POST" class="space-y-5">
+                    @csrf
+                    <div class="grid sm:grid-cols-2 gap-5">
+                        <div><label for="tygNombre">Nombre completo *</label><input id="tygNombre" name="nombre" type="text" autocomplete="name" maxlength="120" required placeholder="Tu nombre"></div>
+                        <div><label for="tygEmail">Correo electrónico *</label><input id="tygEmail" name="email" type="email" autocomplete="email" maxlength="160" required placeholder="correo@empresa.com"></div>
                     </div>
-
-                    <div class="flex flex-col gap-xs">
-                        <label class="text-label-sm text-on-surface-variant uppercase">Email</label>
-                        <input id="email" class="bg-surface-container-low border rounded-lg p-md text-white" placeholder="correo@email.com" type="email" />
+                    <div class="grid sm:grid-cols-2 gap-5">
+                        <div><label for="tygTelefono">Teléfono *</label><input id="tygTelefono" name="telefono" type="tel" autocomplete="tel" maxlength="30" required placeholder="+51 999 999 999"></div>
+                        <div><label for="tygServicio">Servicio de interés *</label><select id="tygServicio" name="servicio" required><option value="">Selecciona un servicio</option><option value="Facturacion Electronica">Facturación electrónica</option><option value="Desarrollo Web">Desarrollo web</option><option value="Ecommerce">E-commerce</option><option value="Desarrollo de Sistemas a Medida">Sistemas a medida</option><option value="Business Intelligence">Business Intelligence</option><option value="Otro">Otro proyecto</option></select></div>
                     </div>
+                    <div><label for="tygMensaje">Cuéntanos sobre tu proyecto *</label><textarea id="tygMensaje" name="mensaje" rows="5" maxlength="3000" required placeholder="¿Qué necesitas desarrollar o mejorar?"></textarea></div>
+                    <div class="flex items-start gap-3 text-sm text-slate-400"><span class="material-symbols-outlined text-cyan-300 text-lg">lock</span><span>Utilizaremos tus datos únicamente para atender tu consulta.</span></div>
+                    <button type="submit" id="tygContactSubmit" class="tyg-primary-btn w-full sm:w-auto"><span class="material-symbols-outlined">send</span><span>Enviar consulta</span><span class="material-symbols-outlined">arrow_forward</span></button>
+                    <p id="tygContactFeedback" class="text-sm" role="status" aria-live="polite"></p>
+                </form>
+            </section>
+
+            <aside class="lg:col-span-5 space-y-6">
+                <div class="tyg-contact-panel tyg-reveal p-7 sm:p-8">
+                    <p class="text-xs tracking-[.2em] uppercase text-cyan-300 mb-3">Estamos conectados</p><h2 class="text-2xl font-bold text-white mb-7">Hablemos de tecnología</h2>
+                    <div class="space-y-6">
+                        @if($company->email)
+                        <div class="tyg-info-row"><span class="material-symbols-outlined">mail</span><div><span class="tyg-info-label">Correo corporativo</span><a href="mailto:{{ $company->email }}" class="tyg-info-link break-all">{{ $company->email }}</a></div></div>
+                        @endif
+                        @if($company->telefono_1)
+                        <div class="tyg-info-row"><span class="material-symbols-outlined">call</span><div><span class="tyg-info-label">Llámanos</span><a href="tel:{{ preg_replace('/[^+0-9]/', '', $company->telefono_1) }}" class="tyg-info-link">{{ $company->telefono_1 }}</a>@if($company->telefono_2)<a href="tel:{{ preg_replace('/[^+0-9]/', '', $company->telefono_2) }}" class="tyg-info-link">{{ $company->telefono_2 }}</a>@endif</div></div>
+                        @endif
+                        @if($company->direccion_1 || $company->direccion_2 || $company->direccion_3)
+                        <div class="tyg-info-row"><span class="material-symbols-outlined">location_on</span><div><span class="tyg-info-label">Nuestra ubicación</span><p class="text-white leading-relaxed">{{ collect([$company->direccion_1, $company->direccion_2, $company->direccion_3])->filter()->implode(', ') }}</p></div></div>
+                        @endif
+                    </div>
+                    <a href="https://wa.me/51972378043?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer" class="tyg-whatsapp-btn mt-8"><i class="fa-brands fa-whatsapp text-xl"></i> Conversar por WhatsApp <span class="material-symbols-outlined">north_east</span></a>
                 </div>
-
-                <div class="flex flex-col gap-xs">
-                    <label class="text-label-sm text-on-surface-variant uppercase">Teléfono</label>
-                    <input id="telefono" class="bg-surface-container-low border rounded-lg p-md text-white" placeholder="+51 999 999 999" type="tel" />
+                <div class="tyg-contact-panel tyg-reveal p-7 sm:p-8 relative overflow-hidden">
+                    <div class="tyg-small-glow" aria-hidden="true"></div><div class="relative"><div class="tyg-icon-box mb-5"><span class="material-symbols-outlined">deployed_code</span></div><h3 class="text-xl font-bold text-white mb-3">Tu próximo proyecto comienza aquí.</h3><p class="text-slate-300 leading-relaxed mb-6">Desarrollo web, comercio electrónico, facturación electrónica y software personalizado, desde la idea hasta su implementación.</p><a href="{{ route('service') }}" class="text-cyan-300 font-semibold inline-flex items-center gap-2 hover:text-white transition">Explorar servicios <span class="material-symbols-outlined text-lg">arrow_forward</span></a></div>
                 </div>
-
-                <div class="flex flex-col gap-xs">
-                    <label class="text-label-sm text-on-surface-variant uppercase">Servicio</label>
-                    <input id="servicio" class="bg-surface-container-low border rounded-lg p-md text-white" placeholder="Ej: Página web, sistema, ecommerce..." type="text" />
-                </div>
-
-                <div class="flex flex-col gap-xs">
-                    <label class="text-label-sm text-on-surface-variant uppercase">Mensaje</label>
-                    <textarea id="mensaje" class="bg-surface-container-low border rounded-lg p-md text-white resize-none" rows="5"></textarea>
-                </div>
-
-                <button type="button"
-                    class="Enviarconsulta w-full bg-gradient-to-r from-primary to-secondary text-white py-md rounded-lg">
-                    Enviar Consulta
-                </button>
-
-            </form>
+            </aside>
         </div>
-        <!-- Office Details & Map Side -->
-        <div class="flex flex-col gap-lg">
-            <!-- Details Card -->
-            <div class="glass-surface p-lg md:p-xl rounded-xl">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-lg">
-                    <div class="flex flex-col gap-sm">
-                        <div class="flex items-center gap-sm text-secondary">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span class="font-label-sm uppercase tracking-widest">Ubicados en</span>
-                        </div>
-                        <p class="text-body-md text-white font-headline-md">
-                            {{ $company->direccion_1 }}<br />
-                            {{ $company->direccion_2 }}<br />
-                            {{ $company->direccion_3 }}
-                        </p>
-                    </div>
-                    <div class="flex flex-col gap-sm">
-                        <div class="flex items-center gap-sm text-secondary">
-                            <i class="fa-solid fa-envelope"></i>
-                            <span class="font-label-sm uppercase tracking-widest">Consultas Generales</span>
-                        </div>
-                        <p class="text-body-md text-white font-headline-md">
-                            {{$company->email}}<br />
-                            {{$company->telefono_1}} <br>
-                            {{$company->telefono_2}}
-                        </p>
-                    </div>
-                </div>
-                <div class="mt-lg pt-lg border-t border-white/5 grid grid-cols-2 gap-lg">
-                    <div>
-                        <span class="text-label-sm text-on-surface-variant block mb-xs">SOPORTE</span>
-                        <p class="text-white">Lun — Vier: 24/5</p>
-                    </div>
-                    <div>
-                        <span class="text-label-sm text-on-surface-variant block mb-xs">VENTAS</span>
-                        <p class="text-white">9AM — 7PM Agente Comercial</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Embedded Map Replacement (Visual UI Element) -->
-            <div class="relative rounded-xl overflow-hidden glass-surface h-full min-h-[400px] border border-white/10 group">
-                <img class="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-60 transition-all duration-700" data-alt="high contrast dark mode architectural map of a modern city center with neon blue and purple accents" data-location="San Francisco" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkKr5Vt8tkpfFLD-oHEVG1mX3_LCKAx2xH2JsnYAUNVGiJzmy8oeawtWJ-U4eFmnDBI1NWl8VNZEnSgX0o2e4E_WV_t_OLDrZQ9ZkWwb0FuTxJpiqEpZUkAS4ZwpsVFd8VcOskjzGQ-2WroBLAastICWv8n-6wgQkpjEZExp4TWK9uAALGuamXUqWekSi6TxTG3SmpyAB4CyBVuJigoaSLQwr3mVJEb0HFfZhY0LKSqp8032I-aWQ9RVl7d6Ox7ZcaS--E2DxlxOU2" />
-                <div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent"></div>
-                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-sm">
-                    <div class="relative">
-                        <div class="absolute inset-0 bg-primary rounded-full animate-ping opacity-25"></div>
-                        <div class="relative bg-primary text-on-primary p-md rounded-full shadow-2xl">
-                            <i class="fa-solid fa-map-marker-alt"></i>
-                        </div>
-                    </div>
-                    <div class="bg-surface-container p-sm px-md rounded-full border border-white/10 shadow-xl backdrop-blur-md">
-                        <span class="text-white font-label-sm">Grupo TyG</span>
-                    </div>
-                </div>
-                <div class="absolute bottom-6 right-6">
-                    <button class="bg-surface-container-high/80 backdrop-blur-md p-sm rounded-lg border border-white/10 hover:bg-white/10 transition-colors">
-                        <span class="material-symbols-outlined text-white" data-icon="open_in_new">open_in_new</span>
-                    </button>
-                </div>
-            </div>
-        </div>
+        <section class="tyg-reveal mt-20 text-center"><p class="text-xs uppercase tracking-[.22em] text-cyan-300 mb-4">Nuestro compromiso</p><h2 class="text-2xl sm:text-4xl font-bold text-white mb-4">Tecnología e Innovación</h2><p class="text-slate-400 max-w-2xl mx-auto">Cada gran solución comienza escuchando una necesidad. Queremos conocer la tuya.</p></section>
     </div>
 </div>
-
-
-
 @endsection
 
 @push('javascript')
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-<script>
-    let token = $('meta[name="csrf-token"]').attr('content');
-
-    $(function() {
-        $(".Enviarconsulta").on('click', function() {
-            var nombre = $("#nombre").val();
-            var telefono = $("#telefono").val();
-            var email = $("#email").val();
-            var servicio = $("#servicio").val();
-            var mensaje = $("#mensaje").val();
-            if (nombre == '') {
-                Swal.fire({
-                    icon: 'warning',
-                    text: "Tienes que ingresar tu nombre",
-                });
-                return false;
-            }
-            if (telefono == '') {
-                Swal.fire({
-                    icon: 'warning',
-                    text: "Tienes que ingresar un número de contacto",
-                });
-                return false;
-            }
-            if (email == '') {
-                Swal.fire({
-                    icon: 'warning',
-                    text: "Tienes que ingresar una correo de contacto",
-                });
-                return false;
-            }
-            if (servicio == '') {
-                Swal.fire({
-                    icon: 'warning',
-                    text: "Ingresa el servicio en la cual estas interesado",
-                });
-                return false;
-            }
-            if (mensaje == '') {
-                Swal.fire({
-                    icon: 'warning',
-                    text: "Tienes que ingresar un mensaje",
-                });
-                return false;
-            }
-            Swal.fire({
-                header: '...',
-                title: 'loading...',
-                allowOutsideClick: false,
-                didOpen: () => {
-                    Swal.showLoading()
-                }
-            });
-
-            $.ajax({
-                url: "/correo",
-                method: "post",
-                dataType: 'json',
-                data: {
-                    _token: token,
-                    nombre: nombre,
-                    telefono: telefono,
-                    email: email,
-                    servicio: servicio,
-                    mensaje: mensaje,
-                },
-                success: function(response) {
-                    if (response.status) {
-                        Swal.fire({
-                            icon: 'success',
-                            title: 'OK',
-                            text: response.msg,
-                        })
-                    } else {
-                        Swal.fire({
-                            icon: 'warning',
-                            title: 'Oops...',
-                            text: response.msg,
-                        })
-                    }
-                    $("#nombre").val('');
-                    $("#telefono").val('');
-                    $("#email").val('');
-                    $("#servicio").val('');
-                    $("#mensaje").val('');
-                },
-                error: function() {
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Oops...!!',
-                        text: 'Algo salió mal, Inténtalo más tarde!',
-                    })
-                }
-            });
-        });
-    })
-</script>
+<script src="{{ asset('js/grupotyg-contact.js') }}" defer></script>
 @endpush

@@ -1,66 +1,84 @@
 @extends('layouts.app')
 
+@push('css')
+<link rel="stylesheet" href="{{ asset('css/grupotyg-projects.css') }}?v=2.0.0">
+@endpush
+
 @section('content')
-<!-- Hero Section -->
-<header class="relative pt-3xl pb-2xl px-margin text-center overflow-hidden">
-    <div class="absolute inset-0 z-0">
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(128,131,255,0.08)_0%,transparent_70%)]"></div>
-    </div>
-    <div class="relative z-10 max-w-4xl mx-auto">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary mb-lg">
-            <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
-            <span class="font-label-sm uppercase">Proyectos seleccionados</span>
-        </div>
-        <h1 class="font-display-xl text-display-xl text-white mb-md">Nuestras innovaciones</h1>
-        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-xl">
-            Exploramos la intersección entre la arquitectura basada en datos y el diseño centrado en el ser humano. Construimos el futuro de los ecosistemas técnicos.
-        </p>
-    </div>
-</header>
-
-<div class="max-w-[1440px] mx-auto px-margin pb-3xl">
-    <!-- Filter Tabs (Internal Navigation) -->
-    <!-- <div class="flex flex-wrap justify-center gap-md mb-2xl">
-        <button class="px-lg py-2 rounded-full glass-card text-primary font-label-sm uppercase border-primary/30">Todos los proyectos</button>
-        <button class="px-lg py-2 rounded-full glass-card text-slate-400 font-label-sm uppercase hover:text-white transition-colors">IA &amp; Datos</button>
-        <button class="px-lg py-2 rounded-full glass-card text-slate-400 font-label-sm uppercase hover:text-white transition-colors">Web3</button>
-        <button class="px-lg py-2 rounded-full glass-card text-slate-400 font-label-sm uppercase hover:text-white transition-colors">Enterprise</button>
-        <button class="px-lg py-2 rounded-full glass-card text-slate-400 font-label-sm uppercase hover:text-white transition-colors">Laboratorio</button>
-    </div> -->
-    <!-- Grid Layout -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
-        <!-- Card 1 -->
-        @foreach($projects as $project)
-        <div class="glass-card rounded-xl overflow-hidden group transition-all duration-300 flex flex-col">
-            <div class="relative overflow-hidden">
-                <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    data-alt="Futuristic dark blue interface with neon lines and abstract data visualization, professional tech aesthetic"
-                    src="{{asset ('storage/' . $project->imagen)}}" />
-                <div class="absolute top-md left-md">
-                    <span class="px-md py-1 bg-slate-950/60 backdrop-blur-md border border-white/10 rounded-full font-label-sm text-secondary uppercase tracking-tighter">{{$project->nombre_negocio}}</span>
+<div class="tyg-projects" id="tyg-projects">
+    <section class="tyg-projects-hero" aria-labelledby="projects-heading">
+        <div class="tyg-projects-orb tyg-projects-orb-a" aria-hidden="true"></div>
+        <div class="tyg-projects-orb tyg-projects-orb-b" aria-hidden="true"></div>
+        <div class="tyg-projects-shell tyg-projects-hero-grid">
+            <div class="tyg-reveal">
+                <span class="tyg-eyebrow"><span class="tyg-live-dot"></span> PORTAFOLIO · GRUPO TYG INGENIEROS</span>
+                <h1 id="projects-heading">Ideas que se convierten en <span class="tyg-gradient-text">soluciones reales.</span></h1>
+                <p>Conoce proyectos donde unimos ingeniería, diseño y tecnología para transformar procesos, experiencias y negocios.</p>
+                <div class="tyg-hero-actions">
+                    <a href="#portafolio" class="tyg-btn tyg-btn-primary">Explorar proyectos <span class="material-symbols-outlined">arrow_downward</span></a>
+                    <a href="{{ route('contact') }}" class="tyg-btn tyg-btn-ghost">Hablemos de tu idea <span class="material-symbols-outlined">north_east</span></a>
                 </div>
             </div>
-            <div class="p-lg flex flex-col flex-grow">
-                <h3 class="font-headline-md text-headline-md text-white mb-sm">{{$project->titulo}}</h3>
-                <p class="text-on-surface-variant font-body-md mb-lg line-clamp-2">{{ $project->descripcion }}</p>
-                <div class="mt-auto flex items-center justify-between">
-                    <span class="text-slate-500 font-label-sm italic">2024 Release</span>
-                    <a class="flex items-center gap-2 text-primary font-label-sm uppercase tracking-widest group/btn" href="{{route('project.detail',$project)}}">
-                        Ver proyecto
-                        <span class="material-symbols-outlined text-[18px] transition-transform group-hover/btn:translate-x-1">arrow_forward</span>
+            <div class="tyg-hero-visual tyg-reveal" aria-hidden="true">
+                <div class="tyg-visual-grid"></div>
+                <div class="tyg-visual-glow"></div>
+                <div class="tyg-visual-window">
+                    <div class="tyg-window-top"><span></span><span></span><span></span><small>GRUPOTYG / PROJECT LAB</small></div>
+                    <div class="tyg-window-body">
+                        <div class="tyg-window-label">TECNOLOGÍA E INNOVACIÓN</div>
+                        <div class="tyg-window-headline">BUILDING<br><em>WHAT'S NEXT.</em></div>
+                        <div class="tyg-window-line"></div>
+                        <div class="tyg-window-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                    </div>
+                </div>
+                <div class="tyg-floating-chip"><span class="material-symbols-outlined">code</span> Diseño + Ingeniería</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portafolio" class="tyg-portfolio tyg-projects-shell" aria-labelledby="portfolio-heading">
+        <div class="tyg-section-heading tyg-reveal">
+            <div><span class="tyg-section-kicker">TRABAJOS DESTACADOS</span><h2 id="portfolio-heading">Nuestro <span class="tyg-gradient-text">portafolio</span></h2><p>Explora las soluciones que hemos desarrollado para nuestros clientes y proyectos.</p></div>
+            <div class="tyg-project-count"><strong>{{ $projects->count() }}</strong><span>{{ $projects->count() === 1 ? 'proyecto' : 'proyectos' }}</span></div>
+        </div>
+        <div class="tyg-portfolio-tools tyg-reveal">
+            <label class="tyg-project-search"><span class="material-symbols-outlined" aria-hidden="true">search</span><span class="sr-only">Buscar proyectos</span><input id="tygProjectSearch" type="search" placeholder="Buscar proyecto o empresa..." autocomplete="off"></label>
+            <span id="tygProjectStatus" class="tyg-project-status" role="status" aria-live="polite"></span>
+        </div>
+        <div class="tyg-project-grid" id="tygProjectGrid">
+            @forelse($projects as $project)
+                <article class="tyg-project-card tyg-reveal" data-project-card data-search="{{ mb_strtolower($project->titulo . ' ' . $project->nombre_negocio . ' ' . $project->descripcion, 'UTF-8') }}">
+                    <a class="tyg-project-image" href="{{ route('project.detail', $project) }}" aria-label="Ver proyecto {{ $project->titulo }}">
+                        @if($project->imagen)
+                            <img src="{{ asset('storage/' . $project->imagen) }}" alt="Proyecto {{ $project->titulo }} de {{ $project->nombre_negocio }}" loading="lazy" decoding="async">
+                        @else
+                            <div class="tyg-image-placeholder"><span class="material-symbols-outlined">deployed_code</span></div>
+                        @endif
+                        <span class="tyg-image-overlay"></span>
+                        <span class="tyg-project-chip">{{ $project->nombre_negocio }}</span>
+                        <span class="tyg-image-arrow material-symbols-outlined" aria-hidden="true">north_east</span>
                     </a>
-                </div>
-            </div>
+                    <div class="tyg-project-content">
+                        <span class="tyg-project-type"><span class="tyg-type-dot"></span> PROYECTO DESARROLLADO</span>
+                        <h3><a href="{{ route('project.detail', $project) }}">{{ $project->titulo }}</a></h3>
+                        <p>{{ $project->descripcion }}</p>
+                        <a class="tyg-project-link" href="{{ route('project.detail', $project) }}">Explorar proyecto <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+                    </div>
+                </article>
+            @empty
+                <div class="tyg-empty-static"><span class="material-symbols-outlined">folder_open</span><h3>Próximamente nuevos proyectos</h3><p>Estamos preparando nuestro portafolio.</p></div>
+            @endforelse
         </div>
-        @endforeach
-    </div>
-    <!-- Pagination/Load More -->
-    <div class="mt-3xl text-center">
-        <button class="px-3xl py-md rounded-lg bg-white/5 border border-white/10 text-white font-label-sm uppercase tracking-[4px] hover:bg-white/10 hover:border-primary/50 transition-all duration-300">
-            Explore More Innovations
-        </button>
-    </div>
+        <div class="tyg-no-results" id="tygNoResults" hidden><span class="material-symbols-outlined">manage_search</span><h3>No encontramos coincidencias</h3><p>Prueba con otro nombre o término.</p></div>
+        <div class="tyg-load-area"><button id="tygLoadMore" class="tyg-btn tyg-btn-ghost" type="button" hidden>Ver más proyectos <span class="material-symbols-outlined">expand_more</span></button></div>
+    </section>
+
+    <section class="tyg-project-cta tyg-projects-shell tyg-reveal" aria-labelledby="projects-cta-heading">
+        <div class="tyg-cta-inner"><div class="tyg-cta-halo" aria-hidden="true"></div><span class="tyg-section-kicker">TU PRÓXIMO PROYECTO EMPIEZA AQUÍ</span><h2 id="projects-cta-heading">¿Tienes una idea? <span class="tyg-gradient-text">Hagámosla realidad.</span></h2><p>Conversemos sobre tus objetivos y construyamos una solución tecnológica para tu negocio.</p><div class="tyg-hero-actions tyg-cta-actions"><a href="{{ route('contact') }}" class="tyg-btn tyg-btn-primary">Iniciar un proyecto <span class="material-symbols-outlined">arrow_forward</span></a><a href="https://wa.me/51972378043?text=Hola%2C%20quiero%20conversar%20sobre%20un%20proyecto" target="_blank" rel="noopener noreferrer" class="tyg-btn tyg-btn-ghost"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Hablar por WhatsApp</a></div></div>
+    </section>
 </div>
-
-
 @endsection
+
+@push('javascript')
+<script src="{{ asset('js/grupotyg-projects.js') }}?v=2.0.0" defer></script>
+@endpush
