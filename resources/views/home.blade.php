@@ -2,7 +2,7 @@
 
 @section('content')
 <main class="tyg-home" id="inicio">
-    <div class="tyg-progress" aria-hidden="true"></div>
+    
     <section class="tyg-hero tyg-grid" aria-label="Presentación de Grupo TyG">
         <div class="tyg-orb tyg-orb-a" aria-hidden="true"></div><div class="tyg-orb tyg-orb-b" aria-hidden="true"></div>
         <div class="tyg-shell tyg-hero-grid">

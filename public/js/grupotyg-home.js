@@ -13,16 +13,7 @@
     reveals.forEach(el => observer.observe(el));
   } else reveals.forEach(el => el.classList.add('is-visible'));
 
-  const progress = root.querySelector('.tyg-progress');
-  let scheduled = false;
-  const updateProgress = () => {
-    const max = document.documentElement.scrollHeight - window.innerHeight;
-    progress.style.width = `${max > 0 ? Math.min(100, window.scrollY / max * 100) : 0}%`;
-    scheduled = false;
-  };
-  window.addEventListener('scroll', () => { if (!scheduled) { scheduled = true; requestAnimationFrame(updateProgress); } }, { passive: true });
-  updateProgress();
-
+  
   if (!reducedMotion && window.matchMedia('(hover: hover)').matches) {
     root.querySelectorAll('.tyg-service-card').forEach(card => {
       card.addEventListener('pointermove', e => {
