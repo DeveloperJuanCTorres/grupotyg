@@ -86,7 +86,7 @@
       </article>
       @endforeach
     </div>
-    <p class="ft-price-note">* Precios y características mostrados según la información de la página original. Confirma vigencia, impuestos, límites, soporte y condiciones comerciales antes de publicarlos como oferta definitiva.</p>
+    <!-- <p class="ft-price-note">* Precios y características mostrados según la información de la página original. Confirma vigencia, impuestos, límites, soporte y condiciones comerciales antes de publicarlos como oferta definitiva.</p> -->
   </div></section>
 
   <section class="ft-section ft-section-soft" id="ft-demo"><div class="ft-container ft-demo-grid"><div class="ft-reveal"><div class="ft-kicker">CONOCE EL SISTEMA</div><h2>Mira FacTyG <span>en acción.</span></h2><p class="ft-lead">Descubre cómo puede ayudarte una solución de facturación y gestión empresarial. Si quieres evaluar su uso en tu negocio, conversemos.</p><a class="ft-btn ft-btn-primary" href="https://wa.me/51972378043?text={{ urlencode('Hola, quiero solicitar una demostración de FacTyG') }}" target="_blank" rel="noopener noreferrer">Solicitar demostración <span aria-hidden="true">↗</span></a></div><div class="ft-video-wrap ft-reveal"><iframe src="https://www.youtube-nocookie.com/embed/qg36PAl5K5k?rel=0" title="Video de facturación electrónica FacTyG" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div></section>
