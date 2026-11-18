@@ -8,37 +8,73 @@
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
-  <title>{{ config('app.name', 'GrupoTyG') }}</title>
+ 
+  {{-- SEO PRINCIPAL --}}
+  <title>@yield('title', 'Grupo TyG Ingenieros | Desarrollo de Software y Soluciones TI')</title>
 
-  <!-- META -->
-  <meta name="description" content="Grupo TyG Ingenieros | Agencia innovadora de soluciones de TI">
-  <link rel="canonical" href="https://grupotyg.pe">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta property="og:title" itemprop="headline" content="GrupoTyG">
-  <meta property="og:description" itemprop="description" content="Grupo TyG Ingenieros | Agencia innovadora de soluciones de TI">
-  <meta property="og:keywords" itemprop="keywords" content="tyg, tecnologia, ti, grupo, business, branding, asesoramiento, web, diseño, pagina, agencia">
-  <!-- <meta name="googlebot" content="noindex"> -->
-  <meta name="googlebot-news" content="nosnippet">
-  <meta property="og:image" itemprop="image" content="{{asset('img/logo3.jpg')}}">
-  <meta property="og:url" itemprop="url" content="https://grupotyg.pe">
+  <meta name="description"
+        content="@yield('meta_description', 'Grupo TyG Ingenieros: desarrollo de páginas web, e-commerce, sistemas ERP, facturación electrónica, Business Intelligence y soluciones TI en Perú.')">
+
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="{{ url()->current() }}">
+
+  {{-- IDENTIDAD CORPORATIVA --}}
+  <meta name="application-name" content="Grupo TyG Ingenieros">
+  <meta name="theme-color" content="#0b1326">
+
+  {{-- FAVICON CORPORATIVO --}}
+  
+  <!-- FAVICON OFICIAL GRUPO TYG -->
+  <link rel="icon" href="{{ asset('img/tyg-brand.ico') }}" sizes="any">
+
+  <link rel="icon" type="image/png" sizes="32x32"
+        href="{{ asset('img/tyg-brand-32.png') }}">
+
+  <link rel="icon" type="image/png" sizes="48x48"
+        href="{{ asset('img/tyg-brand-48.png') }}">
+
+  <link rel="icon" type="image/png" sizes="192x192"
+        href="{{ asset('img/tyg-brand-192.png') }}">
+
+  <link rel="apple-touch-icon" sizes="180x180"
+        href="{{ asset('img/tyg-brand-180.png') }}">
+
+
+  {{-- OPEN GRAPH --}}
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Grupo TyG Ingenieros">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:title"
+        content="@yield('title', 'Grupo TyG Ingenieros | Desarrollo de Software y Soluciones TI')">
+  <meta property="og:description"
+        content="@yield('meta_description', 'Desarrollo web, e-commerce, facturación electrónica, sistemas empresariales y soluciones tecnológicas en Perú.')">
+  <meta property="og:url" content="{{ url()->current() }}">
+  <meta property="og:image"
+      content="{{ asset('img/tyg-social-logo.png') }}">
 
-  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-icon-180x180.png">
-  <!-- Google -->
-  <link rel="icon" type="image/png" sizes="192x192" href="/icon/favicon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/icon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+  {{-- DATOS ESTRUCTURADOS --}}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Grupo TyG Ingenieros",
+        "alternateName": "Grupo TyG",
+        "url": "https://grupotyg.pe/"
+      },
+      {
+        "@type": "Organization",
+        "name": "Grupo TyG Ingenieros",
+        "url": "https://grupotyg.pe/",
+        "logo": "{{ asset('img/logo3.jpg') }}",
+        "email": "informes@grupotyg.pe",
+        "description": "Empresa peruana especializada en desarrollo de software, páginas web, comercio electrónico, sistemas ERP y soluciones de tecnología."
+      }
+    ]
+  }
+  </script>
 
-  <link href="/img/iso-02.png" rel="icon" type="image/x-icon">
 
   <!-- GOOGLE ANALYTICS -->
   <!-- Google tag (gtag.js) -->
